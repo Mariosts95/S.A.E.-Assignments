@@ -1,0 +1,9 @@
+#img1 {
+    background: url(images/404.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: none;
+    background-repeat: no-repeat;
+    max-width: 1900px;
+    max-height: 90%;
+}
