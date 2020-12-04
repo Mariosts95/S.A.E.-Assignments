@@ -1,10 +1,31 @@
 body {
-    background-size: cover;
-    background-position: center;
+    background-image: url("../images/404.jpg");
+    /* background-size: cover; */
+    /* background-position: center; */
     background-attachment: none;
     background-repeat: no-repeat;
     width: 100%;
     height: 100%;
     overflow: hidden;
     position: relative;
+}
+
+#mobile {
+    visibility: hidden;
+}
+
+@media screen and (max-width: 600px) {
+
+body {
+    background-image: none;
+    background-color: white;
+    
+}
+
+#mobile {
+    visibility: visible;
+    width: 100%
+
+}
+
 }
