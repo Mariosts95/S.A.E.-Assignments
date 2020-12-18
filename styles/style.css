@@ -1,109 +1,193 @@
+/*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 0% 0 0% 0%;
+}
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+
+/*  GRID OF TWELVE  */
+.span_12 {
+	width: 100%;
+}
+
+.span_11 {
+  	width: 91.58%;
+}
+.span_10 {
+  	width: 83.16%;
+}
+
+.span_9 {
+  	width: 74.75%;
+}
+
+.span_8 {
+  	width: 66.33%;
+}
+
+.span_7 {
+  	width: 57.91%;
+}
+
+.span_6 {
+  	width: 49.5%;
+}
+
+.span_5 {
+  	width: 41.08%;
+}
+
+.span_4 {
+  	width: 32.66%;
+}
+
+.span_3 {
+  	width: 24.25%;
+}
+
+.span_2 {
+  	width: 15.83%;
+}
+
+.span_1 {
+  	width: 7.416%;
+}
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 480px) {
+	.col {  margin: 1% 0 1% 0%; }
+    
+    .span_1, .span_2, .span_3, .span_4, .span_5, .span_6, .span_7, .span_8, .span_9, .span_10, .span_11, .span_12 {
+	width: 100%; 
+	}
+}
+
+/* CUSTOM CSS */
+
+@font-face {
+  font-family: Harukaze;
+  src: url(../fonts/HarukazeSolid-6YeZM.ttf);
+}
+
+:root {
+    --primary-color: #ED5454;
+    --secondary-color: #282828;
+
+}
+
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 body {
-    background-image: url("../images/background.webp");
-    background-size: cover;
-    background-attachment: none;
-    background-repeat: no-repeat;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(36, 36, 36) url('../images/background.webp'); 
+    background-position: center;
+    background-repeat: repeat;
+    background-size: 25%;
+    font-family: 'Poppins', sans-serif;
 }
+
+h1 , h2 , h3 {
+    font-family: 'Langar', cursive;
+}
+
+/* NAVBAR */
 
 header {
-    background-color: #ED5454;
+    background-color: var(--primary-color);
+    color: white;
     width: 100%;
-    height: 75px;
-    display: flex;
+    height: 3em;
+    box-shadow: 0 0 10px rgba(253, 53, 53, 0.8);
 }
 
-nav {
-    display: flex;
-   float: left;
-   position: absolute;
-   top: 15px;
-   right: 50px;
-}
-
-nav ul li {
-    width: 150px;
-    height: 40px;
+.logo {
     
 }
 
-li {
-    float: left;
+.logo img{
+    width: 25%;
+    height: auto;
+    padding-left: 2em;
 }
 
-ul {
-    list-style-type: none;
+nav {
+    text-align: center;
 }
 
-nav ul li ul {
-    display: flex;
-    flex-direction: column;
-    visibility: hidden;
+nav ul {
+    display: inline-flex;
+    list-style: none;
+    color: white;
+}
+
+nav ul li {
+    width: 9em;
+    margin: 1em;
 }
 
 nav ul li a {
-    text-align: center;
+    display: block;
+    width: 9em;
+    height: 2em;
     text-decoration: none;
     color: white;
-    width: 150px;
-    height: 40px;
-    line-height: 40px;
-    display: block;
-    background-color: #ED5454;
-}
-nav ul li ul li {
-    align-content: center;
-    text-align: center;
-    text-decoration: none;
-    color: white;
-    width: 150px;
-    height: 40px;
-    line-height: 40px;
-    display: block;
-    background-color: #ED5454;
-    border-bottom: 1px solid black;
 }
 
+nav ul li a:hover {
+    text-decoration: none;
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+nav ul li ul {
+    display: none;
+}
 
 nav ul li:hover ul {
-    visibility: visible;
+    display: block;
+    position: absolute;
+    background-color: var(--primary-color);
+    margin-left: -1em;
 }
 
-.container {
-    max-width: 1820px;
-    margin-top: 100px;
-    margin-left: 50px;
-    display: flex;
+nav ul li ul li {
+    width: 9em;
+    height: 2em;
 }
 
-img {
-    width: 100%
+nav {
+    float: right;
 }
 
-.destinations {
-    margin-right: 50px;
-    width: 400px;
+/* MAIN */
+
+
+main ul {
+    display: inline-flex;
+    list-style: none;
 }
 
-.destinations a {
-    display: flex;
-    border: 2px solid white;
-}
-
-.destinations a:hover {
-    display: flex;
-    border: 2px solid rgb(255, 0, 0);
-}
-
-footer {
-    margin-top: 89px;
+main div ul li{
     width: 100%;
-    height: 75px;
-    color: white;
-    background-color: #282828;
+    height: auto;
+    margin-left: 1em;
 }
-
