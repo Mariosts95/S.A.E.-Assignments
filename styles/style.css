@@ -99,7 +99,6 @@ body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     background: rgb(36, 36, 36) url('../images/background.webp'); 
-    background-position: center;
     background-repeat: repeat;
     background-size: 25%;
     font-family: 'Poppins', sans-serif;
@@ -119,10 +118,6 @@ header {
     box-shadow: 0 0 10px rgba(253, 53, 53, 0.8);
 }
 
-.logo {
-    
-}
-
 .logo img{
     width: 25%;
     height: auto;
@@ -134,7 +129,7 @@ nav {
 }
 
 nav ul {
-    display: inline-flex;
+    display: flex;
     list-style: none;
     color: white;
 }
@@ -146,7 +141,7 @@ nav ul li {
 
 nav ul li a {
     display: block;
-    width: 9em;
+    width: 10em;
     height: 2em;
     text-decoration: none;
     color: white;
@@ -170,7 +165,7 @@ nav ul li:hover ul {
 }
 
 nav ul li ul li {
-    width: 9em;
+    width: 10em;
     height: 2em;
 }
 
@@ -179,15 +174,43 @@ nav {
 }
 
 /* MAIN */
-
-
-main ul {
-    display: inline-flex;
-    list-style: none;
+main ul img {
+    display: flex;
+    border: 1px solid white;
 }
 
-main div ul li{
+main ul {
     width: 100%;
-    height: auto;
-    margin-left: 1em;
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+}
+
+main ul img:hover {
+    border: 1px solid red;
+}
+
+
+.destinations {
+    margin-top: 7em;
+}
+
+/* FOOTER */
+
+footer {
+    height: 3em;
+    position: relative;
+
+
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+}
+
+footer ul {
+    display: flex;
 }
