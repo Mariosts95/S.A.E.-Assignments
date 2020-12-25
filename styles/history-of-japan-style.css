@@ -13,6 +13,11 @@
     box-sizing: border-box;
 }
 
+main {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
 body {
     margin: 0;
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
@@ -20,10 +25,11 @@ body {
     font-size: 1.1em;
     line-height: 1.5;
     background-repeat: repeat;
-    background-size: 50%;
+    /* background-size: 50% */;
 }
 
 h1 , h2 , h3 {
+    font-size: 2em;
     padding: 1em 0;
     font-family: 'Langar', cursive;
 }
@@ -140,6 +146,7 @@ header ul li a:hover {
 
 .footer-policy ul li {
     padding-bottom: 0.3em;
+    padding-left: 3em;
 }
 
 .footer-destinations { 
@@ -194,57 +201,251 @@ footer {
     color: white;
 }
 
+/* HISTORY */
 
+/* HISTORY VIDEO */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .footer-container {
+.history-video {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 5em repeat(3, 1fr) 5em;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
     max-width: 1600px;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
     margin: 0 auto;
+}
+
+.history-video-content { 
+    grid-area: 2 / 1 / 5 / 4;
+    display: flex;
+    justify-content: center;
+ }
+
+ /* HISTORY TEXT */
+
+ .history-text-background {
+    background: white;
+    max-width: 1600px;
+ }
+
+ .history-text-background img {
+    border: 1px solid var(--primary-color);
+ }
+
+ .wikipedia-link {
+   text-align: center;
+}
+
+.btn{
+    display: inline-block;
+    color: var(--primary-color);
+    text-decoration: none;
+    padding: 1em 1em;
+    border: 1px solid var(--primary-color);
+    margin: .5em 0;
+    text-align: center;
+}
+.btn:hover{
+    background:  var(--primary-color);
+    color: white;
+    transform: scale(0.98);
+}
+
+/* CLASSICAL JAPAN */
+
+.history-title h1{
+    font-size: 3em;
+    padding-left: 1em;
+}
+
+/* ASUKA PERIOD */
+
+.asuka-period {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 18.75em, 25em;
+    grid-column-gap: 0px;
+    grid-row-gap: 5em;
+    margin: 0 auto;
+}
+
+.asuka-banner { 
+    grid-area: 1 / 1 / 2 / 3; 
+    border: 1px solid var(--primary-color);
+}
+.asuka-image { 
+    grid-area: 2 / 2 / 3 / 3;
+ }
+ 
+ .asuka-image img{ 
+    width: auto;
+    margin: 0 auto;
+  }
+
+.asuka-text { 
+    grid-area: 2 / 1 / 3 / 2;
+    padding-left: 5em;
+}
+
+.asuka-text h2 { 
+    text-align: center;
+}
+
+
+
+/* NARA PERIOD */
+
+.nara-period {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin: 0 auto;
+}
+
+.nara-image {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.nara-text {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+ .nara-image img{ 
+    width: auto;
+    margin: 0 auto;
+  }
+
+.nara-text { 
+    padding-right: 5em;
+}
+
+.nara-text h2 { 
+    text-align: center;
+}
+
+/* HEIAN PERIOD */
+
+.heian-period {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin: 5em auto;
+}
+
+.heian-image {
+    grid-area: 1 / 1 / 2 / 2;
     
 }
 
-.footer-policy {
-    display: flex;
-    margin-right: auto;
-    flex-shrink: 0;
-    align-items: center;
-    
+.heian-text {
+    grid-area: 1 / 2 / 2 / 3;
 }
 
-.footer-social-container {
-    display: flex;
-    margin-left: auto;
-    flex-shrink: 0;
-    align-items: center;
-    color:white;
+ .heian-image img{ 
+    width: auto;
+    margin: 3em 3em;
+  }
+
+.heian-text { 
+    padding: 0 5em;
 }
 
-.footer-policy-link {
-    padding: 0 0.5rem;
+.heian-text h2 { 
+    text-align: center;
 }
 
 
-.footer-social-link {
-    padding: 0 0.5rem;
-} */
+/* FEUDAL JAPAN */
+
+/* KAMAKURA PERIOD */
+
+.kamakura-period {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 18.75em, 25em;
+    grid-column-gap: 0px;
+    grid-row-gap: 5em;
+    margin: 5em auto;
+}
+
+.kamakura-banner { 
+    grid-area: 1 / 1 / 2 / 3;
+    border: 1px solid var(--primary-color);
+}
+.kamakura-image { 
+    grid-area: 2 / 2 / 3 / 3;
+ }
+ 
+ .kamakura-image img{ 
+    width: auto;
+    margin: 0 auto;
+  }
+
+.kamakura-text { 
+    grid-area: 2 / 1 / 3 / 2;
+    padding-left: 5em;
+}
+
+.kamakura-text h2 { 
+    text-align: center;
+}
+
+/* MUROMACHI PERIOD */
+
+.muromachi-period {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin: 0 auto;
+}
+
+.muromachi-image {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.muromachi-text {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+ .muromachi-image img{ 
+    width: auto;
+    margin: 5em auto;
+  }
+
+.muromachi-text { 
+    padding-right: 5em;
+}
+
+.muromachi-text h2 { 
+    text-align: center;
+}
+
+/* AZUCHI-MOMOYAMA PERIOD */
+
+.azuchi-momoyama-period{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.azuchi-momoyama-image {
+    grid-area: 1 / 1 / 2 / 2;
+    max-width: 1200px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.azuchi-momoyama-text {
+    grid-area: 2 / 1 / 3 / 2;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 2em;
+}
