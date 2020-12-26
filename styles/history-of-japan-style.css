@@ -16,6 +16,8 @@
 main {
     max-width: 1600px;
     margin: 0 auto;
+    margin-bottom: -15em;
+    margin-top: 2em;
 }
 
 body {
@@ -25,7 +27,6 @@ body {
     font-size: 1.1em;
     line-height: 1.5;
     background-repeat: repeat;
-    /* background-size: 50% */;
 }
 
 h1 , h2 , h3 {
@@ -159,17 +160,35 @@ header ul li a:hover {
 }
 
 .footer-contact { 
-    grid-area: 1 / 6 / 2 / 7; 
+    grid-area: 1 / 5 / 2 / 7; 
     text-align: center;
+}
+
+.footer-social-links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.contact-info-social { 
+    grid-area: 1 / 1 / 2 / 2; 
+    padding-top: 2em
+}
+
+.footer-contact-social div { 
+    width: fit-content;
 }
 
 .footer-contact img{ 
     width: auto;
-    margin: 0 auto;
+    margin: 1em auto;
 }
 
 .contact-info {
-    padding-top: 2em;
+    grid-area: 1 / 2 / 2 / 3;
+    padding-top: 1em;
 }
 
 .footer-copywrite { 
@@ -177,6 +196,10 @@ header ul li a:hover {
     text-align: center; 
     color: gray;
     border-top: gray 1px solid;
+}
+
+.footer-copywrite p { 
+    line-height: 0.9em;
 }
 
 .footer-list-links li {
@@ -199,6 +222,10 @@ footer {
     top: 300px;
     background: var(--secondary-color);
     color: white;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
 
 /* HISTORY */
@@ -224,7 +251,7 @@ footer {
  /* HISTORY TEXT */
 
  .history-text-background {
-    background: white;
+    background: rgba(255, 255, 255, 0.7);
     max-width: 1600px;
  }
 
@@ -448,4 +475,196 @@ footer {
     max-width: 1000px;
     margin: 0 auto;
     margin-top: 2em;
+}
+
+/* EARLY MODERN JAPAN */
+
+/* EDO PERIOD */
+
+.edo-period {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 18.75em, 25em;
+    grid-column-gap: 0px;
+    grid-row-gap: 5em;
+    margin: 5em auto;
+}
+
+.edo-banner { 
+    grid-area: 1 / 1 / 2 / 3;
+    border: 1px solid var(--primary-color);
+}
+.edo-image { 
+    grid-area: 2 / 2 / 3 / 3;
+ }
+ 
+ .edo-image img{ 
+    width: auto;
+    margin: 0 auto;
+  }
+
+.edo-text { 
+    grid-area: 2 / 1 / 3 / 2;
+    padding-left: 5em;
+}
+
+.edo-text h2 { 
+    text-align: center;
+}
+
+/* MODERN JAPAN */
+
+/* MEIJI PERIOD */
+
+.meiji-period {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 18.75em, 25em;
+    grid-column-gap: 0px;
+    grid-row-gap: 5em;
+    margin: 5em auto;
+}
+
+.meiji-banner { 
+    grid-area: 1 / 1 / 2 / 3;
+    border: 1px solid var(--primary-color);
+}
+.meiji-image { 
+    grid-area: 2 / 2 / 3 / 3;
+ }
+ 
+ .meiji-image img{ 
+    width: auto;
+    margin: 5em auto;
+  }
+
+.meiji-text { 
+    grid-area: 2 / 1 / 3 / 2;
+    padding-left: 5em;
+}
+
+.meiji-text h2 { 
+    text-align: center;
+}
+
+/* TAISHO PERIOD */
+
+.taisho-period {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin: 0 auto;
+}
+
+.taisho-image {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.taisho-text {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+ .taisho-image img{ 
+    width: auto;
+    margin: 5em auto;
+  }
+
+.taisho-text { 
+    padding: 5em;
+}
+
+.taisho-text h2 { 
+    text-align: center;
+}
+
+/* SHOWA PERIOD */
+
+.showa-period {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 18.75em, 25em;
+    grid-column-gap: 0px;
+    grid-row-gap: 5em;
+    margin: 0 auto;
+}
+
+.showa-image { 
+    grid-area: 2 / 2 / 3 / 3;
+ }
+ 
+ .showa-image img{ 
+    width: auto;
+    margin: 5em auto;
+  }
+
+.showa-text { 
+    grid-area: 2 / 1 / 3 / 2;
+    padding-left: 5em;
+}
+
+.showa-text h2 { 
+    text-align: center;
+}
+
+/* HEISEI PERIOD */
+
+.heisei-period {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin: 0 auto;
+}
+
+.heisei-image {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.heisei-text {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+ .heisei-image img{ 
+    width: auto;
+    margin: 5em auto;
+  }
+
+.heisei-text { 
+    padding: 5em;
+}
+
+.heisei-text h2 { 
+    text-align: center;
+}
+
+/* REIWA PERIOD */
+
+.reiwa-period {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 18.75em, 25em;
+    grid-column-gap: 0px;
+    grid-row-gap: 5em;
+    margin: 0 auto;
+}
+
+.reiwa-image { 
+    grid-area: 2 / 2 / 3 / 3;
+ }
+ 
+ .reiwa-image img{ 
+    width: auto;
+    margin: 5em auto;
+  }
+
+.reiwa-text { 
+    grid-area: 2 / 1 / 3 / 2;
+    padding-left: 5em;
+}
+
+.reiwa-text h2 { 
+    text-align: center;
 }
