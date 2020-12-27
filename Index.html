@@ -1,77 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel in Japan</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/style - Copy.css">
     <link rel="icon" href="images/logo.png" type="image/png">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Langar&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
-    <body>
-<!-- NAVBAR -->
 
-        <header>
-            <div class="header-container">
-                <a href="index.html" class="header-logo"></a>
-                <nav class="navigation-menu">
-                    <ul>
-                    <li><a href="index.html">Destinations</a>
-                            <ul>
-                                <li><a href="tokyo.html">Tokyo</a></li>
-                                <li><a href="#">Kyoto</a></li>
-                                <li><a href="#">Osaka</a></li>
-                                <li><a href="#">Nara</a></li>
-                            </ul>
-                        </li>
-                    <li><a href="history-of-japan.html">History of Japan</a>
-                            <ul>
-                                <li><a href="#">Classical Japan</a></li>
-                                <li><a href="#">Feudal Japan</a></li>
-                                <li><a href="#">Early Modern Japan</a></li>
-                                <li><a href="#">Modern Japan</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
+<body>
+    <!-- NAVBAR -->
 
-<!-- MAIN -->
-
-        <main>
-            <div class="home-title"><h1>Destinations</h1></div>
-            <div class="destinations">
+    <header>
+        <nav>
+            <div class="logo"><a href="#"><img src="images/logo_42x42.png" alt=""></a></div>
+            <div class="menu">
+                <label for="btn" class="icon">
+                    <img src="images/burger-menu.png" alt="">
+                </label>
+                <input type="checkbox" id="btn">
                 <ul>
-                    <li><a href="tokyo.html"><img src="images/Destination-1.png" alt=""></a></li>
-                    <li><a href="#"><img src="images/Destination-2.png" alt=""></a></li>
-                    <li><a href="#"><img src="images/Destination-3.png" alt=""></a></li>
-                    <li><a href="#"><img src="images/Destination-4.png" alt=""></a></li>
+                    <li>
+                        <label for="btn-1" class="show">Destinations</label>
+                        <a href="index.html">Destinations</a>
+                        <input type="checkbox" id="btn-1">
+                        <ul>
+                            <li><a href="tokyo.html">Tokyo</a></li>
+                            <li><a href="kyoto.html">Kyoto</a></li>
+                            <li><a href="osaka.html">Osaka</a></li>
+                            <li><a href="nara.html">Nara</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <label for="btn-2" class="show">History of Japan</label>
+                        <a href="history-of-japan.html">History of Japan</a>
+                        <input type="checkbox" id="btn-2">
+                        <ul>
+                            <li><a href="#">Classical Japan</a></li>
+                            <li><a href="#">Feudal Japan</a></li>
+                            <li><a href="#">Early Modern Japan</a></li>
+                            <li><a href="#">Modern Japan</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
-            </div>    
-        </main>
+            </div>
+        </nav>
+    </header>
 
-<!-- FOOTER -->
+    <!-- DESTINATIONS -->
 
-        <footer>
-            <div class="footer-container">
-                <ul class="footer-policy">
-                    <li class="footer-policy-link"><a href="#">Privacy Policy</a></li>
-                    <li class="footer-policy-link"><a href="#">Cookie Policy</a></li>
-                    <li class="footer-policy-link"><a href="#">Terms of Use</a></li>
-                </ul>
-                <div class="footer-social-container">
-                    <span>Follow us |</span>
-                        <a href="#" class="footer-social-link"><img src="../images/Facebook.svg" alt=""></a>
-                        <a href="#" class="footer-social-link"><img src="../images/Instagram.svg" alt=""></a>
-                        <a href="#" class="footer-social-link"><img src="../images/Twitter.svg" alt=""></a>
+    <main>
+        <div class="destinations">
+            <div class="title">
+                <h1>Destinations</h1>
+            </div>
+            <a href="tokyo.html">
+                <div class="destination-1">
+                    <img src="/images/Destination-1.png" alt="">
+                    <div class="text-over-image">
+                        <h1>01</h1>
+                        <h1 class="destination-title">Tokyo</h1>
+                        <a href="tokyo.html" class="btn">Explore</a>
+                    </div>
+                </div>
+            </a>
+            <a href="kyoto.html" class="overlay">
+                <div class="destination-2">
+                    <img src="/images/Destination-2.png" alt="">
+                    <div class="text-over-image">
+                        <h1>02</h1>
+                        <h1 class="destination-title">Kyoto</h1>
+                        <a href="kyoto.html" class="btn">Explore</a>
+                    </div>
+                </div>
+            </a>
+            <a href="osaka.html">
+                <div class="destination-3">
+                    <img src="/images/Destination-3.png" alt="">
+                    <div class="text-over-image">
+                        <h1>03</h1>
+                        <h1 class="destination-title">Osaka</h1>
+                        <a href="osaka.html" class="btn">Explore</a>
+                    </div>
+                </div>
+            </a>
+            <a href="nara.html">
+                <div class="destination-4">
+                    <img src="/images/Destination-4.png" alt="">
+                    <div class="text-over-image">
+                        <h1>04</h1>
+                        <h1 class="destination-title">Nara</h1>
+                        <a href="nara.html" class="btn">Explore</a>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer class="footer-grid">
+        <div class="footer-logo"> <a href="index.html"><img src="images/Logo-2.png" alt=""></a> </div>
+        <div class="footer-policy">
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Cookie Policy</a></li>
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+        </div>
+        <div class="footer-destinations">
+            <ul>
+                <li>Destinations
+                    <ul>
+                        <li class="footer-list-titles"><a href="#">Tokyo</a>
+                            <ul class="footer-list-links">
+                                <li><a href="#">Travel Advice</a></li>
+                                <li><a href="#">Top Attractions</a></li>
+                            </ul>
+                        </li>
+                        <li class="footer-list-titles"><a href="#">Kyoto</a>
+                            <ul class="footer-list-links">
+                                <li><a href="#">Travel Advice</a></li>
+                                <li><a href="#">Top Attractions</a></li>
+                            </ul>
+                        </li>
+                        <li class="footer-list-titles"><a href="#">Osaka</a>
+                            <ul class="footer-list-links">
+                                <li><a href="#">Travel Advice</a></li>
+                                <li><a href="#">Top Attractions</a></li>
+                            </ul>
+                        </li>
+                        <li class="footer-list-titles"><a href="#">Nara</a>
+                            <ul class="footer-list-links">
+                                <li><a href="#">Travel Advice</a></li>
+                                <li><a href="#">Top Attractions</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-history">
+            <ul>
+                <li>History of Japan
+                    <ul>
+                        <li class="footer-list-titles"><a href="#">Classical Japan</a>
+                            <ul class="footer-list-links">
+                                <li><a href="#">Asakusa period (538-710)</a></li>
+                                <li><a href="#">Nara period (710–794)</a></li>
+                                <li><a href="#">Heian period (794–1185)</a></li>
+                            </ul>
+                        </li>
+                        <li class="footer-list-titles"><a href="#">Feudal Japan</a>
+                            <ul class="footer-list-links">
+                                <li><a href="#">Kamakura period (1185–1333)</a></li>
+                                <li><a href="#">Muromachi period (1333–1568)</a></li>
+                                <li><a href="#">Azuchi–Momoyama period (1568–1600)</a></li>
+                            </ul>
+                        </li>
+                        <li class="footer-list-titles"><a href="#">Early Modern Japan</a>
+                            <ul class="footer-list-links">
+                                <li><a href="#">Edo period (1600–1868)</a></li>
+                            </ul>
+                        </li>
+                        <li class="footer-list-titles"><a href="#">Modern Japan</a>
+                            <ul class="footer-list-links">
+                                <li><a href="#">Meiji period (1868–1912)</a></li>
+                                <li><a href="#">Taishō period (1912–1926)</a></li>
+                                <li><a href="#">Shōwa period (1926–1989)</a></li>
+                                <li><a href="#">Heisei period (1989–2019)</a></li>
+                                <li><a href="#">Reiwa period (2019–present)</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-contact">
+            <div>Contact</div>
+            <div class="footer-social-links">
+                <div class="contact-info-social">
+                    <div>
+                        <a href="#"><img src="images/Facebook.svg" alt=""> Facebook</a>
+                    </div>
+                    <div>
+                        <a href="#"><img src="images/Instagram.svg" alt=""> Instagram</a>
+                    </div>
+                    <div>
+                        <a href="#"><img src="images/Twitter.svg" alt=""> Twitter</a>
+                    </div>
+                </div>
+                <div class="contact-info">
+                    <div>
+                        <img src="images/placeholder.png" alt=""> 213, Street Name, Greece
+                    </div>
+                    <div>
+                        <img src="images/telephone-3.png" alt=""> +30 2101234567
+                    </div>
+                    <div>
+                        <img src="images/mail.png" alt=""> contact@travelinjapan.eu
+                    </div>
                 </div>
             </div>
-        </footer>
-        
-    </body>
+        </div>
+        <div class="footer-copywrite">
+            <p>Marios Tsioutsis student project for S.A.E. Athens</p>
+        </div>
+    </footer>
+
+</body>
+
 </html>
