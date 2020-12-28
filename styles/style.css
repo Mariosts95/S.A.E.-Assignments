@@ -52,7 +52,7 @@ a {
     text-decoration: none;
 }
 
-/* NAVBAR */
+/* ----------NAVBAR---------- */
 
 header {
     background: var(--primary-color);
@@ -61,11 +61,12 @@ header {
     justify-content: space-between;  
     height: 52px;    
     box-shadow: 0 0 30px rgba(255, 17, 17, 0.5);
-    position: absolute;
     top: 0;
     right: 0;
     left: 0;
     width: 100%;
+    position: sticky;
+    z-index: 1;
 
 }
 
@@ -74,6 +75,7 @@ nav {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    
 }
 
 .menu {
@@ -234,8 +236,8 @@ nav ul ul li a {
 
 .footer-grid {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 1fr 3em;
+    grid-template-columns: repeat(6, auto);
+    grid-template-rows: auto 3em;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
 }
@@ -276,8 +278,8 @@ nav ul ul li a {
 
 .footer-social-links {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: auto;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
 }
@@ -328,7 +330,7 @@ nav ul ul li a {
 }
 
 footer {
-    margin-top: 6.5em;
+    margin-top: 6em;
     background: var(--secondary-color);
     color: white;
 }
@@ -337,17 +339,15 @@ footer a:hover {
     text-decoration: underline;
 }
 
-
 /* DESTINATIONS */
 
 .destinations {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 5em 1fr;
+    grid-template-columns: repeat(4, 400px);
+    grid-template-rows: auto auto;
     grid-column-gap: 1em;
     grid-row-gap: 2em;
     max-width: 1600px;
-    margin-top: 5em;
 }
 
 .title { 

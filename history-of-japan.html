@@ -18,19 +18,29 @@
 <!-- NAVBAR -->
 
 <header>
-    <div class="header-container">
-        <a href="index.html" class="header-logo"></a>
-        <nav class="navigation-menu">
+    <nav>
+        <div class="logo"><a href="#"><img src="images/logo_42x42.png" alt=""></a></div>
+        <div class="menu">
+            <label for="btn" class="icon">
+                <img src="images/burger-menu.png" alt="">
+            </label>
+            <input type="checkbox" id="btn">
             <ul>
-                <li><a href="index.html">Destinations</a>
+                <li>
+                    <label for="btn-1" class="show">Destinations</label>
+                    <a href="index.html">Destinations</a>
+                    <input type="checkbox" id="btn-1">
                     <ul>
                         <li><a href="tokyo.html">Tokyo</a></li>
-                        <li><a href="#">Kyoto</a></li>
-                        <li><a href="#">Osaka</a></li>
-                        <li><a href="#">Nara</a></li>
+                        <li><a href="kyoto.html">Kyoto</a></li>
+                        <li><a href="osaka.html">Osaka</a></li>
+                        <li><a href="nara.html">Nara</a></li>
                     </ul>
                 </li>
-                <li><a href="history-of-japan.html">History of Japan</a>
+                <li>
+                    <label for="btn-2" class="show">History of Japan</label>
+                    <a href="history-of-japan.html">History of Japan</a>
+                    <input type="checkbox" id="btn-2">
                     <ul>
                         <li><a href="#">Classical Japan</a></li>
                         <li><a href="#">Feudal Japan</a></li>
@@ -40,8 +50,8 @@
                 </li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-        </nav>
-    </div>
+        </div>
+    </nav>
 </header>
 
 <!-- HISTORY -->

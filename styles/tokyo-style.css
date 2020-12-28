@@ -20,6 +20,10 @@ body {
     background-size: 50%;
 }
 
+main img {
+    width: auto;
+    height: auto;
+}
 
 h1 , h2 , h3 {
     padding: 1em 0;
@@ -46,7 +50,7 @@ a {
     text-decoration: none;
 }
 
-/* NAVBAR */
+/* ----------NAVBAR---------- */
 
 .header-logo {
     display: block;
@@ -111,12 +115,12 @@ header ul li a:hover {
     border-bottom: 1px solid white;
 }
 
-/* FOOTER */
+/* ----------FOOTER---------- */
 
 .footer-grid {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 1fr 3em;
+    grid-template-columns: repeat(6, auto);
+    grid-template-rows: auto 3em;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
 }
@@ -157,8 +161,8 @@ header ul li a:hover {
 
 .footer-social-links {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: auto;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
 }
@@ -209,8 +213,7 @@ header ul li a:hover {
 }
 
 footer {
-    position: relative;
-    top: 300px;
+    margin-top: 2em;
     background: var(--secondary-color);
     color: white;
 }
@@ -219,12 +222,12 @@ footer a:hover {
     text-decoration: underline;
 }
 
-/* IMAGE GALLERY */
+/* ----------IMAGE GALLERY---------- */
 
 .gallery {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: auto;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     margin: 0 auto;
@@ -259,7 +262,7 @@ footer a:hover {
     border-bottom: 3px solid white;
 }
 
-/* ALL TEXT */
+/* ----------ALL TEXT---------- */
 
  .text-background {
     background: rgba(255, 255, 255, 0.7);
@@ -272,7 +275,7 @@ footer a:hover {
     border: 1px solid var(--primary-color);
  }
 
- /* TRAVEL ADVICE */
+ /* ----------TRAVEL ADVICE---------- */
 
  .title h1{
     font-size: 3em;
@@ -280,14 +283,14 @@ footer a:hover {
 }
 
 .section-title h1 {
-    font-size: 2em;
+    font-size: 2.5em;
     text-align: center;
 }
 
 .preview {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: auto;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
 }
@@ -302,12 +305,12 @@ footer a:hover {
     padding: 0 5em; 
 }
 
-/* TOKYO TEMPERATURE */
+/* ----------TOKYO TEMPERATURE---------- */
 
 .tokyo-temperature {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: auto;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     text-align: end;
@@ -327,12 +330,12 @@ footer a:hover {
     margin: 0 5em;
     margin-top: 6em;
 }
-/* NARITA INTERNATIONAL AIRPOT */
+/* ----------NARITA INTERNATIONAL AIRPOT---------- */
 
 .narita-airport {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 6em repeat(2, 1fr);
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: 6em repeat(2, auto);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
 }
@@ -345,35 +348,153 @@ footer a:hover {
     grid-area: 1 / 1 / 2 / 4;
     text-align: center;
 }
+
 .narita-express { 
     grid-area: 2 / 1 / 3 / 2;
     padding: 5em;
 }
+
 .sobu-line { 
     grid-area: 2 / 2 / 3 / 3; 
     padding: 5em;
 }
+
 .keisei-skyliner { 
     grid-area: 2 / 3 / 3 / 4; 
     padding: 5em;
 }
+
 .keisei-limited-express { 
     grid-area: 3 / 1 / 4 / 2; 
     padding: 5em;
     padding-top: 0em;
+    height: fit-content
 }
+
 .limousine-bus { 
     grid-area: 3 / 2 / 4 / 3; 
     padding: 5em;
     padding-top: 0em;
+    height: fit-content;
 }
+
 .discount-bus { 
     grid-area: 3 / 3 / 4 / 4; 
     padding: 5em;
     padding-top: 0em;
+    height: fit-content
 }
 
 .transportation-info {
     color: gray;
     font-size: 0.8em;
+}
+
+/* ----------HANEDA AIRPORT---------- */
+
+.haneda-airport {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: 6em , auto;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.airport-title { 
+    grid-area: 1 / 1 / 2 / 4;
+    text-align: center;
+}
+
+.tokyo-monorail { 
+    grid-area: 2 / 1 / 3 / 2;
+    padding: 5em;
+}
+
+.keikyu-railways { 
+    grid-area: 2 / 2 / 3 / 3; 
+    padding: 5em;
+}
+
+.limousine-bus-haneda { 
+    grid-area: 2 / 3 / 3 / 4; 
+    padding: 5em;
+}
+
+/* ----------GETTING AROUND TOKYO---------- */
+
+.getting-around-tokyo {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: auto;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.getting-around-tokyo img {
+    height: auto;
+    width: auto;
+}
+
+.getting-around-tokyo-text {
+    grid-area: 1 / 1 / 2 / 2;
+    max-width: 600px;
+    padding: 2em;
+}
+
+.getting-around-tokyo-image {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.getting-around-tokyo-video {
+    
+    width: auto;
+    max-width: 1600px;
+    margin: 2em auto;
+    display: flex;
+    justify-content: center;
+}
+
+/* ----------TOP ATTRACTIONS---------- */
+
+
+.top-attractions-part-1 {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: auto;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    max-width: 1600px;
+}
+
+.tokyo-attraction-1 { 
+    grid-area: 1 / 1 / 2 / 2;
+    margin: 0 auto;
+}
+
+.tokyo-attraction-2 { 
+    grid-area: 1 / 2 / 2 / 3; 
+    margin: 0 auto;
+}
+
+.top-attractions-part-2 {
+    margin-top: 1em;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: auto;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    max-width: 1600px;
+}
+
+.tokyo-attraction-3 { 
+    grid-area: 1 / 1 / 2 / 2;
+    margin: 0 auto;
+}
+.tokyo-attraction-4 { 
+    grid-area: 1 / 2 / 2 / 3;
+    margin: 0 auto;
+}
+.tokyo-attraction-5 { 
+    grid-area: 1 / 3 / 2 / 4;
+    margin: 0 auto;
 }
