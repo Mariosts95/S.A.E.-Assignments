@@ -12,89 +12,86 @@
     <title>Contact us</title>
 </head>
 <body>
-<!-- NAVBAR -->
-
-    <!-- NAVBAR -->
+<!-- ----------NAVBAR---------- -->
+<header>
+    <nav>
+        <div class="logo"><a href="#"><img src="images/logo_42x42.png" alt=""></a></div>
+        <div class="menu">
+            <label for="btn" class="icon">
+                <img src="images/burger-menu.png" alt="">
+            </label>
+            <input type="checkbox" id="btn">
+            <ul>
+                <li>
+                    <label for="btn-1" class="show">Destinations</label>
+                    <a href="index.html">Destinations</a>
+                    <input type="checkbox" id="btn-1">
+                    <ul>
+                        <li><a href="tokyo.html">Tokyo</a></li>
+                        <li><a href="kyoto.html">Kyoto</a></li>
+                        <li><a href="osaka.html">Osaka</a></li>
+                        <li><a href="nara.html">Nara</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <label for="btn-2" class="show">History of Japan</label>
+                    <a href="history-of-japan.html">History of Japan</a>
+                    <input type="checkbox" id="btn-2">
+                    <ul>
+                        <li><a href="#">Classical Japan</a></li>
+                        <li><a href="#">Feudal Japan</a></li>
+                        <li><a href="#">Early Modern Japan</a></li>
+                        <li><a href="#">Modern Japan</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
     
-    <header>
-        <nav>
-            <div class="logo"><a href="#"><img src="images/logo_42x42.png" alt=""></a></div>
-            <div class="menu">
-                <label for="btn" class="icon">
-                    <img src="images/burger-menu.png" alt="">
-                </label>
-                <input type="checkbox" id="btn">
-                <ul>
-                    <li>
-                        <label for="btn-1" class="show">Destinations</label>
-                        <a href="index.html">Destinations</a>
-                        <input type="checkbox" id="btn-1">
-                        <ul>
-                            <li><a href="tokyo.html">Tokyo</a></li>
-                            <li><a href="kyoto.html">Kyoto</a></li>
-                            <li><a href="osaka.html">Osaka</a></li>
-                            <li><a href="nara.html">Nara</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <label for="btn-2" class="show">History of Japan</label>
-                        <a href="history-of-japan.html">History of Japan</a>
-                        <input type="checkbox" id="btn-2">
-                        <ul>
-                            <li><a href="#">Classical Japan</a></li>
-                            <li><a href="#">Feudal Japan</a></li>
-                            <li><a href="#">Early Modern Japan</a></li>
-                            <li><a href="#">Modern Japan</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-    
-    <!-- CONTACT FORM -->
-    <main>
-        <div class="title"><h1>CONTACT US</h1> </div>
-        <div class="contact-container">
-        <div class="information">
-            <input type="text" placeholder="Your Name">
+<!-- ----------CONTACT FORM---------- -->
+<main>
+     <div>
+    <!-- <div>
+            <h1>Contact</h1>
+        </div>
+    </div> -->
+    <div class="contact-form">
+        <div class="contact-form-image"><img src="images/contact-image.png" alt=""> </div>
+        <div class="contact-form-info">
+            <input type="text" placeholder="Your Fullname">
             <input type="email" placeholder="Your Email">
-            <input type="text" placeholder="Your Phone Number">
+            <input type="text" placeholder="Subject">
         </div>
-        <div class="icons">
-            <div class="info">
-                <img src="../images/placeholder.png" alt="">
-                <p>213, Street Name, <br> Greece</p>
-            </div>
-            <div class="info">
-                <img src="../images/telephone-3.png" alt="">
-                <p>+30 210 1234567</p>
-            </div>
-            <div class="info">
-                <img src="../images/mail.png" alt="">
-                <p>contact@traveilinjapan.eu</p>
-            </div>
+        <div class="contact-form-text"> 
+            <textarea placeholder="Your Message"></textarea>
         </div>
-        <div class="message"> <textarea name="" id="" cols="30" rows="10" placeholder=" Your Message..."></textarea>
-            <div class="btn"><a href="#">SUBMIT</a> </div>
+        <div class="submit-form">
+            <a href="#" class="btn">Submit</a>
         </div>
-        
     </div>
+    <div class="newsletter">
+        <img src="images/contact-form-newsletter.png" alt="">
+        <div class="newsletter-input">
+            <h1>Subscribe to our Newsletter</h1>
+            <input type="email" placeholder="Enter your email">
+            <a href="#" class="btn">Submit</a>
+        </div>
+    </div>
+</main>
 
-    </main>
 
-<!-- FOOTER -->
-
+<!-- ----------FOOTER---------- -->
 <footer class="footer-grid">
     <div class="footer-logo"> <a href="index.html"><img src="images/Logo-2.png" alt=""></a> </div>
     <div class="footer-policy">
         <ul>
-            <li class="footer-policy-link"><a href="#">Privacy Policy</a></li>
-            <li class="footer-policy-link"><a href="#">Cookie Policy</a></li>
-            <li class="footer-policy-link"><a href="#">Terms of Use</a></li>
-            <li class="footer-policy-link"><a href="#">About us</a></li>
-            <li class="footer-policy-link"><a href="#">FAQ</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">FAQ</a></li>
         </ul>
     </div>
     <div class="footer-destinations">
