@@ -341,7 +341,7 @@ footer a:hover {
 
 .contact-form {
     display: grid;
-    grid-template-columns: repeat(2, auto);
+    grid-template-columns: repeat(2, 800px);
     grid-template-rows: repeat(3, auto);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
@@ -368,6 +368,7 @@ footer a:hover {
     display: flex;
     flex-direction: column;
     margin-right: auto;
+    margin-left: 2em;
 }
 
 .contact-form-info input {
@@ -387,6 +388,7 @@ footer a:hover {
 
 .contact-form-text {
     grid-area: 2 / 2 / 3 / 3;
+    margin-left: 2em;
 }
 
 .contact-form-text textarea {
