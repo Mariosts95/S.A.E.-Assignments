@@ -232,7 +232,6 @@ footer a:hover {
     grid-row-gap: 0px;
     margin: 0 auto;
     margin-top: 2.9em;
-    
 }
 
 .gallery-image { 
@@ -250,6 +249,9 @@ footer a:hover {
     width: 20em;
     z-index: 1;
     margin: 0 auto;
+    margin-left: 5em;
+    
+    
 }
 
 .gallery-text p { 
