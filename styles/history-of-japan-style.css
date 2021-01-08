@@ -169,7 +169,7 @@ nav ul ul li a {
     display: none;
 }
 
-/* NAVBAR-RESPONSIVE */
+/* ----------NAVBAR-RESPONSIVE---------- */
 
 .show , input {
     display: none;
@@ -232,7 +232,7 @@ nav ul ul li a {
     }
 }
 
-/* FOOTER */
+/* ----------FOOTER---------- */
 
 .footer-grid {
     display: grid;
@@ -340,9 +340,9 @@ footer a:hover {
     text-decoration: underline;
 }
 
-/* HISTORY */
+/* ----------HISTORY---------- */
 
-/* HISTORY VIDEO */
+/* ----------HISTORY VIDEO---------- */
 
 .history-video {
     display: grid;
@@ -361,7 +361,7 @@ footer a:hover {
     justify-content: center;
  }
 
- /* HISTORY TEXT */
+ /* ----------HISTORY TEXT---------- */
 
  .history-text-background {
     background: rgba(255, 255, 255, 0.7);
@@ -391,14 +391,14 @@ footer a:hover {
     transform: scale(0.98);
 }
 
-/* CLASSICAL JAPAN */
+/* ----------CLASSICAL JAPAN---------- */
 
 .history-title h1{
     font-size: 3em;
     padding-left: 1em;
 }
 
-/* ASUKA PERIOD */
+/* ----------ASUKA PERIOD---------- */
 
 .asuka-period {
     display: grid;
@@ -434,7 +434,7 @@ footer a:hover {
 
 
 
-/* NARA PERIOD */
+/* ----------NARA PERIOD---------- */
 
 .nara-period {
     display: grid;
@@ -463,7 +463,7 @@ footer a:hover {
     text-align: center;
 }
 
-/* HEIAN PERIOD */
+/* ----------HEIAN PERIOD---------- */
 
 .heian-period {
     display: grid;
@@ -493,9 +493,9 @@ footer a:hover {
 }
 
 
-/* FEUDAL JAPAN */
+/* ----------FEUDAL JAPAN---------- */
 
-/* KAMAKURA PERIOD */
+/* ----------KAMAKURA PERIOD---------- */
 
 .kamakura-period {
     display: grid;
@@ -529,7 +529,7 @@ footer a:hover {
     text-align: center;
 }
 
-/* MUROMACHI PERIOD */
+/* ----------MUROMACHI PERIOD---------- */
 
 .muromachi-period {
     display: grid;
@@ -559,7 +559,7 @@ footer a:hover {
     text-align: center;
 }
 
-/* AZUCHI-MOMOYAMA PERIOD */
+/* ----------AZUCHI-MOMOYAMA PERIOD---------- */
 
 .azuchi-momoyama-period{
     display: grid;
@@ -583,9 +583,9 @@ footer a:hover {
     margin-top: 2em;
 }
 
-/* EARLY MODERN JAPAN */
+/* ----------EARLY MODERN JAPAN---------- */
 
-/* EDO PERIOD */
+/* ----------EDO PERIOD---------- */
 
 .edo-period {
     display: grid;
@@ -619,9 +619,9 @@ footer a:hover {
     text-align: center;
 }
 
-/* MODERN JAPAN */
+/* ----------MODERN JAPAN---------- */
 
-/* MEIJI PERIOD */
+/* ----------MEIJI PERIOD---------- */
 
 .meiji-period {
     display: grid;
@@ -656,7 +656,7 @@ footer a:hover {
     text-align: center;
 }
 
-/* TAISHO PERIOD */
+/* ----------TAISHO PERIOD---------- */
 
 .taisho-period {
     display: grid;
@@ -688,7 +688,7 @@ footer a:hover {
     text-align: center;
 }
 
-/* SHOWA PERIOD */
+/* ----------SHOWA PERIOD---------- */
 
 .showa-period {
     display: grid;
@@ -717,7 +717,7 @@ footer a:hover {
     text-align: center;
 }
 
-/* HEISEI PERIOD */
+/* ----------HEISEI PERIOD---------- */
 
 .heisei-period {
     display: grid;
@@ -749,7 +749,7 @@ footer a:hover {
     text-align: center;
 }
 
-/* REIWA PERIOD */
+/* ----------REIWA PERIOD---------- */
 
 .reiwa-period {
     display: grid;

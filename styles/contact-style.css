@@ -167,7 +167,7 @@ nav ul ul li a {
     display: none;
 }
 
-/* NAVBAR-RESPONSIVE */
+/* ----------NAVBAR-RESPONSIVE---------- */
 
 .show , header input {
     display: none;
@@ -230,7 +230,7 @@ nav ul ul li a {
     }
 }
 
-/* FOOTER */
+/* ----------FOOTER---------- */
 
 .footer-grid {
     display: grid;

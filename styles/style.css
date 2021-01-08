@@ -166,7 +166,7 @@ nav ul ul li a {
     display: none;
 }
 
-/* NAVBAR-RESPONSIVE */
+/* ----------NAVBAR-RESPONSIVE---------- */
 
 .show , input {
     display: none;
@@ -229,7 +229,7 @@ nav ul ul li a {
     }
 }
 
-/* FOOTER */
+/* ----------FOOTER---------- */
 
 .footer-grid {
     display: grid;
@@ -327,7 +327,7 @@ nav ul ul li a {
 }
 
 footer {
-    margin-top: 6em;
+    margin-top: 5%;
     background: var(--secondary-color);
     color: white;
 }
@@ -336,7 +336,7 @@ footer a:hover {
     text-decoration: underline;
 }
 
-/* DESTINATIONS */
+/* ----------DESTINATIONS---------- */
 
 .destinations {
     display: grid;
