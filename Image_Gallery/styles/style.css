@@ -1,0 +1,127 @@
+@font-face {
+  font-family: Avengers;
+  src: url(../fonts/AVENGEANCEHEROICAVENGER.ttf);
+}
+
+@font-face {
+  font-family: AvengersBold;
+  src: url(../fonts/AVENGEANCEHEROICAVENGERBD.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(36, 36, 36) url('../images/background.png');
+    background-color: #333;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+}
+
+
+h1 {
+    font-size: 2em;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-family: "AvengersBold";
+}
+
+h2 {
+    text-align: center;
+    font-size: 2em;
+    font-family: "Avengers";
+}
+
+p {
+    font-weight: 200;
+}
+
+span {
+    font-size: 1.5em;
+    margin: 0 5px 0 5px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(3, auto);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    max-width: 1600px;
+    margin: 0 auto;
+    margin-top: 2em;
+}
+
+.title { 
+    grid-area: 1 / 1 / 4 / 2;
+    margin: 2em;
+
+}
+.image-gallery { 
+    grid-area: 2 / 2 / 4 / 2; 
+}
+.hero-info { 
+    grid-area: 2 / 4 / 4 / 5;
+    margin-left: 2em;
+    align-self: center;
+}
+
+#image {
+    width: auto;
+    height: 90vh;
+    position: relative;
+    box-shadow: 0px 0px 20px 5px #0C82B8;
+  /* in order: x offset, y offset, blur size, spread size, color */
+  /* blur size and spread size are optional (they default to 0) */
+}
+
+.dot-list {
+    width: fit-content;
+}
+
+.bullet {
+    width: 24px;
+}
+
+.image-showcase {
+    width: auto;
+    position: relative;
+}
+
+#btnPlay, #btnPause {
+    width: 64px;
+    height: auto;
+    position: absolute;
+    right: 3%;
+    top: 3%;
+}
+
+.button-hiden {
+    visibility: hidden;
+}
+
+.buttons {
+    position: absolute;
+    left: 35%;
+}
+
+#btnPrevious, #btnNext {
+    width: 36px;
+    height: auto;
+    position: absolute;
+    margin: 0 0.5em 0 0.5em;
+}
+
+#btnPrevious {
+    top: 50%;
+    left: 1%;
+}
+
+#btnNext {
+    top: 50%;
+    right: 1%;
+}
