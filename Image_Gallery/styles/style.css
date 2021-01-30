@@ -66,8 +66,10 @@ span {
 }
 .hero-info { 
     grid-area: 2 / 4 / 4 / 5;
-    margin-left: 2em;
+    margin-left: 3em;
     align-self: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 25px;
 }
 
 #image {
