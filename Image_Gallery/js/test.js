@@ -25,8 +25,8 @@ let autoplay = setInterval(AutoPlay, 3 * 1000);
 const Refresh = (i) => {
   document.getElementById("image").src = images[i];
   clearInterval(autoplay); //this to reset to the full view time of an image every time you press next/previous
-  autoplay = setInterval(AutoPlay, 1 * 1000); //this to set the counter again
-  /* ---------THIS IS THE TEXT CHANGE----------- */
+  autoplay = setInterval(AutoPlay,3 * 1000); //this to set the counter again
+  /* ---------TEXT CHANGE----------- */
     switch (i) {
       case 1:
         hero_title.innerHTML = "C a p t a i n - A m e r i c a";
@@ -82,7 +82,7 @@ previous_btn.addEventListener("click", () => {
     i--;
     Refresh(i);
   } else {
-    i = 2;
+    i = images.length - 1 ;
     Refresh(i);
   }
 });
