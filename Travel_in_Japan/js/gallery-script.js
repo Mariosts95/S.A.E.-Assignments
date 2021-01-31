@@ -6,10 +6,10 @@ let time = 3000; // Time Between Switch
 
 
 // Image list
-images[0] = 'images/tokyo/tokyo-banner-1.png';
-images[1] = 'images/tokyo/tokyo-banner-2.png';
-images[2] = 'images/tokyo/tokyo-banner-3.png';
-images[3] = 'images/tokyo/tokyo-banner-4.png';
+images[0] = 'images/tokyo/tokyo-banner-1.jpg';
+images[1] = 'images/tokyo/tokyo-banner-2.jpg';
+images[2] = 'images/tokyo/tokyo-banner-3.jpg';
+images[3] = 'images/tokyo/tokyo-banner-4.jpg';
 
 // Change Image
 
