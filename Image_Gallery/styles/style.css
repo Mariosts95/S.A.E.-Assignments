@@ -50,10 +50,6 @@ p {
     font-weight: 200;
 }
 
-a {
-
-}
-
 .container {
     display: grid;
     grid-template-columns: repeat(4, auto);
