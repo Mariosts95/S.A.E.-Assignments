@@ -1,0 +1,38 @@
+<!-- Η εργασία θα πρέπει να περιέχει μια φόρμα σε HTML, μορφοποίηση της φόρμας με CSS και validation της φόρμας με
+JavaScript.
+
+Τα ελάχιστα πεδία που θα πρέπει να περιλαμβάνονται στη φόρμα είναι: “Ονοματεπώνυμο”, “Email”, “Επιβεβαίωση Email”,
+“Τηλέφωνο”, “Διεύθυνση”.
+
+Όλα τα πεδία θα πρέπει να ελεγχθούν με μέθοδο client side κατά τη συμπλήρωσή τους ή μετά από το πάτημα του κουμπιού
+‘Αποστολή’.
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <form id="contact-form" name="contact-form" method="post">
+        <label for="full-name">FULL NAME</label>
+        <input type="text" name="full-name" id="full-name">
+
+        <label for="email">E-MAIL ADDRESS</label>
+        <input type="email" name="email" id="email">
+
+        <label for="confirm-email">CONFIRM EMAIL ADDRESS</label>
+        <input type="text" name="confirm-email" id="confirm-email">
+
+        <label for="phone-number">PHONE NUMBER</label>
+        <input type="number" name="phone-number" id="phone-number">
+
+        <label for="address">ADDRESS</label>
+        <input type="text" name="address" id="address">
+
+        <button id="submit-button" type="submit">SUBMIT</button>
+    </form>
+</body>
+</html>
