@@ -13,3 +13,7 @@ input {
 .error {
     border-bottom: 2px solid red;
 }
+
+input [type="radio"] {
+    display: inline;
+}

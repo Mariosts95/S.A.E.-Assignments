@@ -82,7 +82,7 @@ previous_btn.addEventListener("click", () => {
     i--;
     Refresh(i);
   } else {
-    i = 2;
+    i = images.length - 1;
     Refresh(i);
   }
 });
