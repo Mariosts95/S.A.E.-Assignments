@@ -1,8 +1,116 @@
+@font-face {
+    font-family: StarWars1;
+    src: url(../fonts/Starjedi.ttf);
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    color: white;
+    background: url('../images/background.jpg');
+}
+
+.form-title {
+    text-align: center;
+}
+
+h1 {
+    font-family: StarWars1;
+    font-size: 40px;
+}
+
+label {
+    font-family: StarWars1;
+    font-size: 20px;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+input[type="text"], input[type="password"] {
+    font-size: 2em;
+    float: right;
+    background: none;
+    border: none;
+    border-bottom: 2px solid white;
+    color: white;
+    
+}
+
+input[type="radio"] {
+    margin: 0 40px;
+}
+
+.form-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 30px;
+    padding: 20px 0;
+}
+form {
+    margin: 0 auto;
+}
 .error {
     color: red;
+}
+
+.input {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+    
+}
+
+#input-error {
+    box-shadow: 0px 0px 50px 10px rgba(255,0,72,0.87);
+}
+
+.button-container {
+    display: flex;
+    justify-content: right;
+
+}
+.button-three {
+    font-family: starwars1;
+    font-size: 15px;
+    position: relative;
+    background-color: #ffffff;
+    border: none;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.button-three:hover{
+   background:rgb(24, 207, 240);
+   box-shadow:0px 0px 10px 5px #97B1BF;
+   color:#000;
+}
+
+.button-three:after {
+    content: "";
+    background: #0533ca;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+.button-three:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
 }

@@ -61,15 +61,16 @@ const password_strong_regex = /^(?=.{16,})(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*
 
 fullname.addEventListener('blur', () => {
     if (fullname.value.trim().length === 0) {
-        //console.error('Fullname is missing');
-        isValid = false;
+        fullname.classList.add('input-error');
         fullname_error.innerHTML = 'So you have no name?';
+        isValid = false;
     } else if (!fullname_regex.test(fullname.value)) {
-        //console.error('Fullname is not Valid');
         fullname_error.innerHTML = 'Fullname is not Valid';
-      isValid = false;
+        fullname.classList.add("input-error");
+        isValid = false;
     } else {
         fullname_error.innerHTML = '';
+        fullname.classList.remove("input-error");
         isValid = true;
     }
 });
@@ -78,15 +79,16 @@ fullname.addEventListener('blur', () => {
 
 email.addEventListener('blur', () => {
     if (email.value.trim().length === 0) {
-        //console.error('Email is missing');
         email_error.innerHTML ='You dont\' have an email either?';
+        email.classList.add("input-error");
         isValid = false;
     } else if (!email_regex.test(email.value)) {
-        //console.error('Email is not valid');
         email_error.innerHTML ='Are you sure this is the right email?';
+        email.classList.add("input-error");
         isValid = false;
     } else {
         email_error.innerHTML ='';
+        email.classList.remove("input-error");
         isValid = true;
     }
 });
@@ -95,15 +97,16 @@ email.addEventListener('blur', () => {
 
 confirm_email.addEventListener('blur', () => {
     if (confirm_email.value.trim().length === 0) {
-        //console.error('Confirm Email is missing');
         confirm_email_error.innerHTML = 'You need to type your e-mail again';
+        confirm_email.classList.add("input-error");
         isValid = false;
     } else if (confirm_email.value !== email.value) {
-        console.error('Emails do not match');
         confirm_email_error.innerHTML = 'The e-mails need to be same';
+        confirm_email.classList.add("input-error");
         isValid = false;
     } else {
         confirm_email_error.innerHTML = '';
+        confirm_email.classList.remove("input-error");
         isValid = true;
     }
 });
@@ -111,45 +114,38 @@ confirm_email.addEventListener('blur', () => {
 //Password check
 password.addEventListener('input', () => {
     if (password.value.trim().length === 0) {
-        console.error('Password is missing')
         password_error.innerHTML = 'Password is missing';
+        password.classList.add("input-error");
         isValid = false;
     } else if (!password_weak_regex.test(password.value)) {
-        console.warn('Password is weak')
         password_error.innerHTML = 'The Force is weak with this password';
+        password.classList.add("input-error");
         isValid = false;
     } else if (!password_medium_regex.test(password.value)) {
-        console.warn('Password is medium')
         password_error.innerHTML = 'The Force is medium with this password';
+        password.classList.remove("input-error");
         isValid = true;
     } else if (!password_strong_regex.test(password.value)) {
-        console.warn('Password is strong')
         password_error.innerHTML = 'The Force is strong with this password';
+        password.classList.remove("input-error");
         isValid = true;
     }
 })
-/* password.addEventListener('blur', () => {
-    if (!password_medium_regex.test(password.value)) {
-        password_error.innerHTML = '';
-        isValid = true;
-    } else if (!password_strong_regex.test(password.value)) {
-        password_error.innerHTML = '';
-        isValid = true;
-    }
-}) */
+
 //Confirm Password check
 
 confirm_password.addEventListener('input', () => {
     if (confirm_password.value.trim().length === 0) {
-        console.error('Confirm Password is missing')
         confirm_password_error.innerHTML = 'You need to confirm your password';
+        confirm_password.classList.add("input-error");
         isValid = false;
     } else if (confirm_password.value !== password.value) {
-        console.error('Passwords do not match')
         confirm_password_error.innerHTML = 'Passwords do not much'
+        confirm_password.classList.add("input-error");
         isValid = false;
     } else {
         confirm_password_error.innerHTML = '';
+        confirm_password.classList.remove("input-error");
         isValid = true;
     }
 })
@@ -158,15 +154,16 @@ confirm_password.addEventListener('input', () => {
 
 phone_number.addEventListener('blur', () => {
     if (phone_number.value.trim().length === 0) {
-        console.error('Phone Number is missing');
         phone_number_error.innerHTML = 'Your phone number is missing';
+        phone_number.classList.add("input-error");
         isValid = false;
     } else if (!phone_number_regex.test(phone_number.value)){
-        console.error('Phone number is not valid');
         phone_number_error.innerHTML = 'Your phone number is not valid'
+        phone_number.classList.add("input-error");
         isValid = false;
     } else {
         phone_number_error.innerHTML = '';
+        phone_number.classList.remove("input-error");
         isValid = true
     }
 });
@@ -175,15 +172,16 @@ phone_number.addEventListener('blur', () => {
 
 address.addEventListener('blur', () => {
 if (address.value.trim().length === 0) {
-    console.error('Address is missing');
     address_error.innerHTML = 'Your address is missing';
+    address.classList.add("input-error");
     isValid = false;
 } else if (!address_regex.test(address.value)) {
-    console.error('Address is not valid');
     address_error.innerHTML = 'Your address is not valid';
+    address.classList.add("input-error");
     isValid = false;
 } else {
     address_error.innerHTML = '';
+    address.classList.remove("input-error");
     isValid = true;
 }
 });
@@ -191,16 +189,17 @@ if (address.value.trim().length === 0) {
 //Planet check
 
 planet.addEventListener('blur', () => {
-  if (planet.value.trim().length === 0) {
-    console.error('Planet is missing');
+    if (planet.value.trim().length === 0) {
     planet_error.innerHTML = 'Your planet is missing';
+    planet.classList.add("input-error");
     isValid = false;
 } else if (!address_regex.test(planet.value)) {
-    console.error('Planet is not valid');
     planet_error.innerHTML = 'Your planet is not valid';
+    planet.classList.add("input-error");
     isValid = false;
 } else {
     planet_error.innerHTML = 'Your planet is not valid';
+    planet.classList.remove("input-error");
     isValid = true;
   }
 });
