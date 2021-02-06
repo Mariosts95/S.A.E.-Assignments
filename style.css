@@ -15,10 +15,11 @@ body {
 a {
     color: black;
     text-decoration: none;
+    border-radius: 20px;
 }
 
 a:hover {
-    box-shadow: 0px 0px 50px 10px rgba(12, 88, 187, 0.87);
+    box-shadow:  0px 0px 50px 10px rgba(12, 88, 187, 0.87) ;
 }
 
 a:visited {
@@ -57,7 +58,8 @@ h1 {
     max-width: 300px;
     padding: 25px;
     height: 400px;
-    background-color: rgba(223, 228, 218, 0.7);
+    background-color: white;
+    border-radius: 20px;
 }
 
 .card-content { 
