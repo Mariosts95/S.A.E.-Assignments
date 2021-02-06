@@ -1,29 +1,26 @@
-"use strict";
+'use strict';
 
 /* ----------IMAGES ARRAY---------- */
 
 let images = [
-  "images/Iron-Man.jfif",
-  "images/Captain-America.jfif",
-  "images/Thor.jfif",
-  "images/Hulk.jfif",
-  "images/Spider-Man.jfif",
-  "images/Black-Panther.jfif",
+  'images/Iron-Man.jfif',
+  'images/Captain-America.jfif',
+  'images/Thor.jfif',
+  'images/Hulk.jfif',
+  'images/Spider-Man.jfif',
+  'images/Black-Panther.jfif',
 ];
-//console.log(images);
 
 /* ----------GALLERY INITIALIZATION---------- */
 
 let i = 0;
-let hero_title = document.getElementById("hero-info-title");
-let hero_info_content = document.getElementById("hero-info-content");
-document.getElementById("image").src = images[i];
-//console.log(i);       //debug
-
+let hero_title = document.getElementById('hero-info-title');
+let hero_info_content = document.getElementById('hero-info-content');
+document.getElementById('image').src = images[i];
 let autoplay = setInterval(AutoPlay, 3 * 1000);
 
 const Refresh = (i) => {
-  document.getElementById("image").src = images[i];
+  document.getElementById('image').src = images[i];
   clearInterval(autoplay); //this to reset to the full view time of an image every time you press next/previous
   autoplay = setInterval(AutoPlay, 3 * 1000); //this to set the counter again
   /* ---------THIS IS THE TEXT CHANGE----------- */
@@ -63,8 +60,8 @@ const Refresh = (i) => {
 
 /* ----------NEXT BUTTON---------- */
 
-let next_btn = document.getElementById("btnNext");
-next_btn.addEventListener("click", () => {
+let next_btn = document.getElementById('btnNext');
+next_btn.addEventListener('click', () => {
   if (i < images.length - 1) {
     i++;
     Refresh(i);
@@ -76,8 +73,8 @@ next_btn.addEventListener("click", () => {
 
 /* ----------PREVIOUS BUTTON---------- */
 
-let previous_btn = document.getElementById("btnPrevious");
-previous_btn.addEventListener("click", () => {
+let previous_btn = document.getElementById('btnPrevious');
+previous_btn.addEventListener('click', () => {
   if (i <= images.length - 1 && i > 0) {
     i--;
     Refresh(i);
@@ -101,49 +98,56 @@ function AutoPlay() {
 
 /* ----------PAUSE BUTTON----------- */
 
-let pause_btn = document.getElementById("btnPause");
+let pause_btn = document.getElementById('btnPause');
 
-pause_btn.addEventListener("click", () => {
-  play_btn.classList.remove("button-hiden");
-  pause_btn.classList.add("button-hiden");
+pause_btn.addEventListener('click', () => {
+  play_btn.classList.remove('button-hiden');
+  pause_btn.classList.add('button-hiden');
   clearInterval(autoplay);
 });
 
 /* ----------PLAY BUTTON----------- */
 
-let play_btn = document.getElementById("btnPlay");
+let play_btn = document.getElementById('btnPlay');
 
-play_btn.addEventListener("click", () => {
-  play_btn.classList.add("button-hiden");
-  pause_btn.classList.remove("button-hiden");
+play_btn.addEventListener('click', () => {
+  play_btn.classList.add('button-hiden');
+  pause_btn.classList.remove('button-hiden');
   autoplay = setInterval(AutoPlay, 3 * 1000);
 });
 
-/* ----------DOT-LIST------------- */
+/* ----------DOT-LIST------------- (this needs a better solution)*/
 
-document.getElementById("dot0").addEventListener("click", () => {
+document.getElementById('dot0').addEventListener('click', () => {
   i = 0;
   Refresh(i);
 });
 
-document.getElementById("dot1").addEventListener("click", () => {
+document.getElementById('dot1').addEventListener('click', () => {
   i = 1;
   Refresh(i);
 });
 
-document.getElementById("dot2").addEventListener("click", () => {
+document.getElementById('dot2').addEventListener('click', () => {
   i = 2;
   Refresh(i);
 });
-document.getElementById("dot3").addEventListener("click", () => {
+document.getElementById('dot3').addEventListener('click', () => {
   i = 3;
   Refresh(i);
 });
-document.getElementById("dot4").addEventListener("click", () => {
+document.getElementById('dot4').addEventListener('click', () => {
   i = 4;
   Refresh(i);
 });
-document.getElementById("dot5").addEventListener("click", () => {
+document.getElementById('dot5').addEventListener('click', () => {
   i = 5;
   Refresh(i);
 });
+
+/* let dots = document.getElementsByClassName('dot');
+
+[...dots].forEach((dot) => {
+  dot.addEventListener('click', () => {Refresh(i)})
+});
+ */
