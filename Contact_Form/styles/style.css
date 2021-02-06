@@ -13,6 +13,7 @@ body {
     color: white;
     background: url('../images/background.jpg');
     background-position: 50% 0;
+    overflow-y: hidden;
     
 }
 
@@ -142,21 +143,15 @@ form {
     left: 0;
  }
 
- .hello-there {
-    height: 0;
-    animation: hello-there-anim 3s ease 1;
- }
-
-.hidden {
-    visibility: hidden;
+#obi {
+  position: absolute;
+  height: 200px;
+  bottom: -200px;
+  opacity: 0;
+  transition: all .25s ease-out;
 }
 
-
-@keyframes hello-there-anim {
-    0% {
-        height: 0;
-    }
-    100% {
-        height: 200px;
-    }
+#obi.visible {
+  opacity: 1;
+  bottom: 0;
 }

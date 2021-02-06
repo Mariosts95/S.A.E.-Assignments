@@ -48,14 +48,14 @@ const password_medium_regex = /^(?=.{10,})(((?=.*[A-Z])(?=.*[a-z]))|((?=.*[A-Z])
 const password_strong_regex = /^(?=.{16,})(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*\\W).*(?=[%@!$&?])$/;
 
 //Obi-Wan Kenobi gif
+const obi = document.getElementById("obi");
 function helloThere() {
-    document.getElementById("hello-there").classList.add('hello-there');
-    document.getElementById("hello-there").classList.remove('hidden');
+	obi.src = obi.src; // Start the animation from the beginning
+    obi.classList.toggle("visible");
 }
 
 function byebyeThere() {
-    document.getElementById("hello-there").classList.remove('hello-there');
-    document.getElementById("hello-there").classList.add('hidden');
+    obi.classList.toggle("visible");
 }
 
 
