@@ -119,35 +119,22 @@ play_btn.addEventListener('click', () => {
 /* ----------DOT-LIST------------- (this needs a better solution)*/
 
 document.getElementById('dot0').addEventListener('click', () => {
-  i = 0;
-  Refresh(i);
+  Refresh(0);
 });
 
 document.getElementById('dot1').addEventListener('click', () => {
-  i = 1;
-  Refresh(i);
+  Refresh(1);
 });
 
 document.getElementById('dot2').addEventListener('click', () => {
-  i = 2;
-  Refresh(i);
+  Refresh(2);
 });
 document.getElementById('dot3').addEventListener('click', () => {
-  i = 3;
-  Refresh(i);
+  Refresh(3);
 });
 document.getElementById('dot4').addEventListener('click', () => {
-  i = 4;
-  Refresh(i);
+  Refresh(4);
 });
 document.getElementById('dot5').addEventListener('click', () => {
-  i = 5;
-  Refresh(i);
+  Refresh(5);
 });
-
-/* let dots = document.getElementsByClassName('dot');
-
-[...dots].forEach((dot) => {
-  dot.addEventListener('click', () => {Refresh(i)})
-});
- */
