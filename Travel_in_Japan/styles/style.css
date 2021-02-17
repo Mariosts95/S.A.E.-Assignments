@@ -438,6 +438,8 @@ footer a:hover {
     margin-bottom: 3em;
 }
 
+/* ----------RESPONSIVE---------- */
+
 @media all and (max-width: 1366px) {
 .destinations {
     display: grid;
@@ -474,7 +476,6 @@ footer a:hover {
     grid-area: 3 / 2 / 4 / 3; 
     position: relative;
 }
-
 
 .destination-1 .text-over-image {
     display: block;
@@ -550,22 +551,6 @@ footer a:hover {
     position: relative;
 }
 
-
-.destination-1 .text-over-image {
-    display: block;
-}
-
-.destination-2 .text-over-image {
-    display: block;
-}
-
-.destination-3 .text-over-image {
-    display: block;
-}
-
-.destination-4 .text-over-image {
-    display: block;
-}
 
 .text-over-image {
     font-size: 1em;
