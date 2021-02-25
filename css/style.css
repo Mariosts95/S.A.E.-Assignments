@@ -1,0 +1,13 @@
+body {
+    background: #23272B;
+}
+
+.btn {
+    width: 50%;
+    color: white;
+    background-color: #23272B;
+}
+
+.btn:hover {
+    background-color: black;
+}

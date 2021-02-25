@@ -9,35 +9,46 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="icon" href="../images/logo.png" type="image/png">
+    <script src="js/json.js"></script>
     <title>Tokyo</title>
 </head>
 <body>
 <!-- ----------NAVBAR---------- -->
 <header>
-    <div class="header-container">
-        <a href="index.html" class="header-logo"></a>
-        <nav class="navigation-menu">
+    <nav>
+        <div class="logo"><a href="#"><img src="images/logo_42x42.png" alt=""></a></div>
+        <div class="menu">
+            <label for="btn" class="icon">
+                <img src="images/burger-menu.png" alt="">
+            </label>
+            <input type="checkbox" id="btn">
             <ul>
-                <li><a href="index.html">Destinations</a>
+                <li>
+                    <label for="btn-1" class="show">Destinations</label>
+                    <a href="index.html">Destinations</a>
+                    <input type="checkbox" id="btn-1">
                     <ul>
-                        <li><a href="#">Tokyo</a></li>
-                        <li><a href="#">Kyoto</a></li>
-                        <li><a href="#">Osaka</a></li>
-                        <li><a href="#">Nara</a></li>
+                        <li><a href="tokyo.html">Tokyo</a></li>
+                        <li><a href="kyoto.html">Kyoto</a></li>
+                        <li><a href="osaka.html">Osaka</a></li>
+                        <li><a href="nara.html">Nara</a></li>
                     </ul>
                 </li>
-                <li><a href="history-of-japan.html">History of Japan</a>
+                <li>
+                    <label for="btn-2" class="show">History of Japan</label>
+                    <a href="history-of-japan.html">History of Japan</a>
+                    <input type="checkbox" id="btn-2">
                     <ul>
-                        <li><a href="#">Classical Japan</a></li>
-                        <li><a href="#">Feudal Japan</a></li>
-                        <li><a href="#">Early Modern Japan</a></li>
-                        <li><a href="#">Modern Japan</a></li>
+                        <li><a href="#classical-japan">Classical Japan</a></li>
+                        <li><a href="#feudal-japan">Feudal Japan</a></li>
+                        <li><a href="#early-modern-japan">Early Modern Japan</a></li>
+                        <li><a href="#modern-japan">Modern Japan</a></li>
                     </ul>
                 </li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-        </nav>
-    </div>
+        </div>
+    </nav>
 </header>
 <main>
 <!-- ----------IMAGE GALLERY---------- -->
@@ -61,9 +72,7 @@
 <div class="preview">
     <div class="preview-image"><img src="images/tokyo/tokyo-preview.jpg" alt=""> </div>
     <div class="preview-text">
-        <h2>Fusing the futuristic with the traditional, 
-        Tokyo is a sprawling megacity bursting with a seemingly limitless number of
-        things to do.</h2>
+        <h2 id="tokyo_preview_title"></h2>
         <p>A business and cultural megacenter that's home to tens of millions of people, Tokyo is also the crossroads where the
         Japanese interact with citizens from all over the world. The media love to focus on Harajuku's vibrant fashion, robot
         restaurants, maid cafes and the passionate uberfans known as otaku. As fast-paced as Tokyo’s innovation is, the
@@ -288,16 +297,17 @@
     <div class="footer-logo"> <a href="index.html"><img src="images/Logo-2.png" alt=""></a> </div>
     <div class="footer-policy">
         <ul>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Cookie Policy</a></li>
-            <li><a href="#">Terms of Use</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">FAQ</a></li>
+            <li class="footer-policy-link"><a href="#">Privacy Policy</a></li>
+            <li class="footer-policy-link"><a href="#">Cookie Policy</a></li>
+            <li class="footer-policy-link"><a href="#">Terms of Use</a></li>
+            <li class="footer-policy-link"><a href="#">About us</a></li>
+            <li class="footer-policy-link"><a href="#">FAQ</a></li>
         </ul>
     </div>
     <div class="footer-destinations">
         <ul>
-            <li>Destinations
+            <li>
+                <h2>Destinations</h2>
                 <ul>
                     <li class="footer-list-titles"><a href="#">Tokyo</a>
                         <ul class="footer-list-links">
@@ -329,7 +339,8 @@
     </div>
     <div class="footer-history">
         <ul>
-            <li>History of Japan
+            <li>
+                <h2>History of Japan</h2>
                 <ul>
                     <li class="footer-list-titles"><a href="#">Classical Japan</a>
                         <ul class="footer-list-links">
@@ -364,7 +375,9 @@
         </ul>
     </div>
     <div class="footer-contact">
-        <div>Contact</div>
+        <div>
+            <h2>Contact</h2>
+        </div>
         <div class="footer-social-links">
             <div class="contact-info-social">
                 <div>
