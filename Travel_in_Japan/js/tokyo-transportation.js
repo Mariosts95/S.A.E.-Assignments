@@ -4,49 +4,43 @@ fetch("./assets/tokyo-transportation.json")
   .then((response) => response.json())
   .then((data) => {
     for (const city of data.cities) {
-      document.getElementById("tokyo_preview_title").innerText =
-        city.tokyo.preview.title;
-      document.getElementById("tokyo_preview_text").innerText =
-        city.tokyo.preview.text;
-      document.getElementById("tokyo-temperature-title").innerText =
-        city.tokyo.temperatures.title;
       document.getElementById("jr-narita-express-info").innerText =
-        city.tokyo.transportation.naritaAirport.jrNaritaExpress.info;
+        city.transportation.naritaAirport.jrNaritaExpress.info;
       document.getElementById("jr-narita-express-text").innerText =
-        city.tokyo.transportation.naritaAirport.jrNaritaExpress.text;
+        city.transportation.naritaAirport.jrNaritaExpress.text;
       document.getElementById("sobu-line-info").innerText =
-        city.tokyo.transportation.naritaAirport.sobuLine.info;
+        city.transportation.naritaAirport.sobuLine.info;
       document.getElementById("sobu-line-text").innerText =
-        city.tokyo.transportation.naritaAirport.sobuLine.text;
+        city.transportation.naritaAirport.sobuLine.text;
       document.getElementById("keisei-skyliner-info").innerText =
-        city.tokyo.transportation.naritaAirport.keiseiSkyliner.info;
+        city.transportation.naritaAirport.keiseiSkyliner.info;
       document.getElementById("keisei-skyliner-text").innerText =
-        city.tokyo.transportation.naritaAirport.keiseiSkyliner.text;
+        city.transportation.naritaAirport.keiseiSkyliner.text;
       document.getElementById("keisei-limited-express-info").innerText =
-        city.tokyo.transportation.naritaAirport.keiseiLimitedExpress.info;
+        city.transportation.naritaAirport.keiseiLimitedExpress.info;
       document.getElementById("keisei-limited-express-text").innerText =
-        city.tokyo.transportation.naritaAirport.keiseiLimitedExpress.text;
+        city.transportation.naritaAirport.keiseiLimitedExpress.text;
       document.getElementById("limousine-bus-info").innerText =
-        city.tokyo.transportation.naritaAirport.limousineBus.info;
+        city.transportation.naritaAirport.limousineBus.info;
       document.getElementById("limousine-bus-text").innerText =
-        city.tokyo.transportation.naritaAirport.limousineBus.text;
+        city.transportation.naritaAirport.limousineBus.text;
       document.getElementById("discount-bus-info").innerText =
-        city.tokyo.transportation.naritaAirport.discountBus.info;
+        city.transportation.naritaAirport.discountBus.info;
       document.getElementById("discount-bus-text").innerText =
-        city.tokyo.transportation.naritaAirport.discountBus.text;
+        city.transportation.naritaAirport.discountBus.text;
 
       document.getElementById("tokyo-monorail-info").innerText =
-        city.tokyo.transportation.hanedaAirport.tokyoMonorail.info;
+        city.transportation.hanedaAirport.tokyoMonorail.info;
       document.getElementById("tokyo-monorail-text").innerText =
-        city.tokyo.transportation.hanedaAirport.tokyoMonorail.text;
+        city.transportation.hanedaAirport.tokyoMonorail.text;
       document.getElementById("keikyu-railways-info").innerText =
-        city.tokyo.transportation.hanedaAirport.keikyuRailways.info;
+        city.transportation.hanedaAirport.keikyuRailways.info;
       document.getElementById("keikyu-railways-text").innerText =
-        city.tokyo.transportation.hanedaAirport.keikyuRailways.text;
+        city.transportation.hanedaAirport.keikyuRailways.text;
       document.getElementById("limousine-bus-haneda-info").innerText =
-        city.tokyo.transportation.hanedaAirport.limousineBus.info;
+        city.transportation.hanedaAirport.limousineBus.info;
       document.getElementById("limousine-bus-haneda-text").innerText =
-        city.tokyo.transportation.hanedaAirport.limousineBus.text;
+        city.transportation.hanedaAirport.limousineBus.text;
     }
   });
 
