@@ -17,7 +17,8 @@ body {
     font-size: 1.1em;
     line-height: 1.5;
     background-repeat: repeat;
-    background-size: 50%;
+    background-size: 30%;
+    background-position: center;
 }
 
 main img {
@@ -236,8 +237,6 @@ nav ul ul li a {
     display: grid;
     grid-template-columns: repeat(6, auto);
     grid-template-rows: auto 3em;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
     padding-top: 2em;
 }
 
@@ -280,8 +279,6 @@ nav ul ul li a {
     display: grid;
     grid-template-columns: repeat(2, auto);
     grid-template-rows: auto;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
 }
 
 .contact-info-social { 
@@ -344,7 +341,7 @@ footer a:hover {
 .gallery {
     width: 100%;
     height: 95vh;
-    background-image: url(../images/tokyo/nara-banner.jpg);
+    background-image: url(../images/nara/nara-banner.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -380,8 +377,6 @@ footer a:hover {
     display: grid;
     grid-template-columns: repeat(2, auto);
     grid-template-rows: auto;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
 }
 
 .preview-image { 
@@ -393,82 +388,82 @@ footer a:hover {
     padding: 2em;
 }
 
+.preview-text h2 {
+    padding: 0;
+}
+
 /* ----------TOKYO TEMPERATURE---------- */
 
-.tokyo-temperature {
+.nara-temperature {
     display: grid;
     grid-template-columns: repeat(2, auto);
     grid-template-rows: auto;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
 }
 
-.tokyo-temperature img {
+.nara-temperature img {
    border: 0;
 }
 
-.tokyo-temperature-array { 
+.nara-temperature-array { 
     grid-area: 1 / 1 / 2 / 2;
     margin: 0 auto;
 }
-.tokyo-temperature-image { 
+.nara-temperature-image { 
     grid-area: 1 / 2 / 2 / 3;
     align-self: end;
     justify-self: center;
 }
-/* ----------NARITA INTERNATIONAL AIRPOT---------- */
+/* ----------GETTING TO KYOTO---------- */
 
-.narita-airport {
+.from {
     display: grid;
     grid-template-columns: repeat(3, auto);
     grid-template-rows: repeat(3, auto);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
 }
 
-.narita-airport img {
+.from img {
     width: auto;
 }
 
-.airport-title { 
+.from-title { 
     grid-area: 1 / 1 / 2 / 4;
     padding-left: 0.5em;
 }
 
-.narita-express { 
+.transportation-1 { 
     grid-area: 2 / 1 / 3 / 2;
     padding: 2em;
 }
 
-.sobu-line { 
+.transportation-2 { 
     grid-area: 2 / 2 / 3 / 3; 
     padding: 2em;
 }
 
-.keisei-skyliner { 
+.transportation-3 { 
     grid-area: 2 / 3 / 3 / 4; 
     padding: 2em;
 }
 
-.keisei-limited-express { 
+.transportation-4 { 
     grid-area: 3 / 1 / 4 / 2; 
     padding: 2em;
     padding-top: 0em;
-    height: fit-content
+    height: fit-content;
 }
 
-.limousine-bus { 
+.transportation-5 { 
     grid-area: 3 / 2 / 4 / 3; 
     padding: 2em;
     padding-top: 0em;
     height: fit-content;
 }
 
-.discount-bus { 
+.transportation-6 { 
     grid-area: 3 / 3 / 4 / 4; 
     padding: 2em;
     padding-top: 0em;
-    height: fit-content
+    height: fit-content;
 }
 
 .transportation-info {
@@ -476,56 +471,29 @@ footer a:hover {
     font-size: 0.8em;
 }
 
-/* ----------HANEDA AIRPORT---------- */
-
-.haneda-airport {
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    grid-template-rows: auto , auto;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-}
-
-.tokyo-monorail { 
-    grid-area: 2 / 1 / 3 / 2;
-    padding: 2em;
-}
-
-.keikyu-railways { 
-    grid-area: 2 / 2 / 3 / 3; 
-    padding: 2em;
-}
-
-.limousine-bus-haneda { 
-    grid-area: 2 / 3 / 3 / 4; 
-    padding: 2em;
-}
-
 /* ----------GETTING AROUND TOKYO---------- */
 
-.getting-around-tokyo {
+.getting-around-nara {
     display: grid;
     grid-template-columns: repeat(2, auto);
     grid-template-rows: auto;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
 }
 
-.getting-around-tokyo img {
+.getting-around-nara img {
     height: auto;
     width: 100%;
 }
 
-.getting-around-tokyo-text {
+.getting-around-nara-text {
     grid-area: 1 / 1 / 2 / 2;
     padding: 2em;
 }
 
-.getting-around-tokyo-image {
+.getting-around-nara-image {
     grid-area: 1 / 2 / 2 / 3;
 }
 
-.getting-around-tokyo-video {
+.getting-around-nara-video {
     
     width: auto;
     max-width: 1600px;
@@ -542,18 +510,16 @@ footer a:hover {
     display: grid;
     grid-template-columns: repeat(2, auto);
     grid-template-rows: auto;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
     max-width: 1600px;
 }
 
-.tokyo-attraction-1 { 
+.nara-attraction-1 { 
     grid-area: 1 / 1 / 2 / 2;
     margin: 0 auto;
     position: relative;
 }
 
-.tokyo-attraction-2 { 
+.nara-attraction-2 { 
     grid-area: 1 / 2 / 2 / 3; 
     margin: 0 auto;
     position: relative;
@@ -564,23 +530,21 @@ footer a:hover {
     display: grid;
     grid-template-columns: repeat(3, auto);
     grid-template-rows: auto;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
     max-width: 1600px;
     padding-bottom: 2.5em;
 }
 
-.tokyo-attraction-3 { 
+.nara-attraction-3 { 
     grid-area: 1 / 1 / 2 / 2;
     margin: 0 auto;
     position: relative;
 }
-.tokyo-attraction-4 { 
+.nara-attraction-4 { 
     grid-area: 1 / 2 / 2 / 3;
     margin: 0 auto;
     position: relative;
 }
-.tokyo-attraction-5 { 
+.nara-attraction-5 { 
     grid-area: 1 / 3 / 2 / 4;
     margin: 0 auto;
     position: relative;
@@ -598,27 +562,27 @@ footer a:hover {
     transition: .5s ease;
 }
 
-.tokyo-attraction-1:hover .overlay {
+.nara-attraction-1:hover .overlay {
     bottom: 0;
     height: 100%;
 }
 
-.tokyo-attraction-2:hover .overlay {
+.nara-attraction-2:hover .overlay {
     bottom: 0;
     height: 100%;
 }
 
-.tokyo-attraction-3:hover .overlay {
+.nara-attraction-3:hover .overlay {
     bottom: 0;
     height: 100%;
 }
 
-.tokyo-attraction-4:hover .overlay {
+.nara-attraction-4:hover .overlay {
     bottom: 0;
     height: 100%;
 }
 
-.tokyo-attraction-5:hover .overlay {
+.nara-attraction-5:hover .overlay {
     bottom: 0;
     height: 100%;
 }
@@ -676,10 +640,7 @@ main img {
 .footer-grid {
     display: grid;
     grid-template-columns: repeat(2, auto);
-    grid-template-rows: repeat(2, auto);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    
+    grid-template-rows: repeat(2, auto);    
 }
 
 .footer-logo { 
@@ -766,38 +727,30 @@ main, nav , header, footer, .text-background {
     max-width: 1024px;
 }
 
-.tokyo-temperature-image {
+.nara-temperature-image {
     width: 100%;
     align-self: center;
     margin-left: 0em;
 }
 
-.narita-airport {
+.from {
     max-width: 1024px;
 }
 
-.narita-airport img {
+.from img {
     width: 100%;
 }
 
-.haneda-airport {
-    max-width: 1024px;
-}
-
-.haneda-airport img {
-    width: 100%;
-}
-
-.getting-around-tokyo {
+.getting-around-nara {
     grid-template-columns: auto;
     grid-template-rows: repeat(2, auto);
 }
 
-.getting-around-tokyo-image {
+.getting-around-nara-image {
     grid-area: 1 / 1 / 2 / 2;
 }
 
-.getting-around-tokyo-text {
+.getting-around-nara-text {
     grid-area: 2 / 1 / 3 / 2;
 }
 
@@ -814,7 +767,7 @@ main img {
 }
 
 .gallery{
-    background-image: url(../images/tokyo/tokyo-banner-360.jpg);
+    background-image: url(../images/nara/nara-banner-360.jpg);
     background-position: top center;
     background-size: 100%;
     width: 360px;
@@ -826,18 +779,18 @@ main img {
 
 /* ----------TOKYO TEMPERATURE---------- */
 
-.tokyo-temperature {
+.nara-temperature {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: repeat(2, auto);
     max-width: 360px;
 }
 
-.tokyo-temperature-array { 
+.nara-temperature-array { 
     grid-area: 1 / 1 / 2 / 2;
     margin: 0 auto;
 }
-.tokyo-temperature-image { 
+.nara-temperature-image { 
     grid-area: 2 / 1 / 3 / 2;
     margin-top: 1em;
     margin-left: 0;
@@ -846,42 +799,39 @@ main img {
 
 /* ----------NARITA INTERNATIONAL AIRPOT---------- */
 
-.narita-airport {
+.from {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: repeat(7, auto);
     width: 100%;
     max-width: 360px;
 }
-/* .narita-airport h2 , .narita-airport p {
-    padding: 2em;
-} */
 
-.airport-title { 
+.from-title { 
     grid-area: 1 / 1 / 2 / 2;
     padding-left: 0.5em;
     max-width: 360px;
 }
 
-.narita-express { 
+.transportation-1 { 
     grid-area: 2 / 1 / 3 / 2;
     padding: 2em;
     max-width: 360px;
 }
 
-.sobu-line { 
+.transportation-2 { 
     grid-area: 3 / 1 / 4 / 2; 
     padding: 2em;
     max-width: 360px;
 }
 
-.keisei-skyliner { 
+.transportation-3 { 
     grid-area: 4 / 1 / 5 / 2; 
     padding: 2em;
     max-width: 360px;
 }
 
-.keisei-limited-express { 
+.transportation-4 { 
     grid-area: 5 / 1 / 6 / 2; 
     padding: 2em;
     padding-top: 0em;
@@ -889,7 +839,7 @@ main img {
     max-width: 360px;
 }
 
-.limousine-bus { 
+.transportation-5  { 
     grid-area: 6 / 1 / 7 / 2; 
     padding: 2em;
     padding-top: 0em;
@@ -897,7 +847,7 @@ main img {
     max-width: 360px;
 }
 
-.discount-bus { 
+.transportation-6  { 
     grid-area: 7 / 1 / 8 / 2; 
     padding: 2em;
     padding-top: 0em;
@@ -905,58 +855,30 @@ main img {
     max-width: 360px;
 }
 
-/* ----------HANEDA AIRPORT---------- */
+/* ----------GETTING AROUND KYOTO---------- */
 
-.haneda-airport {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: repeat(4, auto);
-}
-
-.tokyo-monorail { 
-    grid-area: 2 / 1 / 3 / 2;
-    padding: 2em;
-    max-width: 360px;
-}
-
-.keikyu-railways { 
-    grid-area: 3 / 1 / 4 / 2; 
-    padding: 2em;
-    max-width: 360px;
-}
-
-.limousine-bus-haneda { 
-    grid-area: 4 / 1 / 5 / 2; 
-    padding: 2em;
-    max-width: 360px;
-}
-
-/* ----------GETTING AROUND TOKYO---------- */
-
-.getting-around-tokyo {
+.getting-around-nara {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: repeat(2, auto);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
 }
 
-.getting-around-tokyo img {
+.getting-around-nara img {
     height: auto;
     width: 100%;
 }
 
-.getting-around-tokyo-text {
+.getting-around-nara-text {
     grid-area: 2 / 1 / 3 / 2;
     padding: 2em;
 }
 
-.getting-around-tokyo-image {
+.getting-around-nara-image {
     grid-area: 1 / 1 / 2 / 2;
     
 }
 
-.getting-around-tokyo-video {
+.getting-around-osaka-video {
     width: auto;
     max-width: 360px;
     height: auto;
