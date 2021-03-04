@@ -1,28 +1,63 @@
-'use stict';
+'use strict';
+/* ----------GALLERY INITIALIZATION---------- */
+let images = [
+  './images/gallery/gallery-image-1.jpg',
+  './images/gallery/gallery-image-2.jpg',
+  './images/gallery/gallery-image-3.jpg',
+  './images/gallery/gallery-image-4.jpg',
+  './images/gallery/gallery-image-5.jpg',
+];
+let autoplay = setInterval(Autoplay, 3000);
+let i = 0;
+let dots = document.getElementsByClassName('dot');
 
-let i = 0; // Start point
-let images = []; // Images Array
-let time = 3000; // Time Between Switch
+function Refresh(i) {
+  document.getElementById('image').src = images[i];
+  for (let i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(' active', '');
+  }
+  dots[i].classList.toggle('active');
+}
 
+/* ----------OVERFLOW CHECK---------- */
+function Autoplay() {
+  if (i < images.length - 1) {
+    i++;
+    Refresh(i);
+  } else {
+    i = 0;
+    Refresh(i);
+  }
+}
 
-// Image list
-images[0] = 'images/tokyo/tokyo-banner-1.jpg';
-images[1] = 'images/tokyo/tokyo-banner-2.jpg';
-images[2] = 'images/tokyo/tokyo-banner-3.jpg';
-images[3] = 'images/tokyo/tokyo-banner-4.jpg';
+/* ----------NEXT BUTTON---------- */
+document.getElementById('next-btn').addEventListener('click', () => {
+  if (i < images.length - 1) {
+    i++;
+    clearInterval(autoplay);
+    autoplay = setInterval(Autoplay, 3000);
+    Refresh(i);
+  } else {
+    clearInterval(autoplay);
+    autoplay = setInterval(Autoplay, 3000);
+    i = 0;
+    Refresh(i);
+  }
+});
 
-// Change Image
+/* ----------PREVIOUS BUTTON---------- */
+document.getElementById('prev-btn').addEventListener('click', () => {
+  if (i <= images.length - 1 && i > 0) {
+    i--;
+    clearInterval(autoplay);
+    autoplay = setInterval(Autoplay, 3000);
+    Refresh(i);
+  } else {
+    i = images.length - 1;
+    clearInterval(autoplay);
+    autoplay = setInterval(Autoplay, 3000);
+    Refresh(i);
+  }
+});
 
-function changeImg() {
-    document.slide.src = images[i];
-
-    if (i < images.length - 1) {
-        i++
-    } else {
-        i = 0;
-    }
-
-    setTimeout("changeImg()", time);
-};
-
-window.onload = changeImg;
+window.onload = Refresh(i); //Enables the gallery on load

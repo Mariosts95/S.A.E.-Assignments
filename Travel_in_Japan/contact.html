@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/contact-style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Langar&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link rel="icon" href="images/logo.png" type="image/png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/contact-style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Langar&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+    <script src="js/gallery-script.js" defer></script>
+    <link rel="icon" href="images/logo.png" type="image/png" />
     <title>Contact us</title>
-</head>
-<body>
-<!-- ----------NAVBAR---------- -->
+  </head>
+  <body>
+    <!-- ----------NAVBAR---------- -->
     <header>
       <nav>
         <div class="logo">
@@ -51,36 +52,99 @@
         </div>
       </nav>
     </header>
-    
-<!-- ----------CONTACT FORM---------- -->
-<main>
-     <div>
-    <div class="contact-form">
-        <div class="contact-form-image"><img src="images/contact-image.png" alt=""> </div>
-        <div class="contact-form-info">
-            <input type="text" placeholder="Your Fullname">
-            <input type="email" placeholder="Your Email">
-            <input type="text" placeholder="Subject">
-        </div>
-        <div class="contact-form-text"> 
+
+    <!-- ----------CONTACT FORM---------- -->
+    <main>
+      <div class="container">
+        <div class="contact-form">
+          <div class="contact-form-image"><img src="images/contact-image.png" alt="" /></div>
+          <div class="contact-form-info">
+            <input type="text" placeholder="Your Fullname" />
+            <input type="email" placeholder="Your Email" />
+            <input type="text" placeholder="Subject" />
+          </div>
+          <div class="contact-form-text">
             <textarea placeholder="Your Message"></textarea>
-        </div>
-        <div class="submit-form">
+          </div>
+          <div class="submit-form">
             <a href="#" class="btn">Submit</a>
+          </div>
         </div>
-    </div>
-    <div class="newsletter">
-        <img src="images/contact-form-newsletter.png" alt="">
-        <div class="newsletter-input">
+        <div class="newsletter">
+          <img src="images/contact-form-newsletter.png" alt="" />
+          <div class="newsletter-input">
             <h1>Subscribe to our Newsletter</h1>
-            <input type="email" placeholder="Enter your email">
+            <input type="email" placeholder="Enter your email" />
             <a href="#" class="btn">Submit</a>
+          </div>
         </div>
-    </div>
-</main>
+      </div>
+      <div class="gallery-title">
+        <h2>Image Gallery</h2>
+      </div>
+      <div class="image-gallery">
+        <img src="" alt="" id="image"/>
+        <a class="next-btn" id="next-btn"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	y="0px" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480;" xml:space="preserve">
+	<g>
+		<g>
+			<path fill="var(--primary-color)" d="M461.248,194.736l-128-128c-24.928-24.96-65.568-24.96-90.496,0C230.656,78.8,224,94.896,224,111.984
+			s6.656,33.184,18.752,45.248l82.752,82.752l-82.752,82.752C230.656,334.832,224,350.896,224,367.984s6.656,33.152,18.752,45.248
+			c12.096,12.096,28.16,18.752,45.248,18.752s33.152-6.656,45.248-18.752l128-128C473.344,273.168,480,257.072,480,239.984
+			S473.344,206.8,461.248,194.736z M438.624,262.608l-128,128c-12.128,12.096-33.12,12.096-45.248,0
+			c-12.48-12.48-12.48-32.768,0-45.248l105.376-105.376L265.376,134.608c-6.048-6.048-9.376-14.08-9.376-22.624
+			s3.328-16.576,9.376-22.624c6.24-6.24,14.432-9.376,22.624-9.376c8.192,0,16.384,3.136,22.624,9.344l128,128
+			c6.048,6.08,9.376,14.112,9.376,22.656S444.672,256.56,438.624,262.608z" />
+		</g>
+	</g>
+	<g>
+		<g>
+			<path fill="var(--primary-color)" d="M237.248,194.736l-128-128c-24.928-24.96-65.568-24.96-90.496,0C6.656,78.8,0,94.896,0,111.984
+			s6.656,33.184,18.752,45.248l82.752,82.752l-82.752,82.752C6.656,334.832,0,350.896,0,367.984s6.656,33.152,18.752,45.248
+			c12.096,12.096,28.16,18.752,45.248,18.752s33.152-6.656,45.248-18.752l128-128C249.344,273.168,256,257.072,256,239.984
+			S249.344,206.8,237.248,194.736z M214.624,262.608l-128,128c-12.128,12.096-33.12,12.096-45.248,0
+			c-12.48-12.48-12.48-32.768,0-45.248l105.376-105.376L41.376,134.608C35.328,128.56,32,120.528,32,111.984
+			s3.328-16.576,9.376-22.624c6.24-6.24,14.432-9.376,22.624-9.376s16.384,3.136,22.624,9.344l128,128
+			c6.048,6.08,9.376,14.112,9.376,22.656S220.672,256.56,214.624,262.608z" />
+		</g>
+</svg></a>
+<a class="prev-btn" id="prev-btn">
+  <svg version="1.1" id="Capa_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	y="0px" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480;" xml:space="preserve">
+	<g>
+		<g>
+			<path fill="var(--primary-color)" d="M461.248,194.736l-128-128c-24.928-24.96-65.568-24.96-90.496,0C230.656,78.8,224,94.896,224,111.984
+			s6.656,33.184,18.752,45.248l82.752,82.752l-82.752,82.752C230.656,334.832,224,350.896,224,367.984s6.656,33.152,18.752,45.248
+			c12.096,12.096,28.16,18.752,45.248,18.752s33.152-6.656,45.248-18.752l128-128C473.344,273.168,480,257.072,480,239.984
+			S473.344,206.8,461.248,194.736z M438.624,262.608l-128,128c-12.128,12.096-33.12,12.096-45.248,0
+			c-12.48-12.48-12.48-32.768,0-45.248l105.376-105.376L265.376,134.608c-6.048-6.048-9.376-14.08-9.376-22.624
+			s3.328-16.576,9.376-22.624c6.24-6.24,14.432-9.376,22.624-9.376c8.192,0,16.384,3.136,22.624,9.344l128,128
+			c6.048,6.08,9.376,14.112,9.376,22.656S444.672,256.56,438.624,262.608z" />
+		</g>
+	</g>
+	<g>
+		<g>
+			<path fill="var(--primary-color)" d="M237.248,194.736l-128-128c-24.928-24.96-65.568-24.96-90.496,0C6.656,78.8,0,94.896,0,111.984
+			s6.656,33.184,18.752,45.248l82.752,82.752l-82.752,82.752C6.656,334.832,0,350.896,0,367.984s6.656,33.152,18.752,45.248
+			c12.096,12.096,28.16,18.752,45.248,18.752s33.152-6.656,45.248-18.752l128-128C249.344,273.168,256,257.072,256,239.984
+			S249.344,206.8,237.248,194.736z M214.624,262.608l-128,128c-12.128,12.096-33.12,12.096-45.248,0
+			c-12.48-12.48-12.48-32.768,0-45.248l105.376-105.376L41.376,134.608C35.328,128.56,32,120.528,32,111.984
+			s3.328-16.576,9.376-22.624c6.24-6.24,14.432-9.376,22.624-9.376s16.384,3.136,22.624,9.344l128,128
+			c6.048,6.08,9.376,14.112,9.376,22.656S220.672,256.56,214.624,262.608z" />
+		</g>
+</svg>
+</a>
+        <div style="text-align: center" class="dots">
+          <span class="dot" onclick="Refresh(0)"></span>
+          <span class="dot" onclick="Refresh(1)"></span>
+          <span class="dot" onclick="Refresh(2)"></span>
+          <span class="dot" onclick="Refresh(3)"></span>
+          <span class="dot" onclick="Refresh(4)"></span>
+        </div>
+      </div>
+    </main>
 
-
-<!-- ----------FOOTER---------- -->
+    <!-- ----------FOOTER---------- -->
     <footer class="footer-grid">
       <div class="footer-logo">
         <a href="index.html"><img src="images/Logo-2.png" alt="" /></a>
@@ -103,28 +167,36 @@
                 <a href="tokyo.html">Tokyo</a>
                 <ul class="footer-list-links">
                   <li><a href="tokyo.html#travel-advice">Travel Advice</a></li>
-                  <li><a href="tokyo.html#top-attractions">Top Attractions</a></li>
+                  <li>
+                    <a href="tokyo.html#top-attractions">Top Attractions</a>
+                  </li>
                 </ul>
               </li>
               <li class="footer-list-titles">
                 <a href="kyoto.html">Kyoto</a>
                 <ul class="footer-list-links">
                   <li><a href="kyoto.html#travel-advice">Travel Advice</a></li>
-                  <li><a href="kyoto.html#top-attractions">Top Attractions</a></li>
+                  <li>
+                    <a href="kyoto.html#top-attractions">Top Attractions</a>
+                  </li>
                 </ul>
               </li>
               <li class="footer-list-titles">
                 <a href="osaka.html">Osaka</a>
                 <ul class="footer-list-links">
                   <li><a href="osaka.html#travel-advice">Travel Advice</a></li>
-                  <li><a href="osaka.html#top-attractions">Top Attractions</a></li>
+                  <li>
+                    <a href="osaka.html#top-attractions">Top Attractions</a>
+                  </li>
                 </ul>
               </li>
               <li class="footer-list-titles">
                 <a href="nara.html">Nara</a>
                 <ul class="footer-list-links">
                   <li><a href="nara.html#travel-advice">Travel Advice</a></li>
-                  <li><a href="nara.html#top-attractions">Top Attractions</a></li>
+                  <li>
+                    <a href="nara.html#top-attractions">Top Attractions</a>
+                  </li>
                 </ul>
               </li>
             </ul>
@@ -139,33 +211,57 @@
               <li class="footer-list-titles">
                 <a href="history-of-japan.html#classical-japan">Classical Japan</a>
                 <ul class="footer-list-links">
-                  <li><a href="history-of-japan.html#asuka-period">Asuka period (538-710)</a></li>
-                  <li><a href="history-of-japan.html#nara-period">Nara period (710–794)</a></li>
-                  <li><a href="history-of-japan.html#heian-period">Heian period (794–1185)</a></li>
+                  <li>
+                    <a href="history-of-japan.html#asuka-period">Asuka period (538-710)</a>
+                  </li>
+                  <li>
+                    <a href="history-of-japan.html#nara-period">Nara period (710–794)</a>
+                  </li>
+                  <li>
+                    <a href="history-of-japan.html#heian-period">Heian period (794–1185)</a>
+                  </li>
                 </ul>
               </li>
               <li class="footer-list-titles">
                 <a href="history-of-japan.html#feudal-japan">Feudal Japan</a>
                 <ul class="footer-list-links">
-                  <li><a href="history-of-japan.html#kamakura-period">Kamakura period (1185–1333)</a></li>
-                  <li><a href="history-of-japan.html#muromachi-period">Muromachi period (1333–1568)</a></li>
-                  <li><a href="history-of-japan.html#azuchi-momoyama-period">Azuchi–Momoyama period (1568–1600)</a></li>
+                  <li>
+                    <a href="history-of-japan.html#kamakura-period">Kamakura period (1185–1333)</a>
+                  </li>
+                  <li>
+                    <a href="history-of-japan.html#muromachi-period">Muromachi period (1333–1568)</a>
+                  </li>
+                  <li>
+                    <a href="history-of-japan.html#azuchi-momoyama-period">Azuchi–Momoyama period (1568–1600)</a>
+                  </li>
                 </ul>
               </li>
               <li class="footer-list-titles">
                 <a href="history-of-japan.html#early-modern-japan">Early Modern Japan</a>
                 <ul class="footer-list-links">
-                  <li><a href="history-of-japan.html#edo-period">Edo period (1600–1868)</a></li>
+                  <li>
+                    <a href="history-of-japan.html#edo-period">Edo period (1600–1868)</a>
+                  </li>
                 </ul>
               </li>
               <li class="footer-list-titles">
                 <a href="history-of-japan.html#modern-japan">Modern Japan</a>
                 <ul class="footer-list-links">
-                  <li><a href="history-of-japan.html#meiji-period">Meiji period (1868–1912)</a></li>
-                  <li><a href="history-of-japan.html#taisho-period">Taishō period (1912–1926)</a></li>
-                  <li><a href="history-of-japan.html#showa-period">Shōwa period (1926–1989)</a></li>
-                  <li><a href="history-of-japan.html#heisei-period">Heisei period (1989–2019)</a></li>
-                  <li><a href="history-of-japan.html#reiwa-period">Reiwa period (2019–present)</a></li>
+                  <li>
+                    <a href="history-of-japan.html#meiji-period">Meiji period (1868–1912)</a>
+                  </li>
+                  <li>
+                    <a href="history-of-japan.html#taisho-period">Taishō period (1912–1926)</a>
+                  </li>
+                  <li>
+                    <a href="history-of-japan.html#showa-period">Shōwa period (1926–1989)</a>
+                  </li>
+                  <li>
+                    <a href="history-of-japan.html#heisei-period">Heisei period (1989–2019)</a>
+                  </li>
+                  <li>
+                    <a href="history-of-japan.html#reiwa-period">Reiwa period (2019–present)</a>
+                  </li>
                 </ul>
               </li>
             </ul>
@@ -182,25 +278,16 @@
               <a href="#"><img src="images/Facebook.svg" alt="" /> Facebook</a>
             </div>
             <div>
-              <a href="#"
-                ><img src="images/Instagram.svg" alt="" /> Instagram</a
-              >
+              <a href="#"><img src="images/Instagram.svg" alt="" /> Instagram</a>
             </div>
             <div>
               <a href="#"><img src="images/Twitter.svg" alt="" /> Twitter</a>
             </div>
           </div>
           <div class="contact-info">
-            <div>
-              <img src="images/placeholder.png" alt="" /> 213, Street Name,
-              Greece
-            </div>
-            <div>
-              <img src="images/telephone-3.png" alt="" /> +30 2101234567
-            </div>
-            <div>
-              <img src="images/mail.png" alt="" /> contact@travelinjapan.eu
-            </div>
+            <div><img src="images/placeholder.png" alt="" /> 213, Street Name, Greece</div>
+            <div><img src="images/telephone-3.png" alt="" /> +30 2101234567</div>
+            <div><img src="images/mail.png" alt="" /> contact@travelinjapan.eu</div>
           </div>
         </div>
       </div>
@@ -208,5 +295,5 @@
         <p>Marios Tsioutsis student project for S.A.E. Athens</p>
       </div>
     </footer>
-</body>
+  </body>
 </html>
