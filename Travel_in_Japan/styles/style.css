@@ -232,14 +232,15 @@ input {
 
 .destinations {
   display: grid;
-  grid-template-columns: repeat(4, 400px);
+  grid-template-columns: repeat(4, auto);
   grid-template-rows: auto auto;
   grid-column-gap: 1em;
   grid-row-gap: 2em;
-  max-width: 1600px;
-  margin: 0 auto;
+  max-width: 1700px;
+  margin: 5% auto;
   align-content: center;
   overflow: hidden;
+  padding: 1.5em;
 }
 
 .title {
@@ -290,6 +291,8 @@ input {
 }
 
 .btn {
+  position: absolute;
+  bottom: 3%;
   display: inline-block;
   background: rgba(0, 0, 0, 0.2);
   color: white;
@@ -310,6 +313,8 @@ input {
   font-size: 1.5em;
   top: 0;
   left: 0;
+  width: 100%;
+  height: 100%;
   padding-left: 1em;
   display: none;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.25) 50%, rgba(0, 0, 0, 0.01) 100%);
@@ -318,7 +323,6 @@ input {
 .destination-title {
   height: 2em;
   margin-top: -2em;
-  margin-bottom: 3em;
 }
 
 /* ----------RESPONSIVE---------- */

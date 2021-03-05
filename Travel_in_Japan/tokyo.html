@@ -5,22 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/tokyo-style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Langar&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Langar&display=swap" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
     <link rel="icon" href="images/logo.png" type="image/png" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
+    <script src="js/destination-animation.js" defer></script>
     <script src="js/tokyo-transportation.js" defer></script>
     <title>Tokyo</title>
   </head>
   <body>
     <!-- ----------NAVBAR---------- -->
-    <header>
+    <header class="header">
       <nav>
         <div class="logo">
           <a href="index.html"><img src="images/logo_42x42.png" alt="" /></a>
@@ -33,7 +30,7 @@
           <ul>
             <li>
               <label for="btn-1" class="show">Destinations</label>
-              <a href="index.html">Destinations</a>
+              <a href="index.html" class="nav-link">Destinations</a>
               <input type="checkbox" id="btn-1" />
               <ul>
                 <li><a href="tokyo.html">Tokyo</a></li>
@@ -44,28 +41,24 @@
             </li>
             <li>
               <label for="btn-2" class="show">History of Japan</label>
-              <a href="history-of-japan.html">History of Japan</a>
+              <a href="history-of-japan.html" class="nav-link">History of Japan</a>
               <input type="checkbox" id="btn-2" />
               <ul>
                 <li>
-                  <a href="history-of-japan.html#classical-japan"
-                    >Classical Japan</a
-                  >
+                  <a href="history-of-japan.html#classical-japan">Classical Japan</a>
                 </li>
                 <li>
                   <a href="history-of-japan.html#feudal-japan">Feudal Japan</a>
                 </li>
                 <li>
-                  <a href="history-of-japan.html#early-modern-japan"
-                    >Early Modern Japan</a
-                  >
+                  <a href="history-of-japan.html#early-modern-japan">Early Modern Japan</a>
                 </li>
                 <li>
                   <a href="history-of-japan.html#modern-japan">Modern Japan</a>
                 </li>
               </ul>
             </li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
           </ul>
         </div>
       </nav>
@@ -86,26 +79,19 @@
           </div>
           <div class="preview-text">
             <h2>
-              Fusing the futuristic with the traditional, Tokyo is a sprawling
-              megacity bursting with a seemingly limitless number of things to
-              do.
+              Fusing the futuristic with the traditional, Tokyo is a sprawling megacity bursting with a seemingly
+              limitless number of things to do.
             </h2>
             <p>
-              A business and cultural megacenter that's home to tens of millions
-              of people, Tokyo is also the crossroads where the Japanese
-              interact with citizens from all over the world. The media love to
-              focus on Harajuku's vibrant fashion, robot restaurants, maid cafes
-              and the passionate uberfans known as otaku. As fast-paced as
-              Tokyo’s innovation is, the metropolis is just as devoted to
-              preserving tradition through its historical gardens, shrines and
-              temples. Known for its extreme attention to detail, Japan's
-              capital is home to some of the best Japanese food in the country,
-              with 234 Michelin-starred restaurants—more than any other city.
-              Whatever your cultural interests are, Tokyo is likely to have you
-              covered. Home to many world-class art galleries and museums,
-              staggeringly diverse nightlife options and cutting-edge
-              technology, you'll never be stuck for things to do or places to go
-              in Tokyo.
+              A business and cultural megacenter that's home to tens of millions of people, Tokyo is also the crossroads
+              where the Japanese interact with citizens from all over the world. The media love to focus on Harajuku's
+              vibrant fashion, robot restaurants, maid cafes and the passionate uberfans known as otaku. As fast-paced
+              as Tokyo’s innovation is, the metropolis is just as devoted to preserving tradition through its historical
+              gardens, shrines and temples. Known for its extreme attention to detail, Japan's capital is home to some
+              of the best Japanese food in the country, with 234 Michelin-starred restaurants—more than any other city.
+              Whatever your cultural interests are, Tokyo is likely to have you covered. Home to many world-class art
+              galleries and museums, staggeringly diverse nightlife options and cutting-edge technology, you'll never be
+              stuck for things to do or places to go in Tokyo.
             </p>
           </div>
         </div>
@@ -113,20 +99,17 @@
         <div class="tokyo-temperature">
           <div class="tokyo-temperature-array">
             <h2>Average Temperature by Month</h2>
-            <img
-              border="0"
+            <img class="tokyo-temperature-array-el"
               alt="Average min and max temperatures in Tokyo, Japan"
               src="https://weather-and-climate.com/uploads/average-temperature-japan-tokyo.png"
             />
             <h2>Monthly hours of sunshine</h2>
-            <img
-              border="0"
+            <img class="tokyo-temperature-array-el"
               alt="Average monthly sunhours in Tokyo, Japan"
               src="https://weather-and-climate.com/uploads/average-sunshine-japan-tokyo.png"
             />
             <h2>Monthly precipitation</h2>
-            <img
-              border="0"
+            <img class="tokyo-temperature-array-el"
               alt="Average precipitation (rain/snow) in Tokyo, Japan"
               src="https://weather-and-climate.com/uploads/average-rainfall-japan-tokyo.png"
             />
@@ -166,10 +149,7 @@
             <p id="keisei-skyliner-text"></p>
           </div>
           <div class="keisei-limited-express">
-            <img
-              src="images/transportation/keisei-limited-express.png"
-              alt=""
-            />
+            <img src="images/transportation/keisei-limited-express.png" alt="" />
             <h2>Keisei Limited Express</h2>
             <p class="transportation-info" id="keisei-limited-express-info"></p>
             <p id="keisei-limited-express-text"></p>
@@ -218,26 +198,18 @@
         <div class="getting-around-tokyo">
           <div class="getting-around-tokyo-text">
             <p>
-              There are several ways to get around the sprawling megatropolis of
-              Tokyo, but using the Metro system is by far the best way to see
-              the city. This system uses both subway and train cars, and, like
-              the Shinkansen, they are very fast and efficient. The only
-              downside of using this system is that it becomes unbelievably
-              crowded during rush hours. Looking at maps of the system might
-              seem daunting, but the Metro really is the best way to get around,
-              especially after you get familiar with it. If the Metro is easy to
-              use, the buses are the opposite: they are not easy to use. There
-              are several water buses that can be fun to try. Other than the
-              forms of public transportation, there are several other ways that
-              you can use to explore Tokyo. Seeing Tokyo on foot is not
-              possible: the only exception is if you use public transportation
-              to take you to a particular neighborhood that is of interest to
-              you, and then explore that area by foot. Streets are convoluted
-              and the system of naming streets and numbering properties is
-              beyond comprehension. Take a fun walk and when you get lost find a
-              Metro system: then you’re safe! Because of the notoriously
-              congested and often totally stalled traffic, using a taxi or,
-              worse, trying to drive on you own is not recommended.
+              There are several ways to get around the sprawling megatropolis of Tokyo, but using the Metro system is by
+              far the best way to see the city. This system uses both subway and train cars, and, like the Shinkansen,
+              they are very fast and efficient. The only downside of using this system is that it becomes unbelievably
+              crowded during rush hours. Looking at maps of the system might seem daunting, but the Metro really is the
+              best way to get around, especially after you get familiar with it. If the Metro is easy to use, the buses
+              are the opposite: they are not easy to use. There are several water buses that can be fun to try. Other
+              than the forms of public transportation, there are several other ways that you can use to explore Tokyo.
+              Seeing Tokyo on foot is not possible: the only exception is if you use public transportation to take you
+              to a particular neighborhood that is of interest to you, and then explore that area by foot. Streets are
+              convoluted and the system of naming streets and numbering properties is beyond comprehension. Take a fun
+              walk and when you get lost find a Metro system: then you’re safe! Because of the notoriously congested and
+              often totally stalled traffic, using a taxi or, worse, trying to drive on you own is not recommended.
             </p>
           </div>
           <div class="getting-around-tokyo-image">
@@ -264,18 +236,14 @@
               <div class="overlay-text">
                 <h2>Mount Fuji</h2>
                 <p>
-                  Mount Fuji (富士山, Fujisan) , located on the island of
-                  Honshū, is the highest mountain in Japan, standing 3,776.24 m
-                  (12,389.2 ft). It is the second-highest volcano located on an
-                  island in Asia (after Mount Kerinci on the island of Sumatra),
-                  and seventh-highest peak of an island on Earth. Mount Fuji is
-                  an active stratovolcano that last erupted from 1707 to 1708.
-                  The mountain stands about 100 km (62 mi) southwest of Tokyo
-                  and is visible from there on clear days. Mount Fuji's
-                  exceptionally symmetrical cone, which is snow-capped for about
-                  five months of the year, is commonly used as a cultural icon
-                  of Japan and it is frequently depicted in art and photography,
-                  as well as visited by sightseers and climber
+                  Mount Fuji (富士山, Fujisan) , located on the island of Honshū, is the highest mountain in Japan,
+                  standing 3,776.24 m (12,389.2 ft). It is the second-highest volcano located on an island in Asia
+                  (after Mount Kerinci on the island of Sumatra), and seventh-highest peak of an island on Earth. Mount
+                  Fuji is an active stratovolcano that last erupted from 1707 to 1708. The mountain stands about 100 km
+                  (62 mi) southwest of Tokyo and is visible from there on clear days. Mount Fuji's exceptionally
+                  symmetrical cone, which is snow-capped for about five months of the year, is commonly used as a
+                  cultural icon of Japan and it is frequently depicted in art and photography, as well as visited by
+                  sightseers and climber
                 </p>
               </div>
             </div>
@@ -286,15 +254,12 @@
               <div class="overlay-text">
                 <h2>Shinjuku Gyoen National Garden</h2>
                 <p>
-                  Shinjuku Gyoen was constructed on the site of a private
-                  mansion belonging to Lord Naito, a "daimyo" (feudal lord) of
-                  the Edo era. Completed in 1906 as an imperial garden, it was
-                  re-designated as a national garden after the Second World War
-                  and opened to the public. With 58.3 ha(144 acres) in size and
-                  a circumference of 3.5 km, it blends three distinct styles,
-                  Formal Garden, Landscape Garden and Japanese Traditional
-                  Garden, and is considered to be one of the most important
-                  gardens from the Meiji era.
+                  Shinjuku Gyoen was constructed on the site of a private mansion belonging to Lord Naito, a "daimyo"
+                  (feudal lord) of the Edo era. Completed in 1906 as an imperial garden, it was re-designated as a
+                  national garden after the Second World War and opened to the public. With 58.3 ha(144 acres) in size
+                  and a circumference of 3.5 km, it blends three distinct styles, Formal Garden, Landscape Garden and
+                  Japanese Traditional Garden, and is considered to be one of the most important gardens from the Meiji
+                  era.
                 </p>
               </div>
             </div>
@@ -308,14 +273,11 @@
               <div class="overlay-text">
                 <h2>Asakusa</h2>
                 <p>
-                  From the venerable Sensoji to the futuristic Tokyo Skytree,
-                  Asakusa is a great juxtaposition of the old and the new Enter
-                  through the enormous bright-red Kaminarimon, meaning "thunder
-                  gate," and walk through whorls of incense smoke before leaving
-                  a traditional five-yen offering at the capital's iconic
-                  Sensoji Temple. With delicious street food, abundant shopping,
-                  and retro charm around every corner, Asakusa is an unmissable
-                  stop during your visit to Tokyo.
+                  From the venerable Sensoji to the futuristic Tokyo Skytree, Asakusa is a great juxtaposition of the
+                  old and the new Enter through the enormous bright-red Kaminarimon, meaning "thunder gate," and walk
+                  through whorls of incense smoke before leaving a traditional five-yen offering at the capital's iconic
+                  Sensoji Temple. With delicious street food, abundant shopping, and retro charm around every corner,
+                  Asakusa is an unmissable stop during your visit to Tokyo.
                 </p>
               </div>
             </div>
@@ -326,14 +288,11 @@
               <div class="overlay-text">
                 <h2>Tokyo National Museum</h2>
                 <p>
-                  The Tokyo National Museum features one of the largest and best
-                  collections of art and archeological artifacts in Japan, made
-                  up of over 110,000 individual items including nearly a hundred
-                  national treasures. At any one time, about 4000 different
-                  items from the permanent museum collection are on display. In
-                  addition, visiting temporary exhibitions are also held
-                  regularly. Good English information and audio guides are
-                  available.
+                  The Tokyo National Museum features one of the largest and best collections of art and archeological
+                  artifacts in Japan, made up of over 110,000 individual items including nearly a hundred national
+                  treasures. At any one time, about 4000 different items from the permanent museum collection are on
+                  display. In addition, visiting temporary exhibitions are also held regularly. Good English information
+                  and audio guides are available.
                 </p>
               </div>
             </div>
@@ -344,15 +303,12 @@
               <div class="overlay-text">
                 <h2>Edo-Tokyo Museum</h2>
                 <p>
-                  The Tokyo Metropolitan Edo-Tokyo Museum opened its doors in
-                  March 1993 as a space to reflect on the history and culture of
-                  Edo-Tokyo and envision the city and life of the future. Housed
-                  in a unique building modeled after an elevated-floor type
-                  warehouse, the museum has been a landmark and popular tourist
-                  attraction in Tokyo since its opening. The permanent
-                  exhibition, showcasing original objects and replicas, offers
-                  visitors a journey through the 400-year history of Edo-Tokyo
-                  since Tokugawa Ieyasu entered Edo.
+                  The Tokyo Metropolitan Edo-Tokyo Museum opened its doors in March 1993 as a space to reflect on the
+                  history and culture of Edo-Tokyo and envision the city and life of the future. Housed in a unique
+                  building modeled after an elevated-floor type warehouse, the museum has been a landmark and popular
+                  tourist attraction in Tokyo since its opening. The permanent exhibition, showcasing original objects
+                  and replicas, offers visitors a journey through the 400-year history of Edo-Tokyo since Tokugawa
+                  Ieyasu entered Edo.
                 </p>
               </div>
             </div>
@@ -426,24 +382,16 @@
             <h2>History of Japan</h2>
             <ul>
               <li class="footer-list-titles">
-                <a href="history-of-japan.html#classical-japan"
-                  >Classical Japan</a
-                >
+                <a href="history-of-japan.html#classical-japan">Classical Japan</a>
                 <ul class="footer-list-links">
                   <li>
-                    <a href="history-of-japan.html#asuka-period"
-                      >Asuka period (538-710)</a
-                    >
+                    <a href="history-of-japan.html#asuka-period">Asuka period (538-710)</a>
                   </li>
                   <li>
-                    <a href="history-of-japan.html#nara-period"
-                      >Nara period (710–794)</a
-                    >
+                    <a href="history-of-japan.html#nara-period">Nara period (710–794)</a>
                   </li>
                   <li>
-                    <a href="history-of-japan.html#heian-period"
-                      >Heian period (794–1185)</a
-                    >
+                    <a href="history-of-japan.html#heian-period">Heian period (794–1185)</a>
                   </li>
                 </ul>
               </li>
@@ -451,31 +399,21 @@
                 <a href="history-of-japan.html#feudal-japan">Feudal Japan</a>
                 <ul class="footer-list-links">
                   <li>
-                    <a href="history-of-japan.html#kamakura-period"
-                      >Kamakura period (1185–1333)</a
-                    >
+                    <a href="history-of-japan.html#kamakura-period">Kamakura period (1185–1333)</a>
                   </li>
                   <li>
-                    <a href="history-of-japan.html#muromachi-period"
-                      >Muromachi period (1333–1568)</a
-                    >
+                    <a href="history-of-japan.html#muromachi-period">Muromachi period (1333–1568)</a>
                   </li>
                   <li>
-                    <a href="history-of-japan.html#azuchi-momoyama-period"
-                      >Azuchi–Momoyama period (1568–1600)</a
-                    >
+                    <a href="history-of-japan.html#azuchi-momoyama-period">Azuchi–Momoyama period (1568–1600)</a>
                   </li>
                 </ul>
               </li>
               <li class="footer-list-titles">
-                <a href="history-of-japan.html#early-modern-japan"
-                  >Early Modern Japan</a
-                >
+                <a href="history-of-japan.html#early-modern-japan">Early Modern Japan</a>
                 <ul class="footer-list-links">
                   <li>
-                    <a href="history-of-japan.html#edo-period"
-                      >Edo period (1600–1868)</a
-                    >
+                    <a href="history-of-japan.html#edo-period">Edo period (1600–1868)</a>
                   </li>
                 </ul>
               </li>
@@ -483,29 +421,19 @@
                 <a href="history-of-japan.html#modern-japan">Modern Japan</a>
                 <ul class="footer-list-links">
                   <li>
-                    <a href="history-of-japan.html#meiji-period"
-                      >Meiji period (1868–1912)</a
-                    >
+                    <a href="history-of-japan.html#meiji-period">Meiji period (1868–1912)</a>
                   </li>
                   <li>
-                    <a href="history-of-japan.html#taisho-period"
-                      >Taishō period (1912–1926)</a
-                    >
+                    <a href="history-of-japan.html#taisho-period">Taishō period (1912–1926)</a>
                   </li>
                   <li>
-                    <a href="history-of-japan.html#showa-period"
-                      >Shōwa period (1926–1989)</a
-                    >
+                    <a href="history-of-japan.html#showa-period">Shōwa period (1926–1989)</a>
                   </li>
                   <li>
-                    <a href="history-of-japan.html#heisei-period"
-                      >Heisei period (1989–2019)</a
-                    >
+                    <a href="history-of-japan.html#heisei-period">Heisei period (1989–2019)</a>
                   </li>
                   <li>
-                    <a href="history-of-japan.html#reiwa-period"
-                      >Reiwa period (2019–present)</a
-                    >
+                    <a href="history-of-japan.html#reiwa-period">Reiwa period (2019–present)</a>
                   </li>
                 </ul>
               </li>
@@ -523,25 +451,16 @@
               <a href="#"><img src="images/Facebook.svg" alt="" /> Facebook</a>
             </div>
             <div>
-              <a href="#"
-                ><img src="images/Instagram.svg" alt="" /> Instagram</a
-              >
+              <a href="#"><img src="images/Instagram.svg" alt="" /> Instagram</a>
             </div>
             <div>
               <a href="#"><img src="images/Twitter.svg" alt="" /> Twitter</a>
             </div>
           </div>
           <div class="contact-info">
-            <div>
-              <img src="images/placeholder.png" alt="" /> 213, Street Name,
-              Greece
-            </div>
-            <div>
-              <img src="images/telephone-3.png" alt="" /> +30 2101234567
-            </div>
-            <div>
-              <img src="images/mail.png" alt="" /> contact@travelinjapan.eu
-            </div>
+            <div><img src="images/placeholder.png" alt="" /> 213, Street Name, Greece</div>
+            <div><img src="images/telephone-3.png" alt="" /> +30 2101234567</div>
+            <div><img src="images/mail.png" alt="" /> contact@travelinjapan.eu</div>
           </div>
         </div>
       </div>
