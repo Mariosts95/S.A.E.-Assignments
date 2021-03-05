@@ -16,7 +16,7 @@
   </head>
   <body>
     <!-- ----------NAVBAR---------- -->
-    <header>
+    <header class="header">
       <nav>
         <div class="logo">
           <a href="index.html"><img src="images/logo_42x42.png" alt="" /></a>
@@ -29,7 +29,7 @@
           <ul>
             <li>
               <label for="btn-1" class="show">Destinations</label>
-              <a href="index.html">Destinations</a>
+              <a href="index.html" class="nav-link">Destinations</a>
               <input type="checkbox" id="btn-1" />
               <ul>
                 <li><a href="tokyo.html">Tokyo</a></li>
@@ -40,7 +40,7 @@
             </li>
             <li>
               <label for="btn-2" class="show">History of Japan</label>
-              <a href="history-of-japan.html">History of Japan</a>
+              <a href="history-of-japan.html" class="nav-link">History of Japan</a>
               <input type="checkbox" id="btn-2" />
               <ul>
                 <li>
@@ -57,7 +57,7 @@
                 </li>
               </ul>
             </li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
           </ul>
         </div>
       </nav>
@@ -92,42 +92,50 @@
             </p>
           </div>
         </div>
-        <!-- ----------KYOTO TEMPERATURE---------- -->
+        <!-- ----------NARA TEMPERATURE---------- -->
         <div class="destination-temperature">
           <div class="destination-temperature-array">
-            <h2>Average Temperature by Month</h2>
-            <img
-              alt="Average min and max temperatures in Osaka, Japan"
-              src="https://weather-and-climate.com/uploads/average-temperature-japan-osaka.png"
-            />
-            <h2>Monthly hours of sunshine</h2>
-            <img
-              alt="Average monthly sunhours in Osaka, Japan"
-              src="https://weather-and-climate.com/uploads/average-sunshine-japan-osaka.png"
-            />
-            <h2>Monthly precipitation</h2>
-            <img
-              alt="Average precipitation (rain/snow) in Osaka, Japan"
-              src="https://weather-and-climate.com/uploads/average-rainfall-japan-osaka.png"
-            />
+            <div class="destination-temperature-array-el">
+              <h2>Average Temperature by Month</h2>
+              <img
+                alt="Average min and max temperatures in Osaka, Japan"
+                src="https://weather-and-climate.com/uploads/average-temperature-japan-osaka.png"
+              />
+            </div>
+            <div class="destination-temperature-array-el">
+              <h2>Monthly hours of sunshine</h2>
+              <img
+                alt="Average monthly sunhours in Osaka, Japan"
+                src="https://weather-and-climate.com/uploads/average-sunshine-japan-osaka.png"
+              />
+            </div>
+            <div class="destination-temperature-array-el">
+              <h2>Monthly precipitation</h2>
+              <img
+                alt="Average precipitation (rain/snow) in Osaka, Japan"
+                src="https://weather-and-climate.com/uploads/average-rainfall-japan-osaka.png"
+              />
+            </div>
           </div>
           <div class="destination-temperature-image">
             <img src="images/nara/nara-weather-image.jpg" alt="" />
           </div>
         </div>
-        <!-- ----------GETTING TO OSAKA---------- -->
-        <div class="section-title">
-          <h1>Getting to Nara</h1>
-        </div>
-        <div>
-          <img src="images/nara/getting-to-nara-banner.jpg" alt="" />
+        <!-- ----------GETTING TO NARA---------- -->
+        <div class="getting-to">
+          <div class="section-title">
+            <h1>Getting to Nara</h1>
+          </div>
+          <div>
+            <img src="images/nara/getting-to-nara-banner.jpg" alt="" />
+          </div>
         </div>
         <!-- ----------FROM KYOTO---------- -->
         <div class="from">
           <div class="from-title">
             <h2>From Kyoto</h2>
           </div>
-          <div class="transportation-1">
+          <div class="transportation-1 transportation">
             <img src="images/transportation/japan-railways.jpg" alt="" />
             <h2>Japan Railways (JR)</h2>
             <p class="transportation-info">Direct, 45 minutes, 720 yen one way, two connections per hour</p>
@@ -137,7 +145,7 @@
               also be made by twice-hourly local trains in 75 minutes.
             </p>
           </div>
-          <div class="transportation-2">
+          <div class="transportation-2 transportation">
             <img src="images/transportation/kintetsu-railways.jpg" alt="" />
             <h2>Kintetsu Railways</h2>
             <p class="transportation-info">
@@ -156,7 +164,7 @@
           <div class="from-title">
             <h2>From Osaka</h2>
           </div>
-          <div class="transportation-1">
+          <div class="transportation-1 transportation">
             <img src="images/transportation/japan-railways.jpg" alt="" />
             <h2>Japan Railways (JR)</h2>
             <p class="transportation-info">
@@ -168,7 +176,7 @@
               Station (30 minutes, 470 yen one way). The Japan Rail Pass fully covers the trip.
             </p>
           </div>
-          <div class="transportation-2">
+          <div class="transportation-2 transportation">
             <img src="images/transportation/kintetsu-railways.jpg" alt="" />
             <h2>Kintetsu Railways</h2>
             <p class="transportation-info">Direct, 30-40 minutes, 570-1090 yen one way, multiple trains per hour</p>
@@ -181,23 +189,25 @@
           </div>
         </div>
         <!-- ----------GETTING AROUND---------- -->
-        <div class="section-title">
-          <h1>Getting around Nara</h1>
-        </div>
-        <div class="getting-around-destination">
-          <div class="getting-around-destination-text">
-            <p>
-              Nara is served by two railway companies, Kintetsu Railways and JR West. The Kintetsu station is an
-              underground station just a few steps from Kofukuji and Nara Park, while the JR station is a 15-20 minute
-              walk west of Kofukuji and the park. A network of buses, operated by Nara Kotsu, connects the two stations
-              with all sites of interest. All major IC cards are accepted on the trains and buses around Nara, including
-              Suica and Icoca. Many of Nara's main attractions are found in the centrally located Nara Park and can be
-              visited on foot. The great temples Toshodaiji, Yakushiji and Horyuji, however, stand several kilometers
-              outside of central Nara and are best accessed by bus or train.
-            </p>
+        <div class="around">
+          <div class="section-title">
+            <h1>Getting around Nara</h1>
           </div>
-          <div class="getting-around-destination-image">
-            <img src="images/nara/getting-around-nara-image.jpg" alt="" />
+          <div class="getting-around-destination">
+            <div class="getting-around-destination-text">
+              <p>
+                Nara is served by two railway companies, Kintetsu Railways and JR West. The Kintetsu station is an
+                underground station just a few steps from Kofukuji and Nara Park, while the JR station is a 15-20 minute
+                walk west of Kofukuji and the park. A network of buses, operated by Nara Kotsu, connects the two
+                stations with all sites of interest. All major IC cards are accepted on the trains and buses around
+                Nara, including Suica and Icoca. Many of Nara's main attractions are found in the centrally located Nara
+                Park and can be visited on foot. The great temples Toshodaiji, Yakushiji and Horyuji, however, stand
+                several kilometers outside of central Nara and are best accessed by bus or train.
+              </p>
+            </div>
+            <div class="getting-around-destination-image">
+              <img src="images/nara/getting-around-nara-image.jpg" alt="" />
+            </div>
           </div>
         </div>
         <div class="getting-around-destination-video">
@@ -214,7 +224,7 @@
         <!-- ----------TOP ATTRACTIONS---------- -->
         <div class="title" id="top-attractions"><h1>Top Attractions</h1></div>
         <div class="top-attractions-part-1">
-          <div class="destination-attraction-1">
+          <div class="destination-attraction-1 left-anim">
             <img src="images/nara/nara-attraction-1.jpg" alt="" />
             <div class="overlay">
               <div class="overlay-text">
@@ -227,7 +237,7 @@
               </div>
             </div>
           </div>
-          <div class="destination-attraction-2">
+          <div class="destination-attraction-2 right-anim">
             <img src="images/nara/nara-attraction-2.jpg" alt="" />
             <div class="overlay">
               <div class="overlay-text">
@@ -244,7 +254,7 @@
         </div>
 
         <div class="top-attractions-part-2">
-          <div class="destination-attraction-3">
+          <div class="destination-attraction-3 left-anim">
             <img src="images/nara/nara-attraction-3.jpg" alt="" />
             <div class="overlay">
               <div class="overlay-text">
@@ -258,7 +268,7 @@
               </div>
             </div>
           </div>
-          <div class="destination-attraction-4">
+          <div class="destination-attraction-4 bot-anim">
             <img src="images/nara/nara-attraction-4.jpg" alt="" />
             <div class="overlay">
               <div class="overlay-text">
@@ -272,7 +282,7 @@
               </div>
             </div>
           </div>
-          <div class="destination-attraction-5">
+          <div class="destination-attraction-5 right-anim">
             <img src="images/nara/nara-attraction-5.jpg" alt="" />
             <div class="overlay">
               <div class="overlay-text">

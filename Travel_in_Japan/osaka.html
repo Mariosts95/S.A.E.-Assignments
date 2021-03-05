@@ -16,7 +16,7 @@
   </head>
   <body>
     <!-- ----------NAVBAR---------- -->
-    <header>
+    <header class="header">
       <nav>
         <div class="logo">
           <a href="index.html"><img src="images/logo_42x42.png" alt="" /></a>
@@ -29,7 +29,7 @@
           <ul>
             <li>
               <label for="btn-1" class="show">Destinations</label>
-              <a href="index.html">Destinations</a>
+              <a href="index.html" class="nav-link">Destinations</a>
               <input type="checkbox" id="btn-1" />
               <ul>
                 <li><a href="tokyo.html">Tokyo</a></li>
@@ -40,7 +40,7 @@
             </li>
             <li>
               <label for="btn-2" class="show">History of Japan</label>
-              <a href="history-of-japan.html">History of Japan</a>
+              <a href="history-of-japan.html" class="nav-link">History of Japan</a>
               <input type="checkbox" id="btn-2" />
               <ul>
                 <li>
@@ -57,7 +57,7 @@
                 </li>
               </ul>
             </li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
           </ul>
         </div>
       </nav>
@@ -94,42 +94,50 @@
             </p>
           </div>
         </div>
-        <!-- ----------KYOTO TEMPERATURE---------- -->
+        <!-- ----------OSAKA TEMPERATURE---------- -->
         <div class="destination-temperature">
           <div class="destination-temperature-array">
-            <h2>Average Temperature by Month</h2>
-            <img
-              alt="Average min and max temperatures in Osaka, Japan"
-              src="https://weather-and-climate.com/uploads/average-temperature-japan-osaka.png"
-            />
-            <h2>Monthly hours of sunshine</h2>
-            <img
-              alt="Average monthly sunhours in Osaka, Japan"
-              src="https://weather-and-climate.com/uploads/average-sunshine-japan-osaka.png"
-            />
-            <h2>Monthly precipitation</h2>
-            <img
-              alt="Average precipitation (rain/snow) in Osaka, Japan"
-              src="https://weather-and-climate.com/uploads/average-rainfall-japan-osaka.png"
-            />
+            <div class="destination-temperature-array-el">
+              <h2>Average Temperature by Month</h2>
+              <img
+                alt="Average min and max temperatures in Osaka, Japan"
+                src="https://weather-and-climate.com/uploads/average-temperature-japan-osaka.png"
+              />
+            </div>
+            <div class="destination-temperature-array-el">
+              <h2>Monthly hours of sunshine</h2>
+              <img
+                alt="Average monthly sunhours in Osaka, Japan"
+                src="https://weather-and-climate.com/uploads/average-sunshine-japan-osaka.png"
+              />
+            </div>
+            <div class="destination-temperature-array-el">
+              <h2>Monthly precipitation</h2>
+              <img
+                alt="Average precipitation (rain/snow) in Osaka, Japan"
+                src="https://weather-and-climate.com/uploads/average-rainfall-japan-osaka.png"
+              />
+            </div>
           </div>
           <div class="destination-temperature-image">
             <img src="images/osaka/osaka-weather-image.jpg" alt="" />
           </div>
         </div>
         <!-- ----------GETTING TO OSAKA---------- -->
-        <div class="section-title">
-          <h1>Getting to Osaka</h1>
-        </div>
-        <div>
-          <img src="images/osaka/getting-to-osaka-banner.jpg" alt="" />
+        <div class="getting-to">
+          <div class="section-title">
+            <h1>Getting to Osaka</h1>
+          </div>
+          <div>
+            <img src="images/osaka/getting-to-osaka-banner.jpg" alt="" />
+          </div>
         </div>
         <!-- ----------FROM TOKYO---------- -->
         <div class="from">
           <div class="from-title">
             <h2>From Kansai International Airport</h2>
           </div>
-          <div class="transportation-1">
+          <div class="transportation-1 transportation">
             <img src="images/transportation/jr-limited-express-haruka.jpg" alt="" />
             <h2>JR Limited Express "Haruka"</h2>
             <p class="transportation-info">
@@ -143,7 +151,7 @@
               (to Shin-Osaka) if you own or purchase an Icoca prepaid card.
             </p>
           </div>
-          <div class="transportation-2">
+          <div class="transportation-2 transportation">
             <img src="images/transportation/jr-kansai-airport-rapid.jpg" alt="" />
             <h2>JR Kansai Airport Rapid</h2>
             <p class="transportation-info">
@@ -157,10 +165,10 @@
               rush hours.
             </p>
           </div>
-          <div class="transportation-3">
+          <div class="transportation-3 transportation">
             <img src="images/transportation/nankai-rapit.jpg" alt="" />
             <h2>Nankai "Rapi:t"</h2>
-            <p class="transportation-info">
+            <p class="transportation-info transportation">
               Direct, 35 minutes, 1450 yen one way to Namba Station, frequent departures
             </p>
             <p>
@@ -170,7 +178,7 @@
               for travelers to and from the airport. All seats are reserved.
             </p>
           </div>
-          <div class="transportation-4">
+          <div class="transportation-4 transportation">
             <img src="images/transportation/nankai-airport-express.jpg" alt="" />
             <h2>Nankai Airport Express</h2>
             <p class="transportation-info">Direct, 45 minutes, 930 yen one way to Namba Station, frequent departures</p>
@@ -180,7 +188,7 @@
               more frequently and can become crowded during rush hours.
             </p>
           </div>
-          <div class="transportation-5">
+          <div class="transportation-5 transportation">
             <img src="images/transportation/airport-limousine-bus.jpg" alt="" />
             <h2>Airport Limousine Bus</h2>
             <p class="transportation-info">
@@ -191,7 +199,7 @@
               including Osaka Station (60 minutes, 1600 yen) and Namba Station (45 minutes, 1100 yen).
             </p>
           </div>
-          <div class="transportation-6">
+          <div class="transportation-6 transportation">
             <img src="images/transportation/osaka-taxi.jpg" alt="" />
             <h2>Taxi</h2>
             <p class="transportation-info">About 15,000 yen (18,000 yen late night), 50 minutes to central Osaka</p>
@@ -206,7 +214,7 @@
           <div class="from-title">
             <h2>From Itami Airport</h2>
           </div>
-          <div class="transportation-1">
+          <div class="transportation-1 transportation">
             <img src="images/transportation/osaka-bus.jpg" alt="" />
             <h2>Bus</h2>
             <p class="transportation-info">Direct, 25 minutes, 510-650 yen, frequent departures</p>
@@ -215,7 +223,7 @@
               minutes, 650 yen), Shin-Osaka Station (25 minutes, 510 yen) and Namba/OCAT (25 minutes, 650 yen)
             </p>
           </div>
-          <div class="transportation-2">
+          <div class="transportation-2 transportation">
             <img src="images/transportation/osaka-train.jpg" alt="" />
             <h2>Monorail and Train</h2>
             <p class="transportation-info">15-30 minutes, 430 yen, frequent departures</p>
@@ -227,26 +235,28 @@
           </div>
         </div>
         <!-- ----------GETTING AROUND---------- -->
-        <div class="section-title">
-          <h1>Getting around Osaka</h1>
-        </div>
-        <div class="getting-around-destination">
-          <div class="getting-around-destination-text">
-            <p>
-              Osaka has two major city centers and four major train stations. The two city centers are nicknamed Kita
-              ("North") around Osaka/Umeda Station and Minami ("South") around Namba Station. While Kita is a large
-              shopping and business area, Minami is Osaka's most famous entertainment district. JR Osaka Station is
-              located in the center of the Kita district. Two other railway companies and three subway lines have their
-              own stations in the vicinity of JR Osaka Station. Note that some of them are named after the Umeda
-              district rather than Osaka. The shinkansen trains stop not at Osaka Station, but at Shin-Osaka Station,
-              one station north of Osaka Station by JR train. In the Namba area (Minami), three railway companies (JR,
-              Nankai and Kintetsu) and three subway lines have their separate stations, all named Namba Station. The
-              fourth of Osaka's major railway stations is Tennoji Station in the southeast of central Osaka. It is
-              served by JR, Kintetsu Railways, the Hankai Tramway and two subway lines.
-            </p>
+        <div class="around">
+          <div class="section-title">
+            <h1>Getting around Osaka</h1>
           </div>
-          <div class="getting-around-destination-image">
-            <img src="images/osaka/getting-around-osaka-image.jpg" alt="" />
+          <div class="getting-around-destination">
+            <div class="getting-around-destination-text">
+              <p>
+                Osaka has two major city centers and four major train stations. The two city centers are nicknamed Kita
+                ("North") around Osaka/Umeda Station and Minami ("South") around Namba Station. While Kita is a large
+                shopping and business area, Minami is Osaka's most famous entertainment district. JR Osaka Station is
+                located in the center of the Kita district. Two other railway companies and three subway lines have
+                their own stations in the vicinity of JR Osaka Station. Note that some of them are named after the Umeda
+                district rather than Osaka. The shinkansen trains stop not at Osaka Station, but at Shin-Osaka Station,
+                one station north of Osaka Station by JR train. In the Namba area (Minami), three railway companies (JR,
+                Nankai and Kintetsu) and three subway lines have their separate stations, all named Namba Station. The
+                fourth of Osaka's major railway stations is Tennoji Station in the southeast of central Osaka. It is
+                served by JR, Kintetsu Railways, the Hankai Tramway and two subway lines.
+              </p>
+            </div>
+            <div class="getting-around-destination-image">
+              <img src="images/osaka/getting-around-osaka-image.jpg" alt="" />
+            </div>
           </div>
         </div>
         <div class="getting-around-destination-video">
@@ -263,7 +273,7 @@
         <!-- ----------TOP ATTRACTIONS---------- -->
         <div class="title" id="top-attractions"><h1>Top Attractions</h1></div>
         <div class="top-attractions-part-1">
-          <div class="destination-attraction-1">
+          <div class="destination-attraction-1 left-anim">
             <img src="images/osaka/osaka-attraction-1.jpg" alt="" />
             <div class="overlay">
               <div class="overlay-text">
@@ -276,7 +286,7 @@
               </div>
             </div>
           </div>
-          <div class="destination-attraction-2">
+          <div class="destination-attraction-2 right-anim">
             <img src="images/osaka/osaka-attraction-2.jpg" alt="" />
             <div class="overlay">
               <div class="overlay-text">
@@ -292,7 +302,7 @@
         </div>
 
         <div class="top-attractions-part-2">
-          <div class="destination-attraction-3">
+          <div class="destination-attraction-3 left-anim">
             <img src="images/osaka/osaka-attraction-3.jpg" alt="" />
             <div class="overlay">
               <div class="overlay-text">
@@ -304,7 +314,7 @@
               </div>
             </div>
           </div>
-          <div class="destination-attraction-4">
+          <div class="destination-attraction-4 bot-anim">
             <img src="images/osaka/osaka-attraction-4.jpg" alt="" />
             <div class="overlay">
               <div class="overlay-text">
@@ -319,7 +329,7 @@
               </div>
             </div>
           </div>
-          <div class="destination-attraction-5">
+          <div class="destination-attraction-5 right-anim">
             <img src="images/osaka/osaka-attraction-5.jpg" alt="" />
             <div class="overlay">
               <div class="overlay-text">

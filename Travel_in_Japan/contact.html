@@ -8,6 +8,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Langar&display=swap" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js" defer></script>
+    <script src="js/contact-animation.js" defer></script>
     <script src="js/gallery-script.js" defer></script>
     <script src="js/contact-form-validation.js" defer></script>
     <script src="js/newsletter-validation.js" defer></script>
@@ -16,7 +18,7 @@
   </head>
   <body>
     <!-- ----------NAVBAR---------- -->
-    <header>
+    <header class="header">
       <nav>
         <div class="logo">
           <a href="index.html"><img src="images/logo_42x42.png" alt="" /></a>
@@ -29,7 +31,7 @@
           <ul>
             <li>
               <label for="btn-1" class="show">Destinations</label>
-              <a href="index.html">Destinations</a>
+              <a href="index.html" class="nav-link">Destinations</a>
               <input type="checkbox" id="btn-1" />
               <ul>
                 <li><a href="tokyo.html">Tokyo</a></li>
@@ -40,7 +42,7 @@
             </li>
             <li>
               <label for="btn-2" class="show">History of Japan</label>
-              <a href="history-of-japan.html">History of Japan</a>
+              <a href="history-of-japan.html" class="nav-link">History of Japan</a>
               <input type="checkbox" id="btn-2" />
               <ul>
                 <li><a href="history-of-japan.html#classical-japan">Classical Japan</a></li>
@@ -49,7 +51,7 @@
                 <li><a href="history-of-japan.html#modern-japan">Modern Japan</a></li>
               </ul>
             </li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
           </ul>
         </div>
       </nav>
@@ -85,10 +87,10 @@
             </div>
         </div>
       </div>
-      <div class="gallery-title">
-        <h2>Image Gallery</h2>
-      </div>
       <div class="image-gallery">
+        <div class="gallery-title">
+          <h2>Image Gallery</h2>
+        </div>
         <img src="" alt="" id="image"/>
         <a class="next-btn" id="next-btn"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
 	y="0px" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480;" xml:space="preserve">

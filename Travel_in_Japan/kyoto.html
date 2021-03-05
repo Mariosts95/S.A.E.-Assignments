@@ -16,7 +16,7 @@
   </head>
   <body>
     <!-- ----------NAVBAR---------- -->
-    <header>
+    <header class="header">
       <nav>
         <div class="logo">
           <a href="index.html"><img src="images/logo_42x42.png" alt="" /></a>
@@ -29,7 +29,7 @@
           <ul>
             <li>
               <label for="btn-1" class="show">Destinations</label>
-              <a href="index.html">Destinations</a>
+              <a href="index.html" class="nav-link">Destinations</a>
               <input type="checkbox" id="btn-1" />
               <ul>
                 <li><a href="tokyo.html">Tokyo</a></li>
@@ -40,7 +40,7 @@
             </li>
             <li>
               <label for="btn-2" class="show">History of Japan</label>
-              <a href="history-of-japan.html">History of Japan</a>
+              <a href="history-of-japan.html" class="nav-link">History of Japan</a>
               <input type="checkbox" id="btn-2" />
               <ul>
                 <li>
@@ -57,7 +57,7 @@
                 </li>
               </ul>
             </li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
           </ul>
         </div>
       </nav>
@@ -95,39 +95,49 @@
         <!-- ----------KYOTO TEMPERATURE---------- -->
         <div class="destination-temperature">
           <div class="destination-temperature-array">
-            <h2>Average Temperature by Month</h2>
-            <img
-              alt="Average min and max temperatures in Kyoto, Japan"
-              src="https://weather-and-climate.com/uploads/average-temperature-japan-kyoto.png"
-            />
-            <h2>Monthly hours of sunshine</h2>
-            <img
-              alt="Average monthly sunhours in Kyoto, Japan"
-              src="https://weather-and-climate.com/uploads/average-sunshine-japan-kyoto.png"
-            />
-            <h2>Monthly precipitation</h2>
-            <img
-              alt="Average precipitation (rain/snow) in Kyoto, Japan"
-              src="https://weather-and-climate.com/uploads/average-rainfall-japan-kyoto.png"
-            />
+            <div class="destination-temperature-array-el">
+              <h2>Average Temperature by Month</h2>
+              <img
+                alt="Average min and max temperatures in Kyoto, Japan"
+                src="https://weather-and-climate.com/uploads/average-temperature-japan-kyoto.png"
+              />
+            </div>
+            <div class="destination-temperature-array-el">
+              <h2>Monthly hours of sunshine</h2>
+              <img
+                class="destination-temperature-array-el"
+                alt="Average monthly sunhours in Kyoto, Japan"
+                src="https://weather-and-climate.com/uploads/average-sunshine-japan-kyoto.png"
+              />
+            </div>
+            <div class="destination-temperature-array-el">
+              <h2>Monthly precipitation</h2>
+              <img
+                class="destination-temperature-array-el"
+                alt="Average precipitation (rain/snow) in Kyoto, Japan"
+                src="https://weather-and-climate.com/uploads/average-rainfall-japan-kyoto.png"
+              />
+            </div>
           </div>
           <div class="destination-temperature-image">
             <img src="images/kyoto/kyoto-weather-image.jpg" alt="" />
           </div>
         </div>
         <!-- ----------GETTING TO KYOTO---------- -->
-        <div class="section-title">
-          <h1>Getting to Kyoto</h1>
-        </div>
-        <div>
-          <img src="images/kyoto/getting-to-kyoto-banner.jpg" alt="" />
+        <div class="getting-to">
+          <div class="section-title">
+            <h1>Getting to Kyoto</h1>
+          </div>
+          <div>
+            <img src="images/kyoto/getting-to-kyoto-banner.jpg" alt="" />
+          </div>
         </div>
         <!-- ----------FROM TOKYO---------- -->
         <div class="from">
           <div class="from-title">
             <h2>From Tokyo</h2>
           </div>
-          <div class="transportation-1">
+          <div class="transportation-1 transportation">
             <img src="images/transportation/Shinkansen.jpg" alt="" />
             <h2>JR Tokaido Shinkansen</h2>
             <p class="transportation-info">
@@ -141,7 +151,7 @@
               Rail Pass is valid on Hikari and Kodama trains, but not on Nozomi trains.
             </p>
           </div>
-          <div class="transportation-2">
+          <div class="transportation-2 transportation">
             <img src="images/transportation/highway-bus.jpg" alt="" />
             <h2>Highway bus</h2>
             <p class="transportation-info">
@@ -156,7 +166,7 @@
               yen. Online reservations can be made through Willer and Japan Bus Online.
             </p>
           </div>
-          <div class="transportation-3">
+          <div class="transportation-3 transportation">
             <img src="images/transportation/airplane.jpg" alt="" />
             <h2>Airplane</h2>
             <p class="transportation-info">
@@ -169,7 +179,7 @@
               tickets are usually available for around 9,000 to 16,000 yen.
             </p>
           </div>
-          <div class="transportation-4">
+          <div class="transportation-4 transportation">
             <img src="images/transportation/driving.jpg" alt="" />
             <h2>Driving</h2>
             <p class="transportation-info">5-6 hours without breaks, around 10,000 yen one way in expressway tolls</p>
@@ -178,7 +188,7 @@
               without breaks and traffic jams. The expressway toll is around 10,000 yen one way.
             </p>
           </div>
-          <div class="transportation-5">
+          <div class="transportation-5 transportation">
             <img src="images/transportation/local-train.jpg" alt="" />
             <h2>Local trains</h2>
             <p class="transportation-info">4 transfers, 9 hours, 2370-8210 yen one way</p>
@@ -194,7 +204,7 @@
           <div class="from-title">
             <h2>From Osaka</h2>
           </div>
-          <div class="transportation-1">
+          <div class="transportation-1 transportation">
             <img src="images/transportation/Shinkansen.jpg" alt="" />
             <h2>JR Tokaido Shinkansen</h2>
             <p class="transportation-info">Direct, 15 minutes, 1440 yen, frequent departures</p>
@@ -205,7 +215,7 @@
               trains.
             </p>
           </div>
-          <div class="transportation-2">
+          <div class="transportation-2 transportation">
             <img src="images/transportation/jr-special-rapid-train.jpg" alt="" />
             <h2>JR special rapid train</h2>
             <p class="transportation-info">Direct, 30 minutes, 570 yen, frequent departures</p>
@@ -216,7 +226,7 @@
               fare is also 570 yen. All trains are covered by the Japan Rail Pass.
             </p>
           </div>
-          <div class="transportation-3">
+          <div class="transportation-3 transportation">
             <img src="images/transportation/jr-limited-express-train.jpg" alt="" />
             <h2>JR limited express train</h2>
             <p class="transportation-info">Direct, 30 minutes, 1230-1960 yen, about two departures per hour</p>
@@ -226,7 +236,7 @@
               Japan Rail Pass holders.
             </p>
           </div>
-          <div class="transportation-4">
+          <div class="transportation-4 transportation">
             <img src="images/transportation/hankyu-railway.jpg" alt="" />
             <h2>Hankyu Railway</h2>
             <p class="transportation-info">Direct, 40 minutes, 400 yen, frequent departures</p>
@@ -236,7 +246,7 @@
               yen. They are not covered by the Japan Rail Pass.
             </p>
           </div>
-          <div class="transportation-5">
+          <div class="transportation-5 transportation">
             <img src="images/transportation/keihan-railway.jpg" alt="" />
             <h2>Keihan Railway</h2>
             <p class="transportation-info">Direct, 50 minutes, 420 yen, frequent departures</p>
@@ -248,31 +258,33 @@
           </div>
         </div>
         <!-- ----------GETTING AROUND---------- -->
-        <div class="section-title">
-          <h1>Getting around Kyoto</h1>
-        </div>
-        <div class="getting-around-destination">
-          <div class="getting-around-destination-text">
-            <p>
-              Kyoto features a rectangular street system. Unlike the streets in other Japanese cities, most of central
-              Kyoto's streets are named. The main streets running from east to west are numbered in ascending order from
-              north to south, and are about 500 meters apart from each other, with several smaller streets in between.
-              For example, Shijo means "4th Avenue" and Nijo means "2nd Avenue". Kyoto's city center with the highest
-              concentration of dining, shopping and entertainment opportunities, is located around the junction of
-              Shijo-dori (4th Avenue) and Kawaramachi-dori (Kawaramachi Street). JR Kyoto Station is located south of
-              the city center at the height of Hachijo-dori (8th Avenue). The most prominent north-south street is
-              Karasuma-dori (Karasuma Street), which runs from Kyoto Station via the city center to Kyoto Imperial
-              Palace. Another north-south axis is Kamo River, about one kilometer east of Karasuma-dori. Kyoto has a
-              rather inadequately developed public transportation system for a city of its size, consisting of two
-              subway lines, a dense bus network and several railway companies, whose lines are not always conveniently
-              connected with each other. Taxis and bicycles can be worthwhile alternatives. The recommended way to get
-              around Kyoto by public transportation is to use an IC card, such as Icoca, which is accepted on virtually
-              all trains and buses in the city. Alternatively, travelers intending to use buses or subways extensively,
-              should consider one of the 1-day passes available
-            </p>
+        <div class="around">
+          <div class="section-title">
+            <h1>Getting around Kyoto</h1>
           </div>
-          <div class="getting-around-destination-image">
-            <img src="images/kyoto/getting-around-kyoto-image.jpg" alt="" />
+          <div class="getting-around-destination">
+            <div class="getting-around-destination-text">
+              <p>
+                Kyoto features a rectangular street system. Unlike the streets in other Japanese cities, most of central
+                Kyoto's streets are named. The main streets running from east to west are numbered in ascending order
+                from north to south, and are about 500 meters apart from each other, with several smaller streets in
+                between. For example, Shijo means "4th Avenue" and Nijo means "2nd Avenue". Kyoto's city center with the
+                highest concentration of dining, shopping and entertainment opportunities, is located around the
+                junction of Shijo-dori (4th Avenue) and Kawaramachi-dori (Kawaramachi Street). JR Kyoto Station is
+                located south of the city center at the height of Hachijo-dori (8th Avenue). The most prominent
+                north-south street is Karasuma-dori (Karasuma Street), which runs from Kyoto Station via the city center
+                to Kyoto Imperial Palace. Another north-south axis is Kamo River, about one kilometer east of
+                Karasuma-dori. Kyoto has a rather inadequately developed public transportation system for a city of its
+                size, consisting of two subway lines, a dense bus network and several railway companies, whose lines are
+                not always conveniently connected with each other. Taxis and bicycles can be worthwhile alternatives.
+                The recommended way to get around Kyoto by public transportation is to use an IC card, such as Icoca,
+                which is accepted on virtually all trains and buses in the city. Alternatively, travelers intending to
+                use buses or subways extensively, should consider one of the 1-day passes available
+              </p>
+            </div>
+            <div class="getting-around-destination-image">
+              <img src="images/kyoto/getting-around-kyoto-image.jpg" alt="" />
+            </div>
           </div>
         </div>
         <div class="getting-around-destination-video">
@@ -289,7 +301,7 @@
         <!-- ----------TOP ATTRACTIONS---------- -->
         <div class="title" id="top-attractions"><h1>Top Attractions</h1></div>
         <div class="top-attractions-part-1">
-          <div class="destination-attraction-1">
+          <div class="destination-attraction-1 left-anim">
             <img src="images/kyoto/kyoto-attraction-1.jpg" alt="" />
             <div class="overlay">
               <div class="overlay-text">
@@ -307,7 +319,7 @@
               </div>
             </div>
           </div>
-          <div class="destination-attraction-2">
+          <div class="destination-attraction-2 right-anim">
             <img src="images/kyoto/kyoto-attraction-2.jpg" alt="" />
             <div class="overlay">
               <div class="overlay-text">
@@ -325,7 +337,7 @@
         </div>
 
         <div class="top-attractions-part-2">
-          <div class="destination-attraction-3">
+          <div class="destination-attraction-3 left-anim">
             <img src="images/kyoto/kyoto-attraction-3.jpg" alt="" />
             <div class="overlay">
               <div class="overlay-text">
@@ -341,7 +353,7 @@
               </div>
             </div>
           </div>
-          <div class="destination-attraction-4">
+          <div class="destination-attraction-4 bot-anim">
             <img src="images/kyoto/kyoto-attraction-4.jpg" alt="" />
             <div class="overlay">
               <div class="overlay-text">
@@ -354,7 +366,7 @@
               </div>
             </div>
           </div>
-          <div class="destination-attraction-5">
+          <div class="destination-attraction-5 right-anim">
             <img src="images/kyoto/kyoto-attraction-5.jpg" alt="" />
             <div class="overlay">
               <div class="overlay-text">
@@ -372,7 +384,6 @@
       </div>
     </main>
     <!-- ----------FOOTER---------- -->
-
     <footer class="footer-grid">
       <div class="footer-logo">
         <a href="index.html"><img src="images/Logo-2.png" alt="" /></a>

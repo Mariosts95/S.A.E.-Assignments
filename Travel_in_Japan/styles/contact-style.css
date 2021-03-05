@@ -16,12 +16,14 @@ body {
   font-size: 1.1em;
   line-height: 1.5;
   background-repeat: repeat;
+  overflow-x: hidden;
 }
 
 main {
   max-width: 1600px;
   margin: 0 auto;
   background: rgba(255, 255, 255, 0.7);
+  overflow-x: hidden;
 }
 
 h1,
@@ -338,12 +340,14 @@ footer a:hover {
 .container {
   margin: 2em auto;
   max-width: 1600px;
+  overflow: hidden;
 }
 
 .contact-form {
   display: grid;
   grid-template-columns: 40% auto;
   grid-template-rows: auto;
+  overflow: hidden;
 }
 
 .contact-form img {
@@ -400,12 +404,14 @@ footer a:hover {
   margin: auto 0;
   margin-left: auto;
   margin-right: 10%;
+  overflow: hidden;
 }
 
 form {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  overflow: hidden;
 }
 
 .input-error {
@@ -430,6 +436,7 @@ form {
 
 .newsletter {
   position: relative;
+  overflow: hidden;
 }
 
 .newsletter img {
@@ -461,6 +468,7 @@ form {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
+  overflow: hidden;
 }
 
 .gallery-title h2 {
@@ -470,6 +478,7 @@ form {
 .image-gallery {
   position: relative;
   width: 100%;
+  overflow: hidden;
 }
 
 .image-gallery a svg {
