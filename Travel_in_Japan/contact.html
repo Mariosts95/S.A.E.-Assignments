@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
     <script src="js/gallery-script.js" defer></script>
+    <script src="js/contact-form-validation.js" defer></script>
+    <script src="js/newsletter-validation.js" defer></script>
     <link rel="icon" href="images/logo.png" type="image/png" />
     <title>Contact us</title>
   </head>
@@ -58,25 +60,29 @@
       <div class="container">
         <div class="contact-form">
           <div class="contact-form-image"><img src="images/contact-image.png" alt="" /></div>
-          <div class="contact-form-info">
-            <input type="text" placeholder="Your Fullname" />
-            <input type="email" placeholder="Your Email" />
-            <input type="text" placeholder="Subject" />
-          </div>
-          <div class="contact-form-text">
-            <textarea placeholder="Your Message"></textarea>
-          </div>
-          <div class="submit-form">
-            <a href="#" class="btn">Submit</a>
-          </div>
+          <form class="contact-form-info" id="contact-form-info" name="contact-form-info" method="POST">
+            <input type="text" name="full-name" id="full-name" placeholder="Your Fullname" />
+            <span id="full-name-error" class="error"></span>
+            <input type="text" name="email" id="email" placeholder="Your E-mail Address"  />
+            <span id="email-error" class="error"></span>
+            <input type="text" name="subject" id="subject" placeholder="Subject" />
+            <span id="subject-error" class="error"></span>
+            <div>
+              <textarea class="contact-form-text" id="textarea" placeholder="Your Message"></textarea>
+            </div>
+            <button type="submit" class="btn">Submit</button>
+          </form>
         </div>
         <div class="newsletter">
           <img src="images/contact-form-newsletter.png" alt="" />
           <div class="newsletter-input">
-            <h1>Subscribe to our Newsletter</h1>
-            <input type="email" placeholder="Enter your email" />
-            <a href="#" class="btn">Submit</a>
-          </div>
+            <form id="newsletter" name="newsletter" method="POST">
+              <h2>Subscribe to our Newsletter</h2>
+              <input type="text" name="newsletter-email" id="newsletter-email" placeholder="Your E-mail Address"  />
+              <span id="newsletter-error" class="error"></span>
+              <button type="submit" class="btn">Submit</button>
+            </form>
+            </div>
         </div>
       </div>
       <div class="gallery-title">
