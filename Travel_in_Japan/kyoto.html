@@ -3,18 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/kyoto-style.css" />
+    <link rel="stylesheet" href="styles/destination-style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Langar&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Langar&display=swap" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
     <link rel="icon" href="images/logo.png" type="image/png" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
+    <script src="js/destination-animation.js" defer></script>
     <title>Kyoto</title>
   </head>
   <body>
@@ -47,17 +44,13 @@
               <input type="checkbox" id="btn-2" />
               <ul>
                 <li>
-                  <a href="history-of-japan.html#classical-japan"
-                    >Classical Japan</a
-                  >
+                  <a href="history-of-japan.html#classical-japan">Classical Japan</a>
                 </li>
                 <li>
                   <a href="history-of-japan.html#feudal-japan">Feudal Japan</a>
                 </li>
                 <li>
-                  <a href="history-of-japan.html#early-modern-japan"
-                    >Early Modern Japan</a
-                  >
+                  <a href="history-of-japan.html#early-modern-japan">Early Modern Japan</a>
                 </li>
                 <li>
                   <a href="history-of-japan.html#modern-japan">Modern Japan</a>
@@ -71,7 +64,7 @@
     </header>
     <main>
       <!-- ----------IMAGE GALLERY---------- -->
-      <div class="gallery"></div>
+      <div class="gallery kyoto-gallery"></div>
       <!-- ----------ALL TEXT---------- -->
       <div class="text-background">
         <!-- ----------TRAVEL ADVICE---------- -->
@@ -84,53 +77,41 @@
             <img src="images/kyoto/kyoto-preview.jpg" alt="" />
           </div>
           <div class="preview-text">
-            <h2>
-              A passageway to Japan's past, full of World Heritage sites and
-              traditional arts
-            </h2>
+            <h2>A passageway to Japan's past, full of World Heritage sites and traditional arts</h2>
             <p>
-              Kyoto (京都, Kyōto) served as Japan's capital and the emperor's
-              residence from 794 until 1868. It is one of the country's ten
-              largest cities with a population of 1.5 million people and a
-              modern face. Over the centuries, Kyoto was destroyed by many wars
-              and fires, but due to its exceptional historic value, the city was
-              dropped from the list of target cities for the atomic bomb and
-              escaped destruction during World War II. Countless temples,
-              shrines and other historically priceless structures survive in the
-              city today. The shrines and temples of Kyoto offer a rare link
-              between modern life in the city and its very ancient past. The
-              Shimogamo Shrine dates to the 6th century and seems suspended in
-              time, its serenity and spiritual power still palpable. Visit
-              Fushimi Inari Shrine, then see the life-sized Thousand Armed
-              Kannon statues of Sanjūsangen-dō. Take in traditional geisha
-              performances, then savor a tranquil meal at a restaurant
+              Kyoto (京都, Kyōto) served as Japan's capital and the emperor's residence from 794 until 1868. It is one
+              of the country's ten largest cities with a population of 1.5 million people and a modern face. Over the
+              centuries, Kyoto was destroyed by many wars and fires, but due to its exceptional historic value, the city
+              was dropped from the list of target cities for the atomic bomb and escaped destruction during World War
+              II. Countless temples, shrines and other historically priceless structures survive in the city today. The
+              shrines and temples of Kyoto offer a rare link between modern life in the city and its very ancient past.
+              The Shimogamo Shrine dates to the 6th century and seems suspended in time, its serenity and spiritual
+              power still palpable. Visit Fushimi Inari Shrine, then see the life-sized Thousand Armed Kannon statues of
+              Sanjūsangen-dō. Take in traditional geisha performances, then savor a tranquil meal at a restaurant
               overlooking the Kamo River.
             </p>
           </div>
         </div>
         <!-- ----------KYOTO TEMPERATURE---------- -->
-        <div class="kyoto-temperature">
-          <div class="kyoto-temperature-array">
+        <div class="destination-temperature">
+          <div class="destination-temperature-array">
             <h2>Average Temperature by Month</h2>
             <img
-              border="0"
               alt="Average min and max temperatures in Kyoto, Japan"
               src="https://weather-and-climate.com/uploads/average-temperature-japan-kyoto.png"
             />
             <h2>Monthly hours of sunshine</h2>
             <img
-              border="0"
               alt="Average monthly sunhours in Kyoto, Japan"
               src="https://weather-and-climate.com/uploads/average-sunshine-japan-kyoto.png"
             />
             <h2>Monthly precipitation</h2>
             <img
-              border="0"
               alt="Average precipitation (rain/snow) in Kyoto, Japan"
               src="https://weather-and-climate.com/uploads/average-rainfall-japan-kyoto.png"
             />
           </div>
-          <div class="kyoto-temperature-image">
+          <div class="destination-temperature-image">
             <img src="images/kyoto/kyoto-weather-image.jpg" alt="" />
           </div>
         </div>
@@ -150,81 +131,61 @@
             <img src="images/transportation/Shinkansen.jpg" alt="" />
             <h2>JR Tokaido Shinkansen</h2>
             <p class="transportation-info">
-              Direct, 140-160 minutes, about 14,000 yen one way, multiple
-              connections per hour
+              Direct, 140-160 minutes, about 14,000 yen one way, multiple connections per hour
             </p>
             <p>
-              Tokyo and Kyoto are connected with each other by the JR Tokaido
-              Shinkansen. Nozomi trains require about 140 minutes to reach Kyoto
-              from Tokyo, Hikari trains about 160 minutes and Kodama trains
-              about four hours. The regular one way fare from Tokyo to Kyoto is
-              13,320 yen for a non-reserved seat or around 14,000 yen for a
-              reserved seat. A 7-day Japan Rail Pass costs about the same as
-              regular round trip tickets. The Japan Rail Pass is valid on Hikari
-              and Kodama trains, but not on Nozomi trains.
+              Tokyo and Kyoto are connected with each other by the JR Tokaido Shinkansen. Nozomi trains require about
+              140 minutes to reach Kyoto from Tokyo, Hikari trains about 160 minutes and Kodama trains about four hours.
+              The regular one way fare from Tokyo to Kyoto is 13,320 yen for a non-reserved seat or around 14,000 yen
+              for a reserved seat. A 7-day Japan Rail Pass costs about the same as regular round trip tickets. The Japan
+              Rail Pass is valid on Hikari and Kodama trains, but not on Nozomi trains.
             </p>
           </div>
           <div class="transportation-2">
             <img src="images/transportation/highway-bus.jpg" alt="" />
             <h2>Highway bus</h2>
             <p class="transportation-info">
-              Direct, 7-8 hours, 3,500-10,000 yen one way, multiple daytime and
-              overnight connections per day
+              Direct, 7-8 hours, 3,500-10,000 yen one way, multiple daytime and overnight connections per day
             </p>
             <p>
-              The one way trip from Tokyo to Kyoto by highway bus takes about
-              7-8 hours. There are daytime and overnight buses. Fierce
-              competition on the Tokyo-Kyoto-Osaka route has produced a wide
-              variety of comfort levels (from discount to super premium buses)
-              and an abundance of low priced offers. Typical one way fares for
-              discount buses, such as Willer Express, start from around 3500
-              yen; while premium buses charge up to 10,000 yen. If used
-              effectively, the Japan Bus Pass can reduce the cost for the bus
-              trip to around 3000 yen. Online reservations can be made through
-              Willer and Japan Bus Online.
+              The one way trip from Tokyo to Kyoto by highway bus takes about 7-8 hours. There are daytime and overnight
+              buses. Fierce competition on the Tokyo-Kyoto-Osaka route has produced a wide variety of comfort levels
+              (from discount to super premium buses) and an abundance of low priced offers. Typical one way fares for
+              discount buses, such as Willer Express, start from around 3500 yen; while premium buses charge up to
+              10,000 yen. If used effectively, the Japan Bus Pass can reduce the cost for the bus trip to around 3000
+              yen. Online reservations can be made through Willer and Japan Bus Online.
             </p>
           </div>
           <div class="transportation-3">
             <img src="images/transportation/airplane.jpg" alt="" />
             <h2>Airplane</h2>
             <p class="transportation-info">
-              2-3 transfers, 3-4 hours, 9,000-23,000 yen one way, multiple
-              flights per day
+              2-3 transfers, 3-4 hours, 9,000-23,000 yen one way, multiple flights per day
             </p>
             <p>
-              The closest airport to Kyoto is Osaka's Itami Airport, about one
-              hour by bus from central Kyoto (more details). Most flights
-              connect Itami Airport with Tokyo's Haneda Airport, with just a few
-              serving Tokyo's Narita Airport. Flight duration is one hour. The
-              regular one way fare is around 23,000 yen, but discount tickets
-              are usually available for around 9,000 to 16,000 yen.
+              The closest airport to Kyoto is Osaka's Itami Airport, about one hour by bus from central Kyoto (more
+              details). Most flights connect Itami Airport with Tokyo's Haneda Airport, with just a few serving Tokyo's
+              Narita Airport. Flight duration is one hour. The regular one way fare is around 23,000 yen, but discount
+              tickets are usually available for around 9,000 to 16,000 yen.
             </p>
           </div>
           <div class="transportation-4">
             <img src="images/transportation/driving.jpg" alt="" />
             <h2>Driving</h2>
-            <p class="transportation-info">
-              5-6 hours without breaks, around 10,000 yen one way in expressway
-              tolls
-            </p>
+            <p class="transportation-info">5-6 hours without breaks, around 10,000 yen one way in expressway tolls</p>
             <p>
-              Driving between Tokyo and Kyoto via the Tomei and Meishin
-              Expressways takes about five to six hours without breaks and
-              traffic jams. The expressway toll is around 10,000 yen one way.
+              Driving between Tokyo and Kyoto via the Tomei and Meishin Expressways takes about five to six hours
+              without breaks and traffic jams. The expressway toll is around 10,000 yen one way.
             </p>
           </div>
           <div class="transportation-5">
             <img src="images/transportation/local-train.jpg" alt="" />
             <h2>Local trains</h2>
-            <p class="transportation-info">
-              4 transfers, 9 hours, 2370-8210 yen one way
-            </p>
+            <p class="transportation-info">4 transfers, 9 hours, 2370-8210 yen one way</p>
             <p>
-              By local trains, the one way trip from Tokyo to Kyoto takes about
-              nine hours and typically involves about four transfers of trains.
-              The regular fare is a relatively expensive 8360 yen, however, with
-              a Seishun 18 Kippu you could theoretically do the trip for as
-              little as 2410 yen.
+              By local trains, the one way trip from Tokyo to Kyoto takes about nine hours and typically involves about
+              four transfers of trains. The regular fare is a relatively expensive 8360 yen, however, with a Seishun 18
+              Kippu you could theoretically do the trip for as little as 2410 yen.
             </p>
           </div>
         </div>
@@ -236,75 +197,53 @@
           <div class="transportation-1">
             <img src="images/transportation/Shinkansen.jpg" alt="" />
             <h2>JR Tokaido Shinkansen</h2>
-            <p class="transportation-info">
-              Direct, 15 minutes, 1440 yen, frequent departures
-            </p>
+            <p class="transportation-info">Direct, 15 minutes, 1440 yen, frequent departures</p>
             <p>
-              The JR Tokaido Shinkansen requires 15 minutes and costs 1440 yen
-              for an unreserved seat between not so centrally located Shin-Osaka
-              Station and Kyoto Station. A reserved seat costs about twice as
-              much. The Japan Rail Pass covers Hikari and Kodama trains between
-              Shin-Osaka and Kyoto, but it does not cover Nozomi trains.
+              The JR Tokaido Shinkansen requires 15 minutes and costs 1440 yen for an unreserved seat between not so
+              centrally located Shin-Osaka Station and Kyoto Station. A reserved seat costs about twice as much. The
+              Japan Rail Pass covers Hikari and Kodama trains between Shin-Osaka and Kyoto, but it does not cover Nozomi
+              trains.
             </p>
           </div>
           <div class="transportation-2">
-            <img
-              src="images/transportation/jr-special-rapid-train.jpg"
-              alt=""
-            />
+            <img src="images/transportation/jr-special-rapid-train.jpg" alt="" />
             <h2>JR special rapid train</h2>
-            <p class="transportation-info">
-              Direct, 30 minutes, 570 yen, frequent departures
-            </p>
+            <p class="transportation-info">Direct, 30 minutes, 570 yen, frequent departures</p>
             <p>
-              "Special rapid" trains on the JR Kyoto Line require about 30
-              minutes and cost 570 yen between centrally located Osaka Station
-              and Kyoto Station. Stopping at a few more stations along the way,
-              "rapid" trains require about 40 minutes and "local" trains about
-              45 minutes, but they are often less crowded. The one way fare is
-              also 570 yen. All trains are covered by the Japan Rail Pass.
+              "Special rapid" trains on the JR Kyoto Line require about 30 minutes and cost 570 yen between centrally
+              located Osaka Station and Kyoto Station. Stopping at a few more stations along the way, "rapid" trains
+              require about 40 minutes and "local" trains about 45 minutes, but they are often less crowded. The one way
+              fare is also 570 yen. All trains are covered by the Japan Rail Pass.
             </p>
           </div>
           <div class="transportation-3">
-            <img
-              src="images/transportation/jr-limited-express-train.jpg"
-              alt=""
-            />
+            <img src="images/transportation/jr-limited-express-train.jpg" alt="" />
             <h2>JR limited express train</h2>
-            <p class="transportation-info">
-              Direct, 30 minutes, 1230-1960 yen, about two departures per hour
-            </p>
+            <p class="transportation-info">Direct, 30 minutes, 1230-1960 yen, about two departures per hour</p>
             <p>
-              Limited express trains are more expensive but not much faster than
-              special rapid trains; however, they tend to be less crowded. As a
-              result, they can be a comfortable alternative to special rapid
-              trains for Japan Rail Pass holders.
+              Limited express trains are more expensive but not much faster than special rapid trains; however, they
+              tend to be less crowded. As a result, they can be a comfortable alternative to special rapid trains for
+              Japan Rail Pass holders.
             </p>
           </div>
           <div class="transportation-4">
             <img src="images/transportation/hankyu-railway.jpg" alt="" />
             <h2>Hankyu Railway</h2>
-            <p class="transportation-info">
-              Direct, 40 minutes, 400 yen, frequent departures
-            </p>
+            <p class="transportation-info">Direct, 40 minutes, 400 yen, frequent departures</p>
             <p>
-              Limited express trains on the Hankyu Kyoto Line get you from
-              Osaka-Umeda Station (next to JR Osaka Station) to Karasuma and
-              Kyoto-Kawaramachi Stations in central Kyoto in roughly 40 minutes
-              and for 400 yen. They are not covered by the Japan Rail Pass.
+              Limited express trains on the Hankyu Kyoto Line get you from Osaka-Umeda Station (next to JR Osaka
+              Station) to Karasuma and Kyoto-Kawaramachi Stations in central Kyoto in roughly 40 minutes and for 400
+              yen. They are not covered by the Japan Rail Pass.
             </p>
           </div>
           <div class="transportation-5">
             <img src="images/transportation/keihan-railway.jpg" alt="" />
             <h2>Keihan Railway</h2>
-            <p class="transportation-info">
-              Direct, 50 minutes, 420 yen, frequent departures
-            </p>
+            <p class="transportation-info">Direct, 50 minutes, 420 yen, frequent departures</p>
             <p>
-              Limited express trains on the Keihan Main Line get you from
-              Yodoyabashi Station in central Osaka to Sanjo Station in central
-              Kyoto in roughly 50 minutes and for 420 yen. They are not covered
-              by the Japan Rail Pass.
+              Limited express trains on the Keihan Main Line get you from Yodoyabashi Station in central Osaka to Sanjo
+              Station in central Kyoto in roughly 50 minutes and for 420 yen. They are not covered by the Japan Rail
+              Pass.
             </p>
           </div>
         </div>
@@ -312,40 +251,31 @@
         <div class="section-title">
           <h1>Getting around Kyoto</h1>
         </div>
-        <div class="getting-around-kyoto">
-          <div class="getting-around-kyoto-text">
+        <div class="getting-around-destination">
+          <div class="getting-around-destination-text">
             <p>
-              Kyoto features a rectangular street system. Unlike the streets in
-              other Japanese cities, most of central Kyoto's streets are named.
-              The main streets running from east to west are numbered in
-              ascending order from north to south, and are about 500 meters
-              apart from each other, with several smaller streets in between.
-              For example, Shijo means "4th Avenue" and Nijo means "2nd Avenue".
-              Kyoto's city center with the highest concentration of dining,
-              shopping and entertainment opportunities, is located around the
-              junction of Shijo-dori (4th Avenue) and Kawaramachi-dori
-              (Kawaramachi Street). JR Kyoto Station is located south of the
-              city center at the height of Hachijo-dori (8th Avenue). The most
-              prominent north-south street is Karasuma-dori (Karasuma Street),
-              which runs from Kyoto Station via the city center to Kyoto
-              Imperial Palace. Another north-south axis is Kamo River, about one
-              kilometer east of Karasuma-dori. Kyoto has a rather inadequately
-              developed public transportation system for a city of its size,
-              consisting of two subway lines, a dense bus network and several
-              railway companies, whose lines are not always conveniently
-              connected with each other. Taxis and bicycles can be worthwhile
-              alternatives. The recommended way to get around Kyoto by public
-              transportation is to use an IC card, such as Icoca, which is
-              accepted on virtually all trains and buses in the city.
-              Alternatively, travelers intending to use buses or subways
-              extensively, should consider one of the 1-day passes available
+              Kyoto features a rectangular street system. Unlike the streets in other Japanese cities, most of central
+              Kyoto's streets are named. The main streets running from east to west are numbered in ascending order from
+              north to south, and are about 500 meters apart from each other, with several smaller streets in between.
+              For example, Shijo means "4th Avenue" and Nijo means "2nd Avenue". Kyoto's city center with the highest
+              concentration of dining, shopping and entertainment opportunities, is located around the junction of
+              Shijo-dori (4th Avenue) and Kawaramachi-dori (Kawaramachi Street). JR Kyoto Station is located south of
+              the city center at the height of Hachijo-dori (8th Avenue). The most prominent north-south street is
+              Karasuma-dori (Karasuma Street), which runs from Kyoto Station via the city center to Kyoto Imperial
+              Palace. Another north-south axis is Kamo River, about one kilometer east of Karasuma-dori. Kyoto has a
+              rather inadequately developed public transportation system for a city of its size, consisting of two
+              subway lines, a dense bus network and several railway companies, whose lines are not always conveniently
+              connected with each other. Taxis and bicycles can be worthwhile alternatives. The recommended way to get
+              around Kyoto by public transportation is to use an IC card, such as Icoca, which is accepted on virtually
+              all trains and buses in the city. Alternatively, travelers intending to use buses or subways extensively,
+              should consider one of the 1-day passes available
             </p>
           </div>
-          <div class="getting-around-kyoto-image">
+          <div class="getting-around-destination-image">
             <img src="images/kyoto/getting-around-kyoto-image.jpg" alt="" />
           </div>
         </div>
-        <div class="getting-around-kyoto-video">
+        <div class="getting-around-destination-video">
           <iframe
             width="1280px"
             height="720px"
@@ -359,43 +289,35 @@
         <!-- ----------TOP ATTRACTIONS---------- -->
         <div class="title" id="top-attractions"><h1>Top Attractions</h1></div>
         <div class="top-attractions-part-1">
-          <div class="kyoto-attraction-1">
+          <div class="destination-attraction-1">
             <img src="images/kyoto/kyoto-attraction-1.jpg" alt="" />
             <div class="overlay">
               <div class="overlay-text">
                 <h2>Fushimi Inari-taisha Shrine</h2>
                 <p>
-                  Fushimi Inari-taisha (伏見稲荷大社) is the head shrine of the
-                  kami Inari, located in Fushimi-ku, Kyoto, Kyoto Prefecture,
-                  Japan. The shrine sits at the base of a mountain also named
-                  Inari which is 233 metres (764 ft) above sea level, and
-                  includes trails up the mountain to many smaller shrines which
-                  span 4 kilometres (2.5 mi) and take approximately 2 hours to
-                  walk up. Inari was originally and remains primarily the kami
-                  of rice and agriculture, but merchants and manufacturers also
-                  worship Inari as the patron of business. Each of Fushimi
-                  Inari-taisha's roughly thousand torii was donated by a
-                  Japanese business. Owing to the popularity of Inari's division
-                  and re-enshrinement, this shrine is said to have as many as
-                  32,000 sub-shrines (分社 bunsha) throughout Japan.
+                  Fushimi Inari-taisha (伏見稲荷大社) is the head shrine of the kami Inari, located in Fushimi-ku,
+                  Kyoto, Kyoto Prefecture, Japan. The shrine sits at the base of a mountain also named Inari which is
+                  233 metres (764 ft) above sea level, and includes trails up the mountain to many smaller shrines which
+                  span 4 kilometres (2.5 mi) and take approximately 2 hours to walk up. Inari was originally and remains
+                  primarily the kami of rice and agriculture, but merchants and manufacturers also worship Inari as the
+                  patron of business. Each of Fushimi Inari-taisha's roughly thousand torii was donated by a Japanese
+                  business. Owing to the popularity of Inari's division and re-enshrinement, this shrine is said to have
+                  as many as 32,000 sub-shrines (分社 bunsha) throughout Japan.
                 </p>
               </div>
             </div>
           </div>
-          <div class="kyoto-attraction-2">
+          <div class="destination-attraction-2">
             <img src="images/kyoto/kyoto-attraction-2.jpg" alt="" />
             <div class="overlay">
               <div class="overlay-text">
                 <h2>Kinkakuji Temple</h2>
                 <p>
-                  Kinkaku-ji (金閣寺, literally "Temple of the Golden
-                  Pavilion"), officially named Rokuon-ji (鹿苑寺, literally
-                  "Deer Garden Temple"), is a Zen Buddhist temple in Kyoto,
-                  Japan. It is one of the most popular buildings in Kyoto,
-                  attracting many visitors annually. It is designated as a
-                  National Special Historic Site, a National Special Landscape
-                  and is one of 17 locations making up the Historic Monuments of
-                  Ancient Kyoto which are World Heritage Sites.
+                  Kinkaku-ji (金閣寺, literally "Temple of the Golden Pavilion"), officially named Rokuon-ji (鹿苑寺,
+                  literally "Deer Garden Temple"), is a Zen Buddhist temple in Kyoto, Japan. It is one of the most
+                  popular buildings in Kyoto, attracting many visitors annually. It is designated as a National Special
+                  Historic Site, a National Special Landscape and is one of 17 locations making up the Historic
+                  Monuments of Ancient Kyoto which are World Heritage Sites.
                 </p>
               </div>
             </div>
@@ -403,51 +325,44 @@
         </div>
 
         <div class="top-attractions-part-2">
-          <div class="kyoto-attraction-3">
+          <div class="destination-attraction-3">
             <img src="images/kyoto/kyoto-attraction-3.jpg" alt="" />
             <div class="overlay">
               <div class="overlay-text">
                 <h2>Sanjusangendo Temple</h2>
                 <p>
-                  Sanjūsangen-dō is most famous for its massively long hondō
-                  (main hall) dating from 1266 (Kamakura period) and designated
-                  a National Treasure of Japan, and the collection of sculptures
-                  it houses, including 1001 standing Thousand-armed Kannon, 28
-                  standing attendants, a statue of Fūjin and a statue of Raijin,
-                  and the principal image of the temple, a big seated statue of
-                  Thousand-armed Kannon, all of them designated National
-                  Treasures in the category of sculptures, most of them dating
-                  to the Heian to Kamakura periods.
+                  Sanjūsangen-dō is most famous for its massively long hondō (main hall) dating from 1266 (Kamakura
+                  period) and designated a National Treasure of Japan, and the collection of sculptures it houses,
+                  including 1001 standing Thousand-armed Kannon, 28 standing attendants, a statue of Fūjin and a statue
+                  of Raijin, and the principal image of the temple, a big seated statue of Thousand-armed Kannon, all of
+                  them designated National Treasures in the category of sculptures, most of them dating to the Heian to
+                  Kamakura periods.
                 </p>
               </div>
             </div>
           </div>
-          <div class="kyoto-attraction-4">
+          <div class="destination-attraction-4">
             <img src="images/kyoto/kyoto-attraction-4.jpg" alt="" />
             <div class="overlay">
               <div class="overlay-text">
                 <h2>Arashiyama</h2>
                 <p>
-                  Arashiyama (嵐山) is a pleasant, touristy district in the
-                  western outskirts of Kyoto. The area has been a popular
-                  destination since the Heian Period (794-1185), when nobles
-                  would enjoy its natural setting. Arashiyama is particularly
-                  popular during the cherry blossom and fall color seasons.
+                  Arashiyama (嵐山) is a pleasant, touristy district in the western outskirts of Kyoto. The area has
+                  been a popular destination since the Heian Period (794-1185), when nobles would enjoy its natural
+                  setting. Arashiyama is particularly popular during the cherry blossom and fall color seasons.
                 </p>
               </div>
             </div>
           </div>
-          <div class="kyoto-attraction-5">
+          <div class="destination-attraction-5">
             <img src="images/kyoto/kyoto-attraction-5.jpg" alt="" />
             <div class="overlay">
               <div class="overlay-text">
                 <h2>Monkey Park Iwatayama</h2>
                 <p>
-                  Iwatayama Monkey Park (Japanese: 嵐山モンキーパーク,
-                  Arashiyama Monkī Pāku) is a commercial park located in
-                  Arashiyama in Kyoto, Japan. The park is on Mt Arashiyama, on
-                  the opposite side of the Ōi River as the train station. It is
-                  inhabited by a troop of over 120 Japanese macaque monkeys. The
+                  Iwatayama Monkey Park (Japanese: 嵐山モンキーパーク, Arashiyama Monkī Pāku) is a commercial park
+                  located in Arashiyama in Kyoto, Japan. The park is on Mt Arashiyama, on the opposite side of the Ōi
+                  River as the train station. It is inhabited by a troop of over 120 Japanese macaque monkeys. The
                   animals are wild but can be fed food purchased at the site.
                 </p>
               </div>
@@ -522,24 +437,16 @@
             <h2>History of Japan</h2>
             <ul>
               <li class="footer-list-titles">
-                <a href="history-of-japan.html#classical-japan"
-                  >Classical Japan</a
-                >
+                <a href="history-of-japan.html#classical-japan">Classical Japan</a>
                 <ul class="footer-list-links">
                   <li>
-                    <a href="history-of-japan.html#asuka-period"
-                      >Asuka period (538-710)</a
-                    >
+                    <a href="history-of-japan.html#asuka-period">Asuka period (538-710)</a>
                   </li>
                   <li>
-                    <a href="history-of-japan.html#nara-period"
-                      >Nara period (710–794)</a
-                    >
+                    <a href="history-of-japan.html#nara-period">Nara period (710–794)</a>
                   </li>
                   <li>
-                    <a href="history-of-japan.html#heian-period"
-                      >Heian period (794–1185)</a
-                    >
+                    <a href="history-of-japan.html#heian-period">Heian period (794–1185)</a>
                   </li>
                 </ul>
               </li>
@@ -547,31 +454,21 @@
                 <a href="history-of-japan.html#feudal-japan">Feudal Japan</a>
                 <ul class="footer-list-links">
                   <li>
-                    <a href="history-of-japan.html#kamakura-period"
-                      >Kamakura period (1185–1333)</a
-                    >
+                    <a href="history-of-japan.html#kamakura-period">Kamakura period (1185–1333)</a>
                   </li>
                   <li>
-                    <a href="history-of-japan.html#muromachi-period"
-                      >Muromachi period (1333–1568)</a
-                    >
+                    <a href="history-of-japan.html#muromachi-period">Muromachi period (1333–1568)</a>
                   </li>
                   <li>
-                    <a href="history-of-japan.html#azuchi-momoyama-period"
-                      >Azuchi–Momoyama period (1568–1600)</a
-                    >
+                    <a href="history-of-japan.html#azuchi-momoyama-period">Azuchi–Momoyama period (1568–1600)</a>
                   </li>
                 </ul>
               </li>
               <li class="footer-list-titles">
-                <a href="history-of-japan.html#early-modern-japan"
-                  >Early Modern Japan</a
-                >
+                <a href="history-of-japan.html#early-modern-japan">Early Modern Japan</a>
                 <ul class="footer-list-links">
                   <li>
-                    <a href="history-of-japan.html#edo-period"
-                      >Edo period (1600–1868)</a
-                    >
+                    <a href="history-of-japan.html#edo-period">Edo period (1600–1868)</a>
                   </li>
                 </ul>
               </li>
@@ -579,29 +476,19 @@
                 <a href="history-of-japan.html#modern-japan">Modern Japan</a>
                 <ul class="footer-list-links">
                   <li>
-                    <a href="history-of-japan.html#meiji-period"
-                      >Meiji period (1868–1912)</a
-                    >
+                    <a href="history-of-japan.html#meiji-period">Meiji period (1868–1912)</a>
                   </li>
                   <li>
-                    <a href="history-of-japan.html#taisho-period"
-                      >Taishō period (1912–1926)</a
-                    >
+                    <a href="history-of-japan.html#taisho-period">Taishō period (1912–1926)</a>
                   </li>
                   <li>
-                    <a href="history-of-japan.html#showa-period"
-                      >Shōwa period (1926–1989)</a
-                    >
+                    <a href="history-of-japan.html#showa-period">Shōwa period (1926–1989)</a>
                   </li>
                   <li>
-                    <a href="history-of-japan.html#heisei-period"
-                      >Heisei period (1989–2019)</a
-                    >
+                    <a href="history-of-japan.html#heisei-period">Heisei period (1989–2019)</a>
                   </li>
                   <li>
-                    <a href="history-of-japan.html#reiwa-period"
-                      >Reiwa period (2019–present)</a
-                    >
+                    <a href="history-of-japan.html#reiwa-period">Reiwa period (2019–present)</a>
                   </li>
                 </ul>
               </li>
@@ -619,25 +506,16 @@
               <a href="#"><img src="images/Facebook.svg" alt="" /> Facebook</a>
             </div>
             <div>
-              <a href="#"
-                ><img src="images/Instagram.svg" alt="" /> Instagram</a
-              >
+              <a href="#"><img src="images/Instagram.svg" alt="" /> Instagram</a>
             </div>
             <div>
               <a href="#"><img src="images/Twitter.svg" alt="" /> Twitter</a>
             </div>
           </div>
           <div class="contact-info">
-            <div>
-              <img src="images/placeholder.png" alt="" /> 213, Street Name,
-              Greece
-            </div>
-            <div>
-              <img src="images/telephone-3.png" alt="" /> +30 2101234567
-            </div>
-            <div>
-              <img src="images/mail.png" alt="" /> contact@travelinjapan.eu
-            </div>
+            <div><img src="images/placeholder.png" alt="" /> 213, Street Name, Greece</div>
+            <div><img src="images/telephone-3.png" alt="" /> +30 2101234567</div>
+            <div><img src="images/mail.png" alt="" /> contact@travelinjapan.eu</div>
           </div>
         </div>
       </div>

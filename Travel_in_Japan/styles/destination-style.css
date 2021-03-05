@@ -11,13 +11,13 @@
 
 body {
   margin: 0;
-  font-family: "Poppins", Arial, Helvetica, sans-serif;
-  background: rgb(36, 36, 36) url("../images/background.png");
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  background: rgb(36, 36, 36) url('../images/background.png');
   font-size: 1.1em;
   line-height: 1.5;
   background-repeat: repeat;
-  background-size: 30%;
-  background-position: center;
+  background-size: 50%;
+  overflow-x: hidden;
 }
 
 main img {
@@ -29,7 +29,7 @@ h1,
 h2,
 h3 {
   padding: 1em 0;
-  font-family: "Langar", cursive;
+  font-family: 'Langar', cursive;
 }
 
 img {
@@ -93,7 +93,7 @@ nav img {
 }
 
 nav:after {
-  content: "";
+  content: '';
   clear: both;
   display: table;
 }
@@ -224,7 +224,7 @@ input {
     display: none;
   }
 
-  [id^="btn"]:checked + ul {
+  [id^='btn']:checked + ul {
     display: block;
   }
 
@@ -342,11 +342,23 @@ footer a:hover {
 .gallery {
   width: 100%;
   height: 95vh;
-  background-image: url(../images/kyoto/kyoto-banner.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
+}
+
+.tokyo-gallery {
+  background-image: url(../images/tokyo/tokyo-banner.jpg);
+}
+.kyoto-gallery {
+  background-image: url(../images/kyoto/kyoto-banner.jpg);
+}
+.osaka-gallery {
+  background-image: url(../images/osaka/osaka-banner.jpg);
+}
+.nara-gallery {
+  background-image: url(../images/nara/nara-banner.jpg);
 }
 
 /* ----------ALL TEXT---------- */
@@ -356,6 +368,7 @@ footer a:hover {
   max-width: 1600px;
   margin: 0 auto;
   margin-top: 2em;
+  overflow-x: hidden;
 }
 
 .text-background img {
@@ -391,26 +404,26 @@ footer a:hover {
 
 /* ----------TOKYO TEMPERATURE---------- */
 
-.kyoto-temperature {
+.destination-temperature {
   display: grid;
   grid-template-columns: repeat(2, auto);
   grid-template-rows: auto;
 }
 
-.kyoto-temperature img {
+.destination-temperature img {
   border: 0;
 }
 
-.kyoto-temperature-array {
+.destination-temperature-array {
   grid-area: 1 / 1 / 2 / 2;
   margin: 0 auto;
 }
-.kyoto-temperature-image {
+.destination-temperature-image {
   grid-area: 1 / 2 / 2 / 3;
   align-self: end;
   justify-self: center;
 }
-/* ----------GETTING TO KYOTO---------- */
+/* ----------NARITA INTERNATIONAL AIRPOT---------- */
 
 .from {
   display: grid;
@@ -456,6 +469,13 @@ footer a:hover {
   height: fit-content;
 }
 
+.transportation-6 {
+  grid-area: 3 / 3 / 4 / 4;
+  padding: 2em;
+  padding-top: 0em;
+  height: fit-content;
+}
+
 .transportation-info {
   color: gray;
   font-size: 0.8em;
@@ -463,27 +483,27 @@ footer a:hover {
 
 /* ----------GETTING AROUND TOKYO---------- */
 
-.getting-around-kyoto {
+.getting-around-destination {
   display: grid;
   grid-template-columns: repeat(2, auto);
   grid-template-rows: auto;
 }
 
-.getting-around-kyoto img {
+.getting-around-destination img {
   height: auto;
   width: 100%;
 }
 
-.getting-around-kyoto-text {
+.getting-around-destination-text {
   grid-area: 1 / 1 / 2 / 2;
   padding: 2em;
 }
 
-.getting-around-kyoto-image {
+.getting-around-destination-image {
   grid-area: 1 / 2 / 2 / 3;
 }
 
-.getting-around-kyoto-video {
+.getting-around-destination-video {
   width: auto;
   max-width: 1600px;
   margin: 0 auto;
@@ -501,13 +521,13 @@ footer a:hover {
   max-width: 1600px;
 }
 
-.kyoto-attraction-1 {
+.destination-attraction-1 {
   grid-area: 1 / 1 / 2 / 2;
   margin: 0 auto;
   position: relative;
 }
 
-.kyoto-attraction-2 {
+.destination-attraction-2 {
   grid-area: 1 / 2 / 2 / 3;
   margin: 0 auto;
   position: relative;
@@ -522,17 +542,17 @@ footer a:hover {
   padding-bottom: 2.5em;
 }
 
-.kyoto-attraction-3 {
+.destination-attraction-3 {
   grid-area: 1 / 1 / 2 / 2;
   margin: 0 auto;
   position: relative;
 }
-.kyoto-attraction-4 {
+.destination-attraction-4 {
   grid-area: 1 / 2 / 2 / 3;
   margin: 0 auto;
   position: relative;
 }
-.kyoto-attraction-5 {
+.destination-attraction-5 {
   grid-area: 1 / 3 / 2 / 4;
   margin: 0 auto;
   position: relative;
@@ -550,27 +570,27 @@ footer a:hover {
   transition: 0.5s ease;
 }
 
-.kyoto-attraction-1:hover .overlay {
+.destination-attraction-1:hover .overlay {
   bottom: 0;
   height: 100%;
 }
 
-.kyoto-attraction-2:hover .overlay {
+.destination-attraction-2:hover .overlay {
   bottom: 0;
   height: 100%;
 }
 
-.kyoto-attraction-3:hover .overlay {
+.destination-attraction-3:hover .overlay {
   bottom: 0;
   height: 100%;
 }
 
-.kyoto-attraction-4:hover .overlay {
+.destination-attraction-4:hover .overlay {
   bottom: 0;
   height: 100%;
 }
 
-.kyoto-attraction-5:hover .overlay {
+.destination-attraction-5:hover .overlay {
   bottom: 0;
   height: 100%;
 }
@@ -720,7 +740,7 @@ footer a:hover {
     max-width: 1024px;
   }
 
-  .kyoto-temperature-image {
+  .destination-temperature-image {
     width: 100%;
     align-self: center;
     margin-left: 0em;
@@ -734,16 +754,16 @@ footer a:hover {
     width: 100%;
   }
 
-  .getting-around-kyoto {
+  .getting-around-destination {
     grid-template-columns: auto;
     grid-template-rows: repeat(2, auto);
   }
 
-  .getting-around-kyoto-image {
+  .getting-around-destination-image {
     grid-area: 1 / 1 / 2 / 2;
   }
 
-  .getting-around-kyoto-text {
+  .getting-around-destination-text {
     grid-area: 2 / 1 / 3 / 2;
   }
 }
@@ -762,30 +782,43 @@ footer a:hover {
   }
 
   .gallery {
-    background-image: url(../images/kyoto/kyoto-banner-360.jpg);
     background-position: top center;
     background-size: 100%;
     width: 360px;
-    height: 250px;
+    height: 230px;
   }
+
+  .tokyo-gallery {
+    background-image: url(../images/tokyo/tokyo-banner-360.jpg);
+  }
+  .kyoto-gallery {
+    background-image: url(../images/kyoto/kyoto-banner-360.jpg);
+  }
+  .osaka-gallery {
+    background-image: url(../images/osaka/osaka-banner-360.jpg);
+  }
+  .nara-gallery {
+    background-image: url(../images/nara/nara-banner-360.jpg);
+  }
+
   .text-background {
     margin: 0;
   }
 
   /* ----------TOKYO TEMPERATURE---------- */
 
-  .kyoto-temperature {
+  .destination-temperature {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: repeat(2, auto);
     max-width: 360px;
   }
 
-  .kyoto-temperature-array {
+  .destination-temperature-array {
     grid-area: 1 / 1 / 2 / 2;
     margin: 0 auto;
   }
-  .kyoto-temperature-image {
+  .destination-temperature-image {
     grid-area: 2 / 1 / 3 / 2;
     margin-top: 1em;
     margin-left: 0;
@@ -841,29 +874,37 @@ footer a:hover {
     max-width: 360px;
   }
 
-  /* ----------GETTING AROUND KYOTO---------- */
+  .transportation-6 {
+    grid-area: 7 / 1 / 8 / 2;
+    padding: 2em;
+    padding-top: 0em;
+    height: fit-content;
+    max-width: 360px;
+  }
 
-  .getting-around-kyoto {
+  /* ----------GETTING AROUND TOKYO---------- */
+
+  .getting-around-destination {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: repeat(2, auto);
   }
 
-  .getting-around-kyoto img {
+  .getting-around-destination img {
     height: auto;
     width: 100%;
   }
 
-  .getting-around-kyoto-text {
+  .getting-around-destination-text {
     grid-area: 2 / 1 / 3 / 2;
     padding: 2em;
   }
 
-  .getting-around-kyoto-image {
+  .getting-around-destination-image {
     grid-area: 1 / 1 / 2 / 2;
   }
 
-  .getting-around-kyoto-video {
+  .getting-around-destination-video {
     width: auto;
     max-width: 360px;
     height: auto;

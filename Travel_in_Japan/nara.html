@@ -3,18 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/nara-style.css" />
+    <link rel="stylesheet" href="styles/destination-style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Langar&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Langar&display=swap" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
     <link rel="icon" href="images/logo.png" type="image/png" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
+    <script src="js/destination-animation.js" defer></script>
     <title>Nara</title>
   </head>
   <body>
@@ -47,17 +44,13 @@
               <input type="checkbox" id="btn-2" />
               <ul>
                 <li>
-                  <a href="history-of-japan.html#classical-japan"
-                    >Classical Japan</a
-                  >
+                  <a href="history-of-japan.html#classical-japan">Classical Japan</a>
                 </li>
                 <li>
                   <a href="history-of-japan.html#feudal-japan">Feudal Japan</a>
                 </li>
                 <li>
-                  <a href="history-of-japan.html#early-modern-japan"
-                    >Early Modern Japan</a
-                  >
+                  <a href="history-of-japan.html#early-modern-japan">Early Modern Japan</a>
                 </li>
                 <li>
                   <a href="history-of-japan.html#modern-japan">Modern Japan</a>
@@ -71,7 +64,7 @@
     </header>
     <main>
       <!-- ----------IMAGE GALLERY---------- -->
-      <div class="gallery"></div>
+      <div class="gallery nara-gallery"></div>
       <!-- ----------ALL TEXT---------- -->
       <div class="text-background">
         <!-- ----------TRAVEL ADVICE---------- -->
@@ -85,28 +78,23 @@
           </div>
           <div class="preview-text">
             <h2>
-              Filled with natural beauty, charming townscapes and National
-              Treasures, Nara is less than an hour by train from Kyoto and
-              Osaka, and easily accessible from Tokyo.
+              Filled with natural beauty, charming townscapes and National Treasures, Nara is less than an hour by train
+              from Kyoto and Osaka, and easily accessible from Tokyo.
             </h2>
             <p>
-              Japan's first permanent capital was established in the year 710 at
-              Heijo, the city now known as Nara (奈良). Before that date, the
-              capital used to be moved to a new location whenever a new emperor
-              ascended to the throne. However, as the influence and political
-              ambitions of the city's powerful Buddhist monasteries grew to
-              become a serious threat to the government, the capital was moved
-              away from Nara to Nagaoka in 784 and a few years later to Kyoto.
-              Nara is located less than one hour from Kyoto and Osaka. Due to
-              its past as the first permanent capital, the city remains full of
-              historic treasures, including some of Japan's oldest and largest
-              temples.
+              Japan's first permanent capital was established in the year 710 at Heijo, the city now known as Nara
+              (奈良). Before that date, the capital used to be moved to a new location whenever a new emperor ascended
+              to the throne. However, as the influence and political ambitions of the city's powerful Buddhist
+              monasteries grew to become a serious threat to the government, the capital was moved away from Nara to
+              Nagaoka in 784 and a few years later to Kyoto. Nara is located less than one hour from Kyoto and Osaka.
+              Due to its past as the first permanent capital, the city remains full of historic treasures, including
+              some of Japan's oldest and largest temples.
             </p>
           </div>
         </div>
         <!-- ----------KYOTO TEMPERATURE---------- -->
-        <div class="nara-temperature">
-          <div class="nara-temperature-array">
+        <div class="destination-temperature">
+          <div class="destination-temperature-array">
             <h2>Average Temperature by Month</h2>
             <img
               alt="Average min and max temperatures in Osaka, Japan"
@@ -123,7 +111,7 @@
               src="https://weather-and-climate.com/uploads/average-rainfall-japan-osaka.png"
             />
           </div>
-          <div class="nara-temperature-image">
+          <div class="destination-temperature-image">
             <img src="images/nara/nara-weather-image.jpg" alt="" />
           </div>
         </div>
@@ -142,32 +130,24 @@
           <div class="transportation-1">
             <img src="images/transportation/japan-railways.jpg" alt="" />
             <h2>Japan Railways (JR)</h2>
-            <p class="transportation-info">
-              Direct, 45 minutes, 720 yen one way, two connections per hour
-            </p>
+            <p class="transportation-info">Direct, 45 minutes, 720 yen one way, two connections per hour</p>
             <p>
-              Miyakoji rapid trains operate every 30 minutes between Kyoto
-              Station and JR Nara Station. The one way trip takes 45 minutes,
-              costs 720 yen and is covered by the Japan Rail Pass. For the same
-              fare, the trip could also be made by twice-hourly local trains in
-              75 minutes.
+              Miyakoji rapid trains operate every 30 minutes between Kyoto Station and JR Nara Station. The one way trip
+              takes 45 minutes, costs 720 yen and is covered by the Japan Rail Pass. For the same fare, the trip could
+              also be made by twice-hourly local trains in 75 minutes.
             </p>
           </div>
           <div class="transportation-2">
             <img src="images/transportation/kintetsu-railways.jpg" alt="" />
             <h2>Kintetsu Railways</h2>
             <p class="transportation-info">
-              0-1 transfers, 35-45 minutes, 640-1160 yen one way, multiple
-              connections per hour
+              0-1 transfers, 35-45 minutes, 640-1160 yen one way, multiple connections per hour
             </p>
             <p>
-              Twice-hourly limited express trains take about 35 minutes and cost
-              1160 yen for the one way trip from Kyoto Station to Kintetsu Nara
-              Station. Alternatively, there are hourly direct express trains
-              that take 45 minutes and cost 640 yen one way. There are
-              additional connections by express trains if you do not mind
-              transferring once at Yamato-Saidaiji Station. The Japan Rail Pass
-              is not valid on Kintetsu trains.
+              Twice-hourly limited express trains take about 35 minutes and cost 1160 yen for the one way trip from
+              Kyoto Station to Kintetsu Nara Station. Alternatively, there are hourly direct express trains that take 45
+              minutes and cost 640 yen one way. There are additional connections by express trains if you do not mind
+              transferring once at Yamato-Saidaiji Station. The Japan Rail Pass is not valid on Kintetsu trains.
             </p>
           </div>
         </div>
@@ -180,31 +160,23 @@
             <img src="images/transportation/japan-railways.jpg" alt="" />
             <h2>Japan Railways (JR)</h2>
             <p class="transportation-info">
-              Direct, 30 minutes, 470 yen one way from Tennoji, multiple trains
-              per hour
+              Direct, 30 minutes, 470 yen one way from Tennoji, multiple trains per hour
             </p>
             <p>
-              Multiple Yamatoji rapid trains operate every hour between Osaka
-              (JR Osaka Station) and Nara (JR Nara Station). The one way trip
-              takes 45 minutes and costs 810 yen. The train also stops at
-              Osaka's Tennoji Station (30 minutes, 470 yen one way). The Japan
-              Rail Pass fully covers the trip.
+              Multiple Yamatoji rapid trains operate every hour between Osaka (JR Osaka Station) and Nara (JR Nara
+              Station). The one way trip takes 45 minutes and costs 810 yen. The train also stops at Osaka's Tennoji
+              Station (30 minutes, 470 yen one way). The Japan Rail Pass fully covers the trip.
             </p>
           </div>
           <div class="transportation-2">
             <img src="images/transportation/kintetsu-railways.jpg" alt="" />
             <h2>Kintetsu Railways</h2>
-            <p class="transportation-info">
-              Direct, 30-40 minutes, 570-1090 yen one way, multiple trains per
-              hour
-            </p>
+            <p class="transportation-info">Direct, 30-40 minutes, 570-1090 yen one way, multiple trains per hour</p>
             <p>
-              By limited express, the one way trip from Osaka-Namba Station to
-              Nara (Kintetsu Nara Station) takes about 30 minutes and costs 1090
-              yen. By express, it takes just a few minutes longer, but costs
-              only 570 yen. Trains also stop at Tsuruhashi Station on the JR
-              Osaka Loop Line. The Japan Rail Pass is not valid on Kintetsu
-              trains.
+              By limited express, the one way trip from Osaka-Namba Station to Nara (Kintetsu Nara Station) takes about
+              30 minutes and costs 1090 yen. By express, it takes just a few minutes longer, but costs only 570 yen.
+              Trains also stop at Tsuruhashi Station on the JR Osaka Loop Line. The Japan Rail Pass is not valid on
+              Kintetsu trains.
             </p>
           </div>
         </div>
@@ -212,27 +184,23 @@
         <div class="section-title">
           <h1>Getting around Nara</h1>
         </div>
-        <div class="getting-around-nara">
-          <div class="getting-around-nara-text">
+        <div class="getting-around-destination">
+          <div class="getting-around-destination-text">
             <p>
-              Nara is served by two railway companies, Kintetsu Railways and JR
-              West. The Kintetsu station is an underground station just a few
-              steps from Kofukuji and Nara Park, while the JR station is a 15-20
-              minute walk west of Kofukuji and the park. A network of buses,
-              operated by Nara Kotsu, connects the two stations with all sites
-              of interest. All major IC cards are accepted on the trains and
-              buses around Nara, including Suica and Icoca. Many of Nara's main
-              attractions are found in the centrally located Nara Park and can
-              be visited on foot. The great temples Toshodaiji, Yakushiji and
-              Horyuji, however, stand several kilometers outside of central Nara
-              and are best accessed by bus or train.
+              Nara is served by two railway companies, Kintetsu Railways and JR West. The Kintetsu station is an
+              underground station just a few steps from Kofukuji and Nara Park, while the JR station is a 15-20 minute
+              walk west of Kofukuji and the park. A network of buses, operated by Nara Kotsu, connects the two stations
+              with all sites of interest. All major IC cards are accepted on the trains and buses around Nara, including
+              Suica and Icoca. Many of Nara's main attractions are found in the centrally located Nara Park and can be
+              visited on foot. The great temples Toshodaiji, Yakushiji and Horyuji, however, stand several kilometers
+              outside of central Nara and are best accessed by bus or train.
             </p>
           </div>
-          <div class="getting-around-nara-image">
+          <div class="getting-around-destination-image">
             <img src="images/nara/getting-around-nara-image.jpg" alt="" />
           </div>
         </div>
-        <div class="getting-around-nara-video">
+        <div class="getting-around-destination-video">
           <iframe
             width="1280px"
             height="720px"
@@ -246,34 +214,29 @@
         <!-- ----------TOP ATTRACTIONS---------- -->
         <div class="title" id="top-attractions"><h1>Top Attractions</h1></div>
         <div class="top-attractions-part-1">
-          <div class="nara-attraction-1">
+          <div class="destination-attraction-1">
             <img src="images/nara/nara-attraction-1.jpg" alt="" />
             <div class="overlay">
               <div class="overlay-text">
                 <h2>Nara Park</h2>
                 <p>
-                  Nara Park (奈良公園, Nara Kōen) is a large park in central
-                  Nara. Established in 1880, it is the location of many of
-                  Nara's main attractions including Todaiji, Kasuga Taisha,
-                  Kofukuji and the Nara National Museum. It is also home to
-                  hundreds of freely roaming deer.
+                  Nara Park (奈良公園, Nara Kōen) is a large park in central Nara. Established in 1880, it is the
+                  location of many of Nara's main attractions including Todaiji, Kasuga Taisha, Kofukuji and the Nara
+                  National Museum. It is also home to hundreds of freely roaming deer.
                 </p>
               </div>
             </div>
           </div>
-          <div class="nara-attraction-2">
+          <div class="destination-attraction-2">
             <img src="images/nara/nara-attraction-2.jpg" alt="" />
             <div class="overlay">
               <div class="overlay-text">
                 <h2>Todai-ji Temple</h2>
                 <p>
-                  Todaiji (東大寺, Tōdaiji, "Great Eastern Temple") is one of
-                  Japan's most famous and historically significant temples and a
-                  landmark of Nara. The temple was constructed in 752 as the
-                  head temple of all provincial Buddhist temples of Japan and
-                  grew so powerful that the capital was moved from Nara to
-                  Nagaoka in 784 in order to lower the temple's influence on
-                  government affairs.
+                  Todaiji (東大寺, Tōdaiji, "Great Eastern Temple") is one of Japan's most famous and historically
+                  significant temples and a landmark of Nara. The temple was constructed in 752 as the head temple of
+                  all provincial Buddhist temples of Japan and grew so powerful that the capital was moved from Nara to
+                  Nagaoka in 784 in order to lower the temple's influence on government affairs.
                 </p>
               </div>
             </div>
@@ -281,48 +244,43 @@
         </div>
 
         <div class="top-attractions-part-2">
-          <div class="nara-attraction-3">
+          <div class="destination-attraction-3">
             <img src="images/nara/nara-attraction-3.jpg" alt="" />
             <div class="overlay">
               <div class="overlay-text">
                 <h2>Kasuga Taisha</h2>
                 <p>
-                  Kasuga Taisha (春日大社) is Nara's most celebrated shrine. It
-                  was established at the same time as the capital and is
-                  dedicated to the deity responsible for the protection of the
-                  city. Kasuga Taisha was also the tutelary shrine of the
-                  Fujiwara, Japan's most powerful family clan during most of the
-                  Nara and Heian Periods.
+                  Kasuga Taisha (春日大社) is Nara's most celebrated shrine. It was established at the same time as the
+                  capital and is dedicated to the deity responsible for the protection of the city. Kasuga Taisha was
+                  also the tutelary shrine of the Fujiwara, Japan's most powerful family clan during most of the Nara
+                  and Heian Periods.
                 </p>
               </div>
             </div>
           </div>
-          <div class="nara-attraction-4">
+          <div class="destination-attraction-4">
             <img src="images/nara/nara-attraction-4.jpg" alt="" />
             <div class="overlay">
               <div class="overlay-text">
                 <h2>Nara National Museum</h2>
                 <p>
-                  The Nara National Museum (奈良国立博物館, Nara Kokuritsu
-                  Hakubutsukan), located in Nara Park, is an art museum which
-                  primarily displays Japanese Buddhist art. Established in 1889,
-                  the museum retains its original building and is joined by a
-                  new wing that is connected to the original building by an
+                  The Nara National Museum (奈良国立博物館, Nara Kokuritsu Hakubutsukan), located in Nara Park, is an
+                  art museum which primarily displays Japanese Buddhist art. Established in 1889, the museum retains its
+                  original building and is joined by a new wing that is connected to the original building by an
                   underground passage.
                 </p>
               </div>
             </div>
           </div>
-          <div class="nara-attraction-5">
+          <div class="destination-attraction-5">
             <img src="images/nara/nara-attraction-5.jpg" alt="" />
             <div class="overlay">
               <div class="overlay-text">
                 <h2>Horyuji Temple</h2>
                 <p>
-                  Horyuji Temple (法隆寺, Hōryūji) was founded in 607 by Prince
-                  Shotoku, who is credited with the early promotion of Buddhism
-                  in Japan. Horyuji is one of the country's oldest temples and
-                  contains the world's oldest surviving wooden structures.
+                  Horyuji Temple (法隆寺, Hōryūji) was founded in 607 by Prince Shotoku, who is credited with the early
+                  promotion of Buddhism in Japan. Horyuji is one of the country's oldest temples and contains the
+                  world's oldest surviving wooden structures.
                 </p>
               </div>
             </div>
@@ -396,24 +354,16 @@
             <h2>History of Japan</h2>
             <ul>
               <li class="footer-list-titles">
-                <a href="history-of-japan.html#classical-japan"
-                  >Classical Japan</a
-                >
+                <a href="history-of-japan.html#classical-japan">Classical Japan</a>
                 <ul class="footer-list-links">
                   <li>
-                    <a href="history-of-japan.html#asuka-period"
-                      >Asuka period (538-710)</a
-                    >
+                    <a href="history-of-japan.html#asuka-period">Asuka period (538-710)</a>
                   </li>
                   <li>
-                    <a href="history-of-japan.html#nara-period"
-                      >Nara period (710–794)</a
-                    >
+                    <a href="history-of-japan.html#nara-period">Nara period (710–794)</a>
                   </li>
                   <li>
-                    <a href="history-of-japan.html#heian-period"
-                      >Heian period (794–1185)</a
-                    >
+                    <a href="history-of-japan.html#heian-period">Heian period (794–1185)</a>
                   </li>
                 </ul>
               </li>
@@ -421,31 +371,21 @@
                 <a href="history-of-japan.html#feudal-japan">Feudal Japan</a>
                 <ul class="footer-list-links">
                   <li>
-                    <a href="history-of-japan.html#kamakura-period"
-                      >Kamakura period (1185–1333)</a
-                    >
+                    <a href="history-of-japan.html#kamakura-period">Kamakura period (1185–1333)</a>
                   </li>
                   <li>
-                    <a href="history-of-japan.html#muromachi-period"
-                      >Muromachi period (1333–1568)</a
-                    >
+                    <a href="history-of-japan.html#muromachi-period">Muromachi period (1333–1568)</a>
                   </li>
                   <li>
-                    <a href="history-of-japan.html#azuchi-momoyama-period"
-                      >Azuchi–Momoyama period (1568–1600)</a
-                    >
+                    <a href="history-of-japan.html#azuchi-momoyama-period">Azuchi–Momoyama period (1568–1600)</a>
                   </li>
                 </ul>
               </li>
               <li class="footer-list-titles">
-                <a href="history-of-japan.html#early-modern-japan"
-                  >Early Modern Japan</a
-                >
+                <a href="history-of-japan.html#early-modern-japan">Early Modern Japan</a>
                 <ul class="footer-list-links">
                   <li>
-                    <a href="history-of-japan.html#edo-period"
-                      >Edo period (1600–1868)</a
-                    >
+                    <a href="history-of-japan.html#edo-period">Edo period (1600–1868)</a>
                   </li>
                 </ul>
               </li>
@@ -453,29 +393,19 @@
                 <a href="history-of-japan.html#modern-japan">Modern Japan</a>
                 <ul class="footer-list-links">
                   <li>
-                    <a href="history-of-japan.html#meiji-period"
-                      >Meiji period (1868–1912)</a
-                    >
+                    <a href="history-of-japan.html#meiji-period">Meiji period (1868–1912)</a>
                   </li>
                   <li>
-                    <a href="history-of-japan.html#taisho-period"
-                      >Taishō period (1912–1926)</a
-                    >
+                    <a href="history-of-japan.html#taisho-period">Taishō period (1912–1926)</a>
                   </li>
                   <li>
-                    <a href="history-of-japan.html#showa-period"
-                      >Shōwa period (1926–1989)</a
-                    >
+                    <a href="history-of-japan.html#showa-period">Shōwa period (1926–1989)</a>
                   </li>
                   <li>
-                    <a href="history-of-japan.html#heisei-period"
-                      >Heisei period (1989–2019)</a
-                    >
+                    <a href="history-of-japan.html#heisei-period">Heisei period (1989–2019)</a>
                   </li>
                   <li>
-                    <a href="history-of-japan.html#reiwa-period"
-                      >Reiwa period (2019–present)</a
-                    >
+                    <a href="history-of-japan.html#reiwa-period">Reiwa period (2019–present)</a>
                   </li>
                 </ul>
               </li>
@@ -493,25 +423,16 @@
               <a href="#"><img src="images/Facebook.svg" alt="" /> Facebook</a>
             </div>
             <div>
-              <a href="#"
-                ><img src="images/Instagram.svg" alt="" /> Instagram</a
-              >
+              <a href="#"><img src="images/Instagram.svg" alt="" /> Instagram</a>
             </div>
             <div>
               <a href="#"><img src="images/Twitter.svg" alt="" /> Twitter</a>
             </div>
           </div>
           <div class="contact-info">
-            <div>
-              <img src="images/placeholder.png" alt="" /> 213, Street Name,
-              Greece
-            </div>
-            <div>
-              <img src="images/telephone-3.png" alt="" /> +30 2101234567
-            </div>
-            <div>
-              <img src="images/mail.png" alt="" /> contact@travelinjapan.eu
-            </div>
+            <div><img src="images/placeholder.png" alt="" /> 213, Street Name, Greece</div>
+            <div><img src="images/telephone-3.png" alt="" /> +30 2101234567</div>
+            <div><img src="images/mail.png" alt="" /> contact@travelinjapan.eu</div>
           </div>
         </div>
       </div>

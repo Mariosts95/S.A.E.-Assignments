@@ -3,18 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/osaka-style.css" />
+    <link rel="stylesheet" href="styles/destination-style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Langar&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Langar&display=swap" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
     <link rel="icon" href="images/logo.png" type="image/png" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
+    <script src="js/destination-animation.js" defer></script>
     <title>Osaka</title>
   </head>
   <body>
@@ -47,17 +44,13 @@
               <input type="checkbox" id="btn-2" />
               <ul>
                 <li>
-                  <a href="history-of-japan.html#classical-japan"
-                    >Classical Japan</a
-                  >
+                  <a href="history-of-japan.html#classical-japan">Classical Japan</a>
                 </li>
                 <li>
                   <a href="history-of-japan.html#feudal-japan">Feudal Japan</a>
                 </li>
                 <li>
-                  <a href="history-of-japan.html#early-modern-japan"
-                    >Early Modern Japan</a
-                  >
+                  <a href="history-of-japan.html#early-modern-japan">Early Modern Japan</a>
                 </li>
                 <li>
                   <a href="history-of-japan.html#modern-japan">Modern Japan</a>
@@ -71,7 +64,7 @@
     </header>
     <main>
       <!-- ----------IMAGE GALLERY---------- -->
-      <div class="gallery"></div>
+      <div class="gallery osaka-gallery"></div>
       <!-- ----------ALL TEXT---------- -->
       <div class="text-background">
         <!-- ----------TRAVEL ADVICE---------- -->
@@ -84,56 +77,43 @@
             <img src="images/osaka/osaka-preview.jpg" alt="" />
           </div>
           <div class="preview-text">
-            <h2>
-              An electric culinary capital where food crawls fuel epic
-              sightseeing
-            </h2>
+            <h2>An electric culinary capital where food crawls fuel epic sightseeing</h2>
             <p>
-              Osaka (Japanese: 大阪市, Hepburn: Ōsaka-shi, pronounced
-              [oːsakaɕi]; commonly just 大阪, Ōsaka [oːsaka]) is a designated
-              city in the Kansai region of Honshu in Japan. It is the capital
-              city of Osaka Prefecture and the largest component of the
-              Keihanshin Metropolitan Area, the second-largest metropolitan area
-              in Japan and the 10th largest urban area in the world with more
-              than 19 million inhabitants. Osaka was traditionally considered
-              Japan's economic hub. By the Kofun period (300–538) it had
-              developed into an important regional port, and in the 7th and 8th
-              centuries, it served briefly as the imperial capital. Osaka
-              continued to flourish during the Edo period (1603–1867) and became
-              known as a center of Japanese culture. Following the Meiji
-              Restoration, Osaka greatly expanded in size and underwent rapid
-              industrialization. In 1889, Osaka was officially established as a
-              municipality. Osaka is a major financial center of Japan. It is
-              home to the Osaka Securities Exchange as well as the multinational
-              electronics corporations Panasonic and Sharp. Famous landmarks in
-              Osaka include Osaka Castle, Sumiyoshi Taisha Grand Shrine, and
-              Shitennō-ji, the oldest Buddhist temple in Japan.
+              Osaka (Japanese: 大阪市, Hepburn: Ōsaka-shi, pronounced [oːsakaɕi]; commonly just 大阪, Ōsaka [oːsaka]) is
+              a designated city in the Kansai region of Honshu in Japan. It is the capital city of Osaka Prefecture and
+              the largest component of the Keihanshin Metropolitan Area, the second-largest metropolitan area in Japan
+              and the 10th largest urban area in the world with more than 19 million inhabitants. Osaka was
+              traditionally considered Japan's economic hub. By the Kofun period (300–538) it had developed into an
+              important regional port, and in the 7th and 8th centuries, it served briefly as the imperial capital.
+              Osaka continued to flourish during the Edo period (1603–1867) and became known as a center of Japanese
+              culture. Following the Meiji Restoration, Osaka greatly expanded in size and underwent rapid
+              industrialization. In 1889, Osaka was officially established as a municipality. Osaka is a major financial
+              center of Japan. It is home to the Osaka Securities Exchange as well as the multinational electronics
+              corporations Panasonic and Sharp. Famous landmarks in Osaka include Osaka Castle, Sumiyoshi Taisha Grand
+              Shrine, and Shitennō-ji, the oldest Buddhist temple in Japan.
             </p>
           </div>
         </div>
         <!-- ----------KYOTO TEMPERATURE---------- -->
-        <div class="osaka-temperature">
-          <div class="osaka-temperature-array">
+        <div class="destination-temperature">
+          <div class="destination-temperature-array">
             <h2>Average Temperature by Month</h2>
             <img
-              border="0"
               alt="Average min and max temperatures in Osaka, Japan"
               src="https://weather-and-climate.com/uploads/average-temperature-japan-osaka.png"
             />
             <h2>Monthly hours of sunshine</h2>
             <img
-              border="0"
               alt="Average monthly sunhours in Osaka, Japan"
               src="https://weather-and-climate.com/uploads/average-sunshine-japan-osaka.png"
             />
             <h2>Monthly precipitation</h2>
             <img
-              border="0"
               alt="Average precipitation (rain/snow) in Osaka, Japan"
               src="https://weather-and-climate.com/uploads/average-rainfall-japan-osaka.png"
             />
           </div>
-          <div class="osaka-temperature-image">
+          <div class="destination-temperature-image">
             <img src="images/osaka/osaka-weather-image.jpg" alt="" />
           </div>
         </div>
@@ -150,104 +130,74 @@
             <h2>From Kansai International Airport</h2>
           </div>
           <div class="transportation-1">
-            <img
-              src="images/transportation/jr-limited-express-haruka.jpg"
-              alt=""
-            />
+            <img src="images/transportation/jr-limited-express-haruka.jpg" alt="" />
             <h2>JR Limited Express "Haruka"</h2>
             <p class="transportation-info">
-              Direct, 50 minutes, 1120-2900 yen one way to Shin-Osaka Station, 2
-              trains per hour
+              Direct, 50 minutes, 1120-2900 yen one way to Shin-Osaka Station, 2 trains per hour
             </p>
             <p>
-              "Haruka" limited express trains connect Kansai Airport with
-              Tennoji (30 minutes, 1740 yen by unreserved seat, about 2300 yen
-              by reserved seat) and Shin-Osaka Station (50 minutes, 2380 yen
-              unreserved, about 2900 yen reserved). With the Icoca & Haruka
-              ticket, available to foreign tourists only, you can travel by
-              non-reserved seat on the Haruka between the airport and Osaka for
-              only 1120 yen (to Tennoji) or 1320 yen (to Shin-Osaka) if you own
-              or purchase an Icoca prepaid card.
+              "Haruka" limited express trains connect Kansai Airport with Tennoji (30 minutes, 1740 yen by unreserved
+              seat, about 2300 yen by reserved seat) and Shin-Osaka Station (50 minutes, 2380 yen unreserved, about 2900
+              yen reserved). With the Icoca & Haruka ticket, available to foreign tourists only, you can travel by
+              non-reserved seat on the Haruka between the airport and Osaka for only 1120 yen (to Tennoji) or 1320 yen
+              (to Shin-Osaka) if you own or purchase an Icoca prepaid card.
             </p>
           </div>
           <div class="transportation-2">
-            <img
-              src="images/transportation/jr-kansai-airport-rapid.jpg"
-              alt=""
-            />
+            <img src="images/transportation/jr-kansai-airport-rapid.jpg" alt="" />
             <h2>JR Kansai Airport Rapid</h2>
             <p class="transportation-info">
-              Direct, 70 minutes, 1080-1210 yen one way to Osaka Station, 2-3
-              trains per hour
+              Direct, 70 minutes, 1080-1210 yen one way to Osaka Station, 2-3 trains per hour
             </p>
             <p>
-              The JR Airport Line is the inexpensive JR alternative to the
-              Haruka limited express between the airport and central Osaka,
-              serving Tennoji, Osaka and other major stations on the Osaka Loop
-              Line. It cuts the ticket price in half, but increases the
-              traveling time by about 15 minutes. Unlike the Haruka, it is a
-              normal commuter train which stops a few times between the airport
-              and Osaka and can become crowded during rush hours.
+              The JR Airport Line is the inexpensive JR alternative to the Haruka limited express between the airport
+              and central Osaka, serving Tennoji, Osaka and other major stations on the Osaka Loop Line. It cuts the
+              ticket price in half, but increases the traveling time by about 15 minutes. Unlike the Haruka, it is a
+              normal commuter train which stops a few times between the airport and Osaka and can become crowded during
+              rush hours.
             </p>
           </div>
           <div class="transportation-3">
             <img src="images/transportation/nankai-rapit.jpg" alt="" />
             <h2>Nankai "Rapi:t"</h2>
             <p class="transportation-info">
-              Direct, 35 minutes, 1450 yen one way to Namba Station, frequent
-              departures
+              Direct, 35 minutes, 1450 yen one way to Namba Station, frequent departures
             </p>
             <p>
-              The Nankai "Rapi:t Alpha" and "Rapi:t Beta" trains are limited
-              express trains which connect the airport with Namba, the heart of
-              Osaka's southern city center. Beta trains stop at two more
-              stations than Alpha trains and are, therefore, just slightly
-              slower than Alpha trains. Both are comfortable trains especially
+              The Nankai "Rapi:t Alpha" and "Rapi:t Beta" trains are limited express trains which connect the airport
+              with Namba, the heart of Osaka's southern city center. Beta trains stop at two more stations than Alpha
+              trains and are, therefore, just slightly slower than Alpha trains. Both are comfortable trains especially
               for travelers to and from the airport. All seats are reserved.
             </p>
           </div>
           <div class="transportation-4">
-            <img
-              src="images/transportation/nankai-airport-express.jpg"
-              alt=""
-            />
+            <img src="images/transportation/nankai-airport-express.jpg" alt="" />
             <h2>Nankai Airport Express</h2>
-            <p class="transportation-info">
-              Direct, 45 minutes, 930 yen one way to Namba Station, frequent
-              departures
-            </p>
+            <p class="transportation-info">Direct, 45 minutes, 930 yen one way to Namba Station, frequent departures</p>
             <p>
-              The Nankai Airport Express, also connecting the airport with
-              Namba, is the cheaper but slower alternative to the "Rapi:t"
-              trains. Unlike the "Rapi:t" trains, these trains are normal
-              commuter trains which stop more frequently and can become crowded
-              during rush hours.
+              The Nankai Airport Express, also connecting the airport with Namba, is the cheaper but slower alternative
+              to the "Rapi:t" trains. Unlike the "Rapi:t" trains, these trains are normal commuter trains which stop
+              more frequently and can become crowded during rush hours.
             </p>
           </div>
           <div class="transportation-5">
             <img src="images/transportation/airport-limousine-bus.jpg" alt="" />
             <h2>Airport Limousine Bus</h2>
             <p class="transportation-info">
-              Direct, 45-60 minutes, 1600 yen one way to central Osaka, frequent
-              departures
+              Direct, 45-60 minutes, 1600 yen one way to central Osaka, frequent departures
             </p>
             <p>
-              There are direct airport limousine buses from Kansai Airport to
-              various places and hotels in Osaka, including Osaka Station (60
-              minutes, 1600 yen) and Namba Station (45 minutes, 1100 yen).
+              There are direct airport limousine buses from Kansai Airport to various places and hotels in Osaka,
+              including Osaka Station (60 minutes, 1600 yen) and Namba Station (45 minutes, 1100 yen).
             </p>
           </div>
           <div class="transportation-6">
             <img src="images/transportation/osaka-taxi.jpg" alt="" />
             <h2>Taxi</h2>
-            <p class="transportation-info">
-              About 15,000 yen (18,000 yen late night), 50 minutes to central
-              Osaka
-            </p>
+            <p class="transportation-info">About 15,000 yen (18,000 yen late night), 50 minutes to central Osaka</p>
             <p>
-              Because Kansai Airport is located about 50 km outside of Osaka, a
-              taxi ride into the city center of Osaka is very expensive and not
-              recommended to common travelers.
+              Because Kansai Airport is located about 50 km outside of Osaka, a taxi ride into the city center of Osaka
+              is very expensive and not recommended to common travelers.
             </p>
           </div>
         </div>
@@ -259,27 +209,20 @@
           <div class="transportation-1">
             <img src="images/transportation/osaka-bus.jpg" alt="" />
             <h2>Bus</h2>
-            <p class="transportation-info">
-              Direct, 25 minutes, 510-650 yen, frequent departures
-            </p>
+            <p class="transportation-info">Direct, 25 minutes, 510-650 yen, frequent departures</p>
             <p>
-              Airport buses connect Itami Airport with many locations across
-              Osaka, including Osaka/Umeda Station (25 minutes, 650 yen),
-              Shin-Osaka Station (25 minutes, 510 yen) and Namba/OCAT (25
-              minutes, 650 yen)
+              Airport buses connect Itami Airport with many locations across Osaka, including Osaka/Umeda Station (25
+              minutes, 650 yen), Shin-Osaka Station (25 minutes, 510 yen) and Namba/OCAT (25 minutes, 650 yen)
             </p>
           </div>
           <div class="transportation-2">
             <img src="images/transportation/osaka-train.jpg" alt="" />
             <h2>Monorail and Train</h2>
-            <p class="transportation-info">
-              15-30 minutes, 430 yen, frequent departures
-            </p>
+            <p class="transportation-info">15-30 minutes, 430 yen, frequent departures</p>
             <p>
-              Take the Osaka Monorail from the airport (Osaka Airport Station)
-              for just one station to Hotarugaike Station (2 minutes, 200 yen).
-              Then, transfer to the Hankyu Takarazuka Line for Osaka-Umeda
-              Station (15-20 minutes, 230 yen).
+              Take the Osaka Monorail from the airport (Osaka Airport Station) for just one station to Hotarugaike
+              Station (2 minutes, 200 yen). Then, transfer to the Hankyu Takarazuka Line for Osaka-Umeda Station (15-20
+              minutes, 230 yen).
             </p>
           </div>
         </div>
@@ -287,32 +230,26 @@
         <div class="section-title">
           <h1>Getting around Osaka</h1>
         </div>
-        <div class="getting-around-osaka">
-          <div class="getting-around-osaka-text">
+        <div class="getting-around-destination">
+          <div class="getting-around-destination-text">
             <p>
-              Osaka has two major city centers and four major train stations.
-              The two city centers are nicknamed Kita ("North") around
-              Osaka/Umeda Station and Minami ("South") around Namba Station.
-              While Kita is a large shopping and business area, Minami is
-              Osaka's most famous entertainment district. JR Osaka Station is
-              located in the center of the Kita district. Two other railway
-              companies and three subway lines have their own stations in the
-              vicinity of JR Osaka Station. Note that some of them are named
-              after the Umeda district rather than Osaka. The shinkansen trains
-              stop not at Osaka Station, but at Shin-Osaka Station, one station
-              north of Osaka Station by JR train. In the Namba area (Minami),
-              three railway companies (JR, Nankai and Kintetsu) and three subway
-              lines have their separate stations, all named Namba Station. The
-              fourth of Osaka's major railway stations is Tennoji Station in the
-              southeast of central Osaka. It is served by JR, Kintetsu Railways,
-              the Hankai Tramway and two subway lines.
+              Osaka has two major city centers and four major train stations. The two city centers are nicknamed Kita
+              ("North") around Osaka/Umeda Station and Minami ("South") around Namba Station. While Kita is a large
+              shopping and business area, Minami is Osaka's most famous entertainment district. JR Osaka Station is
+              located in the center of the Kita district. Two other railway companies and three subway lines have their
+              own stations in the vicinity of JR Osaka Station. Note that some of them are named after the Umeda
+              district rather than Osaka. The shinkansen trains stop not at Osaka Station, but at Shin-Osaka Station,
+              one station north of Osaka Station by JR train. In the Namba area (Minami), three railway companies (JR,
+              Nankai and Kintetsu) and three subway lines have their separate stations, all named Namba Station. The
+              fourth of Osaka's major railway stations is Tennoji Station in the southeast of central Osaka. It is
+              served by JR, Kintetsu Railways, the Hankai Tramway and two subway lines.
             </p>
           </div>
-          <div class="getting-around-osaka-image">
+          <div class="getting-around-destination-image">
             <img src="images/osaka/getting-around-osaka-image.jpg" alt="" />
           </div>
         </div>
-        <div class="getting-around-osaka-video">
+        <div class="getting-around-destination-video">
           <iframe
             width="1280px"
             height="720px"
@@ -326,30 +263,28 @@
         <!-- ----------TOP ATTRACTIONS---------- -->
         <div class="title" id="top-attractions"><h1>Top Attractions</h1></div>
         <div class="top-attractions-part-1">
-          <div class="osaka-attraction-1">
+          <div class="destination-attraction-1">
             <img src="images/osaka/osaka-attraction-1.jpg" alt="" />
             <div class="overlay">
               <div class="overlay-text">
                 <h2>Universal Studios Japan</h2>
                 <p>
-                  This extremely popular theme park is equivalent to the
-                  Universal Studios in Hollywood and Orlando, and features
-                  shows, rides and restaurants based on famous movie themes,
-                  like Jaws, Back to the Future and Terminator.
+                  This extremely popular theme park is equivalent to the Universal Studios in Hollywood and Orlando, and
+                  features shows, rides and restaurants based on famous movie themes, like Jaws, Back to the Future and
+                  Terminator.
                 </p>
               </div>
             </div>
           </div>
-          <div class="osaka-attraction-2">
+          <div class="destination-attraction-2">
             <img src="images/osaka/osaka-attraction-2.jpg" alt="" />
             <div class="overlay">
               <div class="overlay-text">
                 <h2>Osaka Castle Park</h2>
                 <p>
-                  Formally the home of the wife of 16th-century Japanese ruler
-                  Toyotomi Hideyoshi, the 15-acre Nishinomaru Garden is one of
-                  Osaka's most beloved cherry blossom viewing spots, with the
-                  Osaka Castle Tower enhancing the backdrop.
+                  Formally the home of the wife of 16th-century Japanese ruler Toyotomi Hideyoshi, the 15-acre
+                  Nishinomaru Garden is one of Osaka's most beloved cherry blossom viewing spots, with the Osaka Castle
+                  Tower enhancing the backdrop.
                 </p>
               </div>
             </div>
@@ -357,49 +292,42 @@
         </div>
 
         <div class="top-attractions-part-2">
-          <div class="osaka-attraction-3">
+          <div class="destination-attraction-3">
             <img src="images/osaka/osaka-attraction-3.jpg" alt="" />
             <div class="overlay">
               <div class="overlay-text">
                 <h2>Osaka Aquarium Kaiyukan</h2>
                 <p>
-                  See the wide range of habitats that make up the Pacific Rim on
-                  a tour of this fascinating aquarium, which takes you from one
-                  environment to another and lets you feel as though you’re
-                  underwater.
+                  See the wide range of habitats that make up the Pacific Rim on a tour of this fascinating aquarium,
+                  which takes you from one environment to another and lets you feel as though you’re underwater.
                 </p>
               </div>
             </div>
           </div>
-          <div class="osaka-attraction-4">
+          <div class="destination-attraction-4">
             <img src="images/osaka/osaka-attraction-4.jpg" alt="" />
             <div class="overlay">
               <div class="overlay-text">
                 <h2>Kuromon Market</h2>
                 <p>
-                  Kuromon Market (黒門市場, Kuromon Ichiba) is a covered public
-                  market that stretches around 600 meters parallel to
-                  Sakaisujidori Street in the Minami area of Osaka. The market
-                  has about 150 shops that predominantly sell fish, meat and
-                  produce, with other shops also purveying traditional sweets
-                  and low priced clothes and homeware. The market dates back to
-                  the Edo Period, and today makes for an atmospheric place to
-                  stroll around, shop and eat a variety of different street
-                  foods.
+                  Kuromon Market (黒門市場, Kuromon Ichiba) is a covered public market that stretches around 600 meters
+                  parallel to Sakaisujidori Street in the Minami area of Osaka. The market has about 150 shops that
+                  predominantly sell fish, meat and produce, with other shops also purveying traditional sweets and low
+                  priced clothes and homeware. The market dates back to the Edo Period, and today makes for an
+                  atmospheric place to stroll around, shop and eat a variety of different street foods.
                 </p>
               </div>
             </div>
           </div>
-          <div class="osaka-attraction-5">
+          <div class="destination-attraction-5">
             <img src="images/osaka/osaka-attraction-5.jpg" alt="" />
             <div class="overlay">
               <div class="overlay-text">
                 <h2>Tempozan Ferris Wheel</h2>
                 <p>
-                  Tempozan Ferris Wheel is located in Osaka, Japan, at Tempozan
-                  Harbor Village, next to Osaka Aquarium Kaiyukan, one of the
-                  largest aquariums in the world. The wheel has a height of
-                  112.5 metres (369 ft) and diameter of 100 metres (330 ft).
+                  Tempozan Ferris Wheel is located in Osaka, Japan, at Tempozan Harbor Village, next to Osaka Aquarium
+                  Kaiyukan, one of the largest aquariums in the world. The wheel has a height of 112.5 metres (369 ft)
+                  and diameter of 100 metres (330 ft).
                 </p>
               </div>
             </div>
@@ -473,24 +401,16 @@
             <h2>History of Japan</h2>
             <ul>
               <li class="footer-list-titles">
-                <a href="history-of-japan.html#classical-japan"
-                  >Classical Japan</a
-                >
+                <a href="history-of-japan.html#classical-japan">Classical Japan</a>
                 <ul class="footer-list-links">
                   <li>
-                    <a href="history-of-japan.html#asuka-period"
-                      >Asuka period (538-710)</a
-                    >
+                    <a href="history-of-japan.html#asuka-period">Asuka period (538-710)</a>
                   </li>
                   <li>
-                    <a href="history-of-japan.html#nara-period"
-                      >Nara period (710–794)</a
-                    >
+                    <a href="history-of-japan.html#nara-period">Nara period (710–794)</a>
                   </li>
                   <li>
-                    <a href="history-of-japan.html#heian-period"
-                      >Heian period (794–1185)</a
-                    >
+                    <a href="history-of-japan.html#heian-period">Heian period (794–1185)</a>
                   </li>
                 </ul>
               </li>
@@ -498,31 +418,21 @@
                 <a href="history-of-japan.html#feudal-japan">Feudal Japan</a>
                 <ul class="footer-list-links">
                   <li>
-                    <a href="history-of-japan.html#kamakura-period"
-                      >Kamakura period (1185–1333)</a
-                    >
+                    <a href="history-of-japan.html#kamakura-period">Kamakura period (1185–1333)</a>
                   </li>
                   <li>
-                    <a href="history-of-japan.html#muromachi-period"
-                      >Muromachi period (1333–1568)</a
-                    >
+                    <a href="history-of-japan.html#muromachi-period">Muromachi period (1333–1568)</a>
                   </li>
                   <li>
-                    <a href="history-of-japan.html#azuchi-momoyama-period"
-                      >Azuchi–Momoyama period (1568–1600)</a
-                    >
+                    <a href="history-of-japan.html#azuchi-momoyama-period">Azuchi–Momoyama period (1568–1600)</a>
                   </li>
                 </ul>
               </li>
               <li class="footer-list-titles">
-                <a href="history-of-japan.html#early-modern-japan"
-                  >Early Modern Japan</a
-                >
+                <a href="history-of-japan.html#early-modern-japan">Early Modern Japan</a>
                 <ul class="footer-list-links">
                   <li>
-                    <a href="history-of-japan.html#edo-period"
-                      >Edo period (1600–1868)</a
-                    >
+                    <a href="history-of-japan.html#edo-period">Edo period (1600–1868)</a>
                   </li>
                 </ul>
               </li>
@@ -530,29 +440,19 @@
                 <a href="history-of-japan.html#modern-japan">Modern Japan</a>
                 <ul class="footer-list-links">
                   <li>
-                    <a href="history-of-japan.html#meiji-period"
-                      >Meiji period (1868–1912)</a
-                    >
+                    <a href="history-of-japan.html#meiji-period">Meiji period (1868–1912)</a>
                   </li>
                   <li>
-                    <a href="history-of-japan.html#taisho-period"
-                      >Taishō period (1912–1926)</a
-                    >
+                    <a href="history-of-japan.html#taisho-period">Taishō period (1912–1926)</a>
                   </li>
                   <li>
-                    <a href="history-of-japan.html#showa-period"
-                      >Shōwa period (1926–1989)</a
-                    >
+                    <a href="history-of-japan.html#showa-period">Shōwa period (1926–1989)</a>
                   </li>
                   <li>
-                    <a href="history-of-japan.html#heisei-period"
-                      >Heisei period (1989–2019)</a
-                    >
+                    <a href="history-of-japan.html#heisei-period">Heisei period (1989–2019)</a>
                   </li>
                   <li>
-                    <a href="history-of-japan.html#reiwa-period"
-                      >Reiwa period (2019–present)</a
-                    >
+                    <a href="history-of-japan.html#reiwa-period">Reiwa period (2019–present)</a>
                   </li>
                 </ul>
               </li>
@@ -570,25 +470,16 @@
               <a href="#"><img src="images/Facebook.svg" alt="" /> Facebook</a>
             </div>
             <div>
-              <a href="#"
-                ><img src="images/Instagram.svg" alt="" /> Instagram</a
-              >
+              <a href="#"><img src="images/Instagram.svg" alt="" /> Instagram</a>
             </div>
             <div>
               <a href="#"><img src="images/Twitter.svg" alt="" /> Twitter</a>
             </div>
           </div>
           <div class="contact-info">
-            <div>
-              <img src="images/placeholder.png" alt="" /> 213, Street Name,
-              Greece
-            </div>
-            <div>
-              <img src="images/telephone-3.png" alt="" /> +30 2101234567
-            </div>
-            <div>
-              <img src="images/mail.png" alt="" /> contact@travelinjapan.eu
-            </div>
+            <div><img src="images/placeholder.png" alt="" /> 213, Street Name, Greece</div>
+            <div><img src="images/telephone-3.png" alt="" /> +30 2101234567</div>
+            <div><img src="images/mail.png" alt="" /> contact@travelinjapan.eu</div>
           </div>
         </div>
       </div>
