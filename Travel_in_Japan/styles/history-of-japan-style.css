@@ -351,6 +351,7 @@ footer a:hover {
   max-width: 1600px;
   margin: 0 auto;
   margin-bottom: 10%;
+  overflow: hidden;
 }
 
 iframe {
@@ -361,6 +362,7 @@ iframe {
 .history-video-content {
   display: flex;
   justify-content: center;
+  overflow: hidden;
 }
 
 /* ----------HISTORY TEXT---------- */
@@ -368,6 +370,7 @@ iframe {
 .history-text-background {
   background: rgba(255, 255, 255, 0.7);
   max-width: 1600px;
+  overflow: hidden;
 }
 
 .history-text-background img {
