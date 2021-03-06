@@ -2,7 +2,7 @@ const timeline = gsap.timeline({ defaults: { duration: 0.5 } });
 timeline
   .from('.header', { y: '-100%', ease: 'ease' })
   .from('.nav-link', { opacity: 0, stagger: 0.5, ease: 'ease' }, '<0.5')
-  .from('.gallery', { scale:(0.5),opacity: 0, ease: 'ease' }, 0.3);
+  .from('.gallery', { y: -100,opacity: 0, ease: 'ease' }, 0.3);
 
 gsap.from('.preview', {
     scrollTrigger:{
