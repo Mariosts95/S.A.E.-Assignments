@@ -933,6 +933,14 @@ footer a:hover {
     height: auto;
   }
 
+ .overlay h2 {
+    font-size: 1em !important;
+  }
+
+ .overlay p {
+   display: none !important; 
+ }
+
   /* ----------FOOTER---------- */
   .footer-grid {
     display: grid;
