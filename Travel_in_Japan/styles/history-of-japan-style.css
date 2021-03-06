@@ -963,21 +963,22 @@ iframe {
     grid-area: 3 / 1 / 4 / 2;
   }
 
-  .showa-image{
+  .showa-image {
     grid-area: 1 / 1 / 2 / 2;
   }
 
   .reiwa-image {
     grid-area: 1 / 1 / 2 / 2;
   }
-
-
 }
 @media all and (max-width: 412px) {
-  body {
+  body,
+  header,
+  main,
+  footer,
+  .history-text-background {
     max-width: 412px;
-    margin: 0;
-    padding: 0;
+    overflow-x: hidden;
   }
   main img {
     width: 100%;
@@ -990,18 +991,6 @@ iframe {
     font-family: 'Langar', cursive;
   }
 
-  header {
-    max-width: 412px;
-  }
-
-  main {
-    max-width: 412px;
-  }
-
-  footer {
-    max-width: 412px;
-  }
-
   .history-video {
     margin: 0 auto;
     margin-bottom: 5%;
@@ -1010,10 +999,6 @@ iframe {
   iframe {
     width: 90%;
     height: 250px;
-  }
-
-  .history-text-background {
-    max-width: 412px;
   }
 
   /* ----------ASUKA PERIOD---------- */
@@ -1365,5 +1350,6 @@ iframe {
   .kamakura-period,
   .kamakura-period img {
     max-width: 360px;
+    overflow-x: hidden;
   }
 }
