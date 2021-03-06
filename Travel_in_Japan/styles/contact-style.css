@@ -579,13 +579,13 @@ svg {
   }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 412px) {
   main,
   nav,
   header,
   footer,
   .container {
-    max-width: 360px;
+    max-width: 412px;
   }
 
   .gallery-title h2 {
@@ -611,25 +611,18 @@ svg {
     grid-area: 2 / 1 / 2 / 2;
   }
 
-  /*   .contact-form-text {
-    grid-area: 3 / 1 / 4 / 2;
-  }
-  .submit-form {
-    grid-area: 4 / 1 / 5 / 2;
-  } */
-
   .newsletter {
-    max-width: 360px;
+    max-width: 412px;
     padding-top: 100%;
     position: relative;
   }
   .newsletter-input {
-    max-width: 360px;
+    max-width: 412px;
     left: 0;
   }
 
   .newsletter-input input {
-    max-width: 360px;
+    max-width: 412px;
     padding: 0;
     margin: 0;
   }
@@ -639,7 +632,7 @@ svg {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: repeat(5, auto);
-    max-width: 360px;
+    max-width: 412px;
     text-align: center;
   }
 
@@ -663,5 +656,21 @@ svg {
 
   .footer-copywrite {
     grid-area: 5 / 1 / 6 / 2;
+  }
+}
+
+
+@media (max-width: 360px) {
+  main,
+  nav,
+  header,
+  footer,
+  .container,
+  .newsletter,
+  .newsletter-input,
+  .newsletter-input input,
+  .footer-grid
+   {
+    max-width: 360px;
   }
 }
