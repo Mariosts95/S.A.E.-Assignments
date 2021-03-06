@@ -18,8 +18,8 @@ main {
 
 body {
   margin: 0;
-  font-family: "Poppins", Arial, Helvetica, sans-serif;
-  background: rgb(36, 36, 36) url("../images/background.png");
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  background: rgb(36, 36, 36) url('../images/background.png');
   font-size: 1.1em;
   line-height: 1.5;
   background-repeat: repeat;
@@ -30,7 +30,7 @@ h2,
 h3 {
   font-size: 2em;
   padding: 1em 0;
-  font-family: "Langar", cursive;
+  font-family: 'Langar', cursive;
 }
 
 img {
@@ -94,7 +94,7 @@ nav img {
 }
 
 nav:after {
-  content: "";
+  content: '';
   clear: both;
   display: table;
 }
@@ -225,7 +225,7 @@ input {
     display: none;
   }
 
-  [id^="btn"]:checked + ul {
+  [id^='btn']:checked + ul {
     display: block;
   }
 
@@ -348,9 +348,6 @@ footer a:hover {
 /* ----------HISTORY VIDEO---------- */
 
 .history-video {
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto;
   max-width: 1600px;
   margin: 0 auto;
   margin-bottom: 10%;
@@ -358,11 +355,10 @@ footer a:hover {
 
 iframe {
   width: 100%;
-  height: 768px;
+  height: 80vh;
 }
 
 .history-video-content {
-  grid-area: 1 / 1 / 2 / 2;
   display: flex;
   justify-content: center;
 }
@@ -779,23 +775,9 @@ iframe {
   }
 
   .history-video {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
     max-width: 1366px;
     margin: 0 auto;
     margin-bottom: 10%;
-  }
-
-  iframe {
-    width: 1280px;
-    height: 720px;
-  }
-
-  .history-video-content {
-    grid-area: 1 / 1 / 2 / 2;
-    display: flex;
-    justify-content: center;
   }
 
   /* ----------HISTORY TEXT---------- */
@@ -933,9 +915,9 @@ iframe {
   }
 }
 
-@media all and (max-width: 360px) {
+@media all and (max-width: 412px) {
   body {
-    max-width: 360px;
+    max-width: 412px;
     margin: 0;
     padding: 0;
   }
@@ -947,19 +929,19 @@ iframe {
   h3 {
     font-size: 2em;
     padding: 1em 0;
-    font-family: "Langar", cursive;
+    font-family: 'Langar', cursive;
   }
 
   header {
-    max-width: 360px;
+    max-width: 412px;
   }
 
   main {
-    max-width: 360px;
+    max-width: 412px;
   }
 
   footer {
-    max-width: 360px;
+    max-width: 412px;
   }
 
   .history-video {
@@ -968,12 +950,12 @@ iframe {
   }
 
   iframe {
-    width: 80%;
-    height: 360px;
+    width: 90%;
+    height: 250px;
   }
 
   .history-text-background {
-    max-width: 360px;
+    max-width: 412px;
   }
 
   /* ----------ASUKA PERIOD---------- */
@@ -1038,7 +1020,7 @@ iframe {
     grid-template-columns: auto;
     grid-template-rows: repeat(2, auto);
     margin-bottom: 2em;
-    max-width: 360px;
+    max-width: 412px;
   }
 
   .heian-image {
@@ -1065,7 +1047,7 @@ iframe {
     grid-template-columns: auto;
     grid-template-rows: repeat(2, auto);
     margin-bottom: 2em;
-    max-width: 360px;
+    max-width: 412px;
   }
 
   .kamakura-banner {
@@ -1076,7 +1058,7 @@ iframe {
   .kamakura-period img {
     width: 100%;
     margin: 0;
-    max-width: 360px;
+    max-width: 412px;
   }
 
   .kamakura-image {
@@ -1311,5 +1293,19 @@ iframe {
 
   .footer-copywrite {
     grid-area: 5 / 1 / 6 / 2;
+  }
+}
+
+@media all and (max-width: 360px) {
+  body,
+  main,
+  main img,
+  header,
+  footer,
+  .history-text-background,
+  .heian-period,
+  .kamakura-period,
+  .kamakura-period img {
+    max-width: 360px;
   }
 }

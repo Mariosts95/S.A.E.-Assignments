@@ -10,6 +10,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="icon" href="images/logo.png" type="image/png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
+    <script src="js/destination-animation.js" defer></script>
     <title>History of Japan</title>
 </head>
 
@@ -17,10 +20,10 @@
 
 <!-- ----------NAVBAR---------- -->
 
-    <header>
+    <header class="header">
       <nav>
         <div class="logo">
-          <a href="index.html"><img src="images/logo_42x42.png" alt="" /></a>
+          <a href="index.html"><img src="images/logo_42x42.png" alt="logo" /></a>
         </div>
         <div class="menu">
           <label for="btn" class="icon">
@@ -30,7 +33,7 @@
           <ul>
             <li>
               <label for="btn-1" class="show">Destinations</label>
-              <a href="index.html">Destinations</a>
+              <a href="index.html" class="nav-link">Destinations</a>
               <input type="checkbox" id="btn-1" />
               <ul>
                 <li><a href="tokyo.html">Tokyo</a></li>
@@ -41,7 +44,7 @@
             </li>
             <li>
               <label for="btn-2" class="show">History of Japan</label>
-              <a href="history-of-japan.html">History of Japan</a>
+              <a href="history-of-japan.html" class="nav-link">History of Japan</a>
               <input type="checkbox" id="btn-2" />
               <ul>
                 <li><a href="history-of-japan.html#classical-japan">Classical Japan</a></li>
@@ -50,7 +53,7 @@
                 <li><a href="history-of-japan.html#modern-japan">Modern Japan</a></li>
               </ul>
             </li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
           </ul>
         </div>
       </nav>
@@ -79,10 +82,10 @@
     <!-- ----------ASUKA PERIOD---------- -->
     <div class="asuka-period" id="asuka-period">
             <div class="asuka-banner">
-                <img src="images/history/classical-history-of-japan-banner.jpg" alt=""> 
+                <img src="images/history/classical-history-of-japan-banner.jpg" alt="Gosannen War Picture Scroll"> 
             </div>
             <div class="asuka-image">
-                <img src="images/history/asuka-history-of-japan-image.jpg" alt=""> 
+                <img src="images/history/asuka-history-of-japan-image.jpg" alt="Prince Shōtoku , also known as Prince Umayado or Prince Kamitsumiya "> 
             </div>
             <div class="asuka-text">
                 <h2>Asuka period (538–710)</h3>
@@ -100,7 +103,7 @@
 <!-- ----------NARA PERIOD---------- -->      
     <div class="nara-period" id="nara-period">
         <div class="nara-image">
-            <img src="images/history/nara-history-of-japan-image.jpg" alt="">
+            <img src="images/history/nara-history-of-japan-image.jpg" alt="Seated Bhaisajyaguru">
         </div>
         <div class="nara-text">
             <h2>Nara period (710–794)</h2>
@@ -121,7 +124,7 @@
 <!-- ----------HEIAN PERIOD---------- -->
     <div class="heian-period" id="heian-period">
         <div class="heian-image">
-            <img src="images/history/heian-history-of-japan-image.jpg" alt="">
+            <img src="images/history/heian-history-of-japan-image.jpg" alt="A scene of Illustrated scroll of Tale of Genji">
         </div>
         <div class="heian-text">
             <h2>Heian period (794–1185)</h2>
@@ -142,10 +145,10 @@
 <!-- ----------KAMAKURA PERIOD---------- -->
     <div class="kamakura-period" id="kamakura-period">
         <div class="kamakura-banner">
-            <img src="images/history/feudal-history-of-japan-banner.jpg" alt="">
+            <img src="images/history/feudal-history-of-japan-banner.jpg" alt="Edo period screen depicting the Battle of Sekigahara. It began on October 21, 1600, with a total of 160,000 men facing each other.">
         </div>
         <div class="kamakura-image">
-            <img src="images/history/kamakura-history-of-japan-image.jpg" alt="">
+            <img src="images/history/kamakura-history-of-japan-image.jpg" alt="Shōgun Minamoto no Yoritomo, founder of the Kamakura shogunate">
         </div>
         <div class="kamakura-text">
             <h2>Kamakura period (1185–1333)</h3>
@@ -160,7 +163,7 @@
 <!-- ----------MUROMACHI PERIOD---------- -->
     <div class="muromachi-period" id="muromachi-period">
         <div class="muromachi-image">
-            <img src="images/history/muromachi-history-of-japan-image.jpg" alt="">
+            <img src="images/history/muromachi-history-of-japan-image.jpg" alt="Muromachi samurai (1538)">
         </div>
         <div class="muromachi-text">
             <h2>Muromachi period (1333–1568)</h2>
@@ -185,7 +188,7 @@
     <div class="azuchi-momoyama-period" id="azuchi-momoyama-period">
         <div class="azuchi-momoyama-image">
             <h2>Azuchi–Momoyama period (1568–1600)</h2>
-            <img src="images/history/azuchi-momoyama-history-of-japan-image.jpg" alt="">
+            <img src="images/history/azuchi-momoyama-history-of-japan-image.jpg" alt="Sekigahara Kassen Byōbu, Japanese screen depicting the Battle of Sekigahara. This layout is considered rare since it is the only one of the many Sekigahara screens which shows the battlefield from the North.">
         </div>
         <div class="azuchi-momoyama-text">
             <p>The Azuchi–Momoyama period (安土桃山時代, Azuchi–Momoyama jidai) is the final phase of the Sengoku period (戦国時代, Sengoku
@@ -215,10 +218,10 @@
 <!-- ----------EDO PERIOD---------- -->
     <div class="edo-period" id="edo-period">
         <div class="edo-banner">
-            <img src="images/history/early-modern-japan-history-of-japan-banner.jpg" alt="">
+            <img src="images/history/early-modern-japan-history-of-japan-banner.jpg" alt="The Great Wave off Kanagawa, also known as The Great Wave or simply The Wave, is a woodblock print by the Japanese ukiyo-e artist Hokusai.">
         </div>
         <div class="edo-image">
-            <img src="images/history/edo-history-of-japan-image.jpg" alt="">
+            <img src="images/history/edo-history-of-japan-image.jpg" alt="Portrait of Tokugawa Ieyasu">
         </div>
         <div class="edo-text">
             <h2>Edo period (1600–1868)</h3>
@@ -238,10 +241,10 @@
 <!-- ----------MEIJI PERIOD---------- -->
     <div class="meiji-period" id="meiji-period">
         <div class="meiji-banner">
-            <img src="images/history/modern-japan-history-of-japan-banner.jpg" alt="">
+            <img src="images/history/modern-japan-history-of-japan-banner.jpg" alt="Illustration of Chinese Generals from Pyongyang Captured Alive by Migita Toshihide, October 1894.">
         </div>
         <div class="meiji-image">
-            <img src="images/history/meiji-history-of-japan-image.jpg" alt="">
+            <img src="images/history/meiji-history-of-japan-image.jpg" alt="Promulgation of the new Japanese constitution by Emperor Meiji in Tokyo.">
         </div>
         <div class="meiji-text">
             <h2>Meiji period (1868–1912)</h3>
@@ -262,7 +265,7 @@
 <!-- ----------TAISHO PERIOD---------- -->
     <div class="taisho-period" id="taisho-period">
         <div class="taisho-image">
-            <img src="images/history/taisho-history-of-japan-image.jpg" alt="">
+            <img src="images/history/taisho-history-of-japan-image.jpg" alt="Emperor Taisho of Japan">
         </div>
         <div class="taisho-text">
             <h2>Taishō period (1912–1926)</h2>
@@ -277,7 +280,7 @@
 <!-- ----------SHOWA PERIOD---------- -->
 <div class="showa-period" id="showa-period">
     <div class="showa-image">
-        <img src="images/history/showa-history-of-japan-image.jpg" alt="">
+        <img src="images/history/showa-history-of-japan-image.jpg" alt="Emperor Showa">
     </div>
     <div class="showa-text">
         <h2>Shōwa period (1926–1989)</h3>
@@ -306,7 +309,7 @@
 <!-- ----------HEISEI PERIOD---------- -->
 <div class="heisei-period" id="heisei-period">
     <div class="heisei-image">
-        <img src="images/history/heisei-history-of-japan-image.jpg" alt="">
+        <img src="images/history/heisei-history-of-japan-image.jpg" alt="Emperor Akihito">
     </div>
     <div class="heisei-text">
         <h2>Heisei period (1989–2019)</h2>
@@ -326,7 +329,7 @@
 <!-- REIWA PERIOD -->
 <div class="reiwa-period" id="reiwa-period">
     <div class="reiwa-image">
-        <img src="images/history/reiwa-history-of-japan-image.jpg" alt="">
+        <img src="images/history/reiwa-history-of-japan-image.jpg" alt="Emperor Naruhito">
     </div>
     <div class="reiwa-text">
         <h2>Reiwa period (2019–present)</h3>
@@ -346,7 +349,7 @@
     
 <footer class="footer-grid">
     <div class="footer-logo">
-    <a href="index.html"><img src="images/Logo-2.png" alt="" /></a>
+    <a href="index.html"><img src="images/Logo-2.png" alt="logo" /></a>
     </div>
     <div class="footer-policy">
     <ul>
@@ -442,27 +445,27 @@
     <div class="footer-social-links">
         <div class="contact-info-social">
         <div>
-            <a href="#"><img src="images/Facebook.svg" alt="" /> Facebook</a>
+            <a href="#"><img src="images/Facebook.svg" alt="Facebook logo" /> Facebook</a>
         </div>
         <div>
             <a href="#"
-            ><img src="images/Instagram.svg" alt="" /> Instagram</a
+            ><img src="images/Instagram.svg" alt="Instagram logo" /> Instagram</a
             >
         </div>
         <div>
-            <a href="#"><img src="images/Twitter.svg" alt="" /> Twitter</a>
+            <a href="#"><img src="images/Twitter.svg" alt="Twitter logo" /> Twitter</a>
         </div>
         </div>
         <div class="contact-info">
         <div>
-            <img src="images/placeholder.png" alt="" /> 213, Street Name,
+            <img src="images/placeholder.png" alt="location pin" /> 213, Street Name,
             Greece
         </div>
         <div>
-            <img src="images/telephone-3.png" alt="" /> +30 2101234567
+            <img src="images/telephone-3.png" alt="phone" /> +30 2101234567
         </div>
         <div>
-            <img src="images/mail.png" alt="" /> contact@travelinjapan.eu
+            <img src="images/mail.png" alt="mail" /> contact@travelinjapan.eu
         </div>
         </div>
     </div>
