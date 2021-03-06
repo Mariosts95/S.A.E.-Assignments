@@ -1,6 +1,6 @@
 :root {
   --primary-color: #ed5454;
-  --secondary-color: #282828;
+  --secondary-color: #3b4954;
 }
 
 * {
@@ -238,38 +238,37 @@ input {
 .footer-grid {
   display: grid;
   grid-template-columns: repeat(6, auto);
-  grid-template-rows: auto 3em;
-  padding-top: 2em;
+  grid-template-rows: repeat(2, auto);
+  padding-top: 1em;
 }
 
 .footer-logo {
   grid-area: 1 / 1 / 2 / 2;
   display: flex;
-  align-items: center;
 }
 
 .footer-logo img {
   height: auto;
-  padding: 2em;
+  padding: 1em;
 }
 
 .footer-policy {
-  grid-area: 1 / 2 / 2 / 3;
-  margin: 2em auto;
+  grid-area: 1 / 4 / 2 / 5;
+  align-self: center;
+  justify-self: center;
 }
 
 .footer-policy ul li {
-  padding-bottom: 0.3em;
-  padding-left: 3em;
+  padding: 1em;
 }
 
 .footer-destinations {
-  grid-area: 1 / 3 / 2 / 4;
+  grid-area: 1 / 2 / 2 / 3;
 }
 
 .footer-history {
-  grid-area: 1 / 4 / 2 / 5;
-  margin-bottom: 2em;
+  grid-area: 1 / 3 / 2 / 4;
+  padding-bottom: 0.5em;
 }
 
 .footer-contact {
@@ -277,29 +276,37 @@ input {
   text-align: center;
 }
 
-.footer-social-links {
-  display: grid;
-  grid-template-columns: repeat(2, auto);
-  grid-template-rows: auto;
+footer svg {
+  display: block;
+  margin: 0 auto;
+  width: 52px;
+  height: 100%;
+  transition: all 0.5s ease;
+}
+
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: fit-content;
+}
+
+.contact-info p {
+  padding: 0;
 }
 
 .contact-info-social {
-  grid-area: 1 / 1 / 2 / 2;
-  padding-top: 2em;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5em;
+}
+
+.contact-info-social svg:hover {
+  fill: var(--primary-color);
 }
 
 .footer-contact-social div {
   width: fit-content;
-}
-
-.footer-contact img {
-  width: auto;
-  margin: 1em auto;
-}
-
-.contact-info {
-  grid-area: 1 / 2 / 2 / 3;
-  padding-top: 1em;
 }
 
 .footer-copywrite {
@@ -413,7 +420,7 @@ footer a:hover {
 
 .destination-temperature img {
   border: 0;
-  padding: .5em;
+  padding: 0.5em;
 }
 
 .destination-temperature-array {
@@ -677,7 +684,7 @@ footer a:hover {
 
   .footer-contact {
     grid-area: 2 / 2 / 3 / 3;
-    margin: 0 auto;
+    padding: 1em;
   }
 
   .footer-social-links {
@@ -782,13 +789,13 @@ footer a:hover {
   }
 }
 
-@media all and (max-width: 412px) {
+@media all and (max-width: 414px) {
   main,
   nav,
   header,
   footer,
   .text-background {
-    max-width: 412px;
+    max-width: 414px;
   }
 
   main img {
@@ -798,7 +805,7 @@ footer a:hover {
   .gallery {
     background-position: top center;
     background-size: 100%;
-    width: 412px;
+    width: 414px;
     height: 260px;
     overflow: hidden;
   }
@@ -826,7 +833,7 @@ footer a:hover {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: repeat(2, auto);
-    max-width: 412px;
+    max-width: 414px;
   }
 
   .destination-temperature-array {
@@ -846,31 +853,31 @@ footer a:hover {
     grid-template-columns: auto;
     grid-template-rows: repeat(7, auto);
     width: 100%;
-    max-width: 412px;
+    max-width: 414px;
   }
 
   .from-title {
     grid-area: 1 / 1 / 2 / 2;
     padding-left: 0.5em;
-    max-width: 412px;
+    max-width: 414px;
   }
 
   .transportation-1 {
     grid-area: 2 / 1 / 3 / 2;
     padding: 2em;
-    max-width: 412px;
+    max-width: 414px;
   }
 
   .transportation-2 {
     grid-area: 3 / 1 / 4 / 2;
     padding: 2em;
-    max-width: 412px;
+    max-width: 414px;
   }
 
   .transportation-3 {
     grid-area: 4 / 1 / 5 / 2;
     padding: 2em;
-    max-width: 412px;
+    max-width: 414px;
   }
 
   .transportation-4 {
@@ -878,7 +885,7 @@ footer a:hover {
     padding: 2em;
     padding-top: 0em;
     height: fit-content;
-    max-width: 412px;
+    max-width: 414px;
   }
 
   .transportation-5 {
@@ -886,7 +893,7 @@ footer a:hover {
     padding: 2em;
     padding-top: 0em;
     height: fit-content;
-    max-width: 412px;
+    max-width: 414px;
   }
 
   .transportation-6 {
@@ -894,7 +901,7 @@ footer a:hover {
     padding: 2em;
     padding-top: 0em;
     height: fit-content;
-    max-width: 412px;
+    max-width: 414px;
   }
 
   /* ----------GETTING AROUND TOKYO---------- */
@@ -921,7 +928,7 @@ footer a:hover {
 
   .getting-around-destination-video {
     width: auto;
-    max-width: 412px;
+    max-width: 414px;
     height: auto;
     margin: 0 auto;
     display: flex;
@@ -933,20 +940,20 @@ footer a:hover {
     height: auto;
   }
 
- .overlay h2 {
+  .overlay h2 {
     font-size: 1em !important;
   }
 
- .overlay p {
-   display: none !important; 
- }
+  .overlay p {
+    display: none !important;
+  }
 
   /* ----------FOOTER---------- */
   .footer-grid {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: repeat(5, auto);
-    max-width: 412px;
+    max-width: 414px;
   }
 
   .footer-destinations {
@@ -960,6 +967,16 @@ footer a:hover {
   .footer-contact {
     grid-area: 3 / 1 / 4 / 2;
     margin-bottom: 1em;
+  }
+
+  .contact-info {
+    flex-direction: column;
+  }
+  .contact-info div {
+    margin: 0.5em 0;
+  }
+  .contact-info-social {
+    margin-top: 0;
   }
 
   .footer-policy {

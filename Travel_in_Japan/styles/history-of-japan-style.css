@@ -1,6 +1,6 @@
 :root {
   --primary-color: #ed5454;
-  --secondary-color: #282828;
+  --secondary-color: #3b4954;
 }
 
 * {
@@ -12,7 +12,6 @@
 main {
   max-width: 1600px;
   margin: 0 auto;
-  margin-bottom: -15em;
   margin-top: 2em;
 }
 
@@ -239,72 +238,75 @@ input {
 .footer-grid {
   display: grid;
   grid-template-columns: repeat(6, auto);
-  grid-template-rows: auto 3em;
+  grid-template-rows: repeat(2, auto);
+  padding-top: 1em;
 }
 
 .footer-logo {
   grid-area: 1 / 1 / 2 / 2;
   display: flex;
-  align-items: center;
-  padding-top: 1em;
 }
 
 .footer-logo img {
   height: auto;
-  padding: 2em;
+  padding: 1em;
 }
 
 .footer-policy {
-  grid-area: 1 / 2 / 2 / 3;
-  padding-top: 1em;
-  margin: auto;
+  grid-area: 1 / 4 / 2 / 5;
+  align-self: center;
+  justify-self: center;
 }
 
 .footer-policy ul li {
-  padding-bottom: 0.3em;
-  padding-left: 3em;
+  padding: 1em;
 }
 
 .footer-destinations {
-  grid-area: 1 / 3 / 2 / 4;
-  padding-top: 1em;
+  grid-area: 1 / 2 / 2 / 3;
 }
 
 .footer-history {
-  grid-area: 1 / 4 / 2 / 5;
-  padding-top: 1em;
-  margin-bottom: 2em;
+  grid-area: 1 / 3 / 2 / 4;
+  padding-bottom: 0.5em;
 }
 
 .footer-contact {
   grid-area: 1 / 5 / 2 / 7;
-  padding-top: 1em;
   text-align: center;
 }
 
-.footer-social-links {
-  display: grid;
-  grid-template-columns: repeat(2, auto);
-  grid-template-rows: auto;
+footer svg {
+  display: block;
+  margin: 0 auto;
+  width: 52px;
+  height: 100%;
+  transition: all 0.5s ease;
+}
+
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: fit-content;
+}
+
+.contact-info p {
+  padding: 0;
 }
 
 .contact-info-social {
-  grid-area: 1 / 1 / 2 / 2;
-  padding-top: 2em;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5em;
+}
+
+.contact-info-social svg:hover {
+  fill: var(--primary-color);
 }
 
 .footer-contact-social div {
   width: fit-content;
-}
-
-.footer-contact img {
-  width: auto;
-  margin: 1em auto;
-}
-
-.contact-info {
-  grid-area: 1 / 2 / 2 / 3;
-  padding-top: 1em;
 }
 
 .footer-copywrite {
@@ -333,8 +335,7 @@ input {
 }
 
 footer {
-  position: relative;
-  top: 300px;
+  margin-top: 2em;
   background: var(--secondary-color);
   color: white;
 }
@@ -408,7 +409,7 @@ iframe {
 .asuka-period {
   display: grid;
   grid-template-columns: repeat(2, auto);
-  grid-template-rows: auto, auto;
+  grid-template-rows: auto auto;
   margin: 0 auto;
 }
 
@@ -499,7 +500,7 @@ iframe {
 .kamakura-period {
   display: grid;
   grid-template-columns: repeat(2, auto);
-  grid-template-rows: auto, auto;
+  grid-template-rows: auto auto;
   margin: 0 auto;
 }
 
@@ -586,7 +587,7 @@ iframe {
 .edo-period {
   display: grid;
   grid-template-columns: repeat(2, auto);
-  grid-template-rows: auto, auto;
+  grid-template-rows: auto auto;
   margin: 0 auto;
 }
 
@@ -621,7 +622,7 @@ iframe {
 .meiji-period {
   display: grid;
   grid-template-columns: repeat(2, auto);
-  grid-template-rows: auto, auto;
+  grid-template-rows: auto auto;
   margin: 0 auto;
 }
 
@@ -686,7 +687,7 @@ iframe {
 .showa-period {
   display: grid;
   grid-template-columns: repeat(2, auto);
-  grid-template-rows: auto, auto;
+  grid-template-rows: auto auto;
   margin: 0 auto;
 }
 
@@ -778,7 +779,6 @@ iframe {
   main {
     max-width: 1366px;
     margin: 0 auto;
-    margin-bottom: -15em;
     margin-top: 2em;
   }
   nav {
@@ -876,7 +876,7 @@ iframe {
 
   .footer-contact {
     grid-area: 2 / 2 / 3 / 3;
-    margin: 0 auto;
+    padding: 1em;
   }
 
   .footer-social-links {
@@ -886,7 +886,6 @@ iframe {
   .contact-info-social {
     grid-area: 1 / 1 / 2 / 2;
     padding-top: 2em;
-    /*   margin-right: auto; */
   }
 
   .footer-contact-social div {
@@ -924,8 +923,6 @@ iframe {
   }
 
   footer {
-    position: relative;
-    top: 300px;
     background: var(--secondary-color);
     color: white;
   }
@@ -971,13 +968,12 @@ iframe {
     grid-area: 1 / 1 / 2 / 2;
   }
 }
-@media all and (max-width: 412px) {
+@media all and (max-width: 414px) {
   body,
-  header,
   main,
   footer,
   .history-text-background {
-    max-width: 412px;
+    max-width: 414px;
     overflow-x: hidden;
   }
   main img {
@@ -1063,7 +1059,7 @@ iframe {
     grid-template-columns: auto;
     grid-template-rows: repeat(2, auto);
     margin-bottom: 2em;
-    max-width: 412px;
+    max-width: 414px;
   }
 
   .heian-image {
@@ -1090,7 +1086,7 @@ iframe {
     grid-template-columns: auto;
     grid-template-rows: repeat(2, auto);
     margin-bottom: 2em;
-    max-width: 412px;
+    max-width: 414px;
   }
 
   .kamakura-banner {
@@ -1101,7 +1097,7 @@ iframe {
   .kamakura-period img {
     width: 100%;
     margin: 0;
-    max-width: 412px;
+    max-width: 414px;
   }
 
   .kamakura-image {
@@ -1309,11 +1305,11 @@ iframe {
   }
 
   /* ----------FOOTER---------- */
-
   .footer-grid {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: repeat(5, auto);
+    max-width: 414px;
   }
 
   .footer-destinations {
@@ -1327,6 +1323,16 @@ iframe {
   .footer-contact {
     grid-area: 3 / 1 / 4 / 2;
     margin-bottom: 1em;
+  }
+
+  .contact-info {
+    flex-direction: column;
+  }
+  .contact-info div {
+    margin: 0.5em 0;
+  }
+  .contact-info-social {
+    margin-top: 0;
   }
 
   .footer-policy {
@@ -1343,7 +1349,6 @@ iframe {
   body,
   main,
   main img,
-  header,
   footer,
   .history-text-background,
   .heian-period,

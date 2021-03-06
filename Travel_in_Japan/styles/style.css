@@ -1,6 +1,6 @@
 :root {
   --primary-color: #ed5454;
-  --secondary-color: #282828;
+  --secondary-color: #3b4954;
 }
 
 * {
@@ -400,14 +400,14 @@ input {
   }
 }
 
-@media all and (max-width: 412px) {
+@media all and (max-width: 414px) {
   .destinations {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto;
     grid-column-gap: 1em;
     grid-row-gap: 0.5em;
-    max-width: 412px;
+    max-width: 414px;
     margin: 0 auto;
     margin: 2%;
   }
