@@ -109,7 +109,6 @@ nav ul {
 nav ul li {
   display: inline-block;
   background: var(--primary-color);
-  /* margin: 0 5px; */
   width: 13em;
   text-align: center;
 }
@@ -127,12 +126,10 @@ nav ul li a {
   line-height: 52px;
   font-size: 1em;
   width: 13em;
-  /* padding: 8px 15px; */
 }
 
 nav ul ul {
   position: absolute;
-  /* top: 3.2em; */
   opacity: 0;
   visibility: hidden;
 }
@@ -410,7 +407,7 @@ footer a:hover {
   padding: 2em;
 }
 
-/* ----------TOKYO TEMPERATURE---------- */
+/* ----------TEMPERATURE---------- */
 
 .destination-temperature {
   display: grid;
@@ -432,7 +429,7 @@ footer a:hover {
   align-self: end;
   justify-self: center;
 }
-/* ----------NARITA INTERNATIONAL AIRPOT---------- */
+/* ----------GETTING THERE---------- */
 
 .from {
   display: grid;
@@ -490,7 +487,7 @@ footer a:hover {
   font-size: 0.8em;
 }
 
-/* ----------GETTING AROUND TOKYO---------- */
+/* ----------GETTING AROUND --------- */
 
 .getting-around-destination {
   display: grid;
