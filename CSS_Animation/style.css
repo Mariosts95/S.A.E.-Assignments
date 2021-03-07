@@ -1,0 +1,72 @@
+body {
+    overflow: hidden;
+    background: url(background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.leaf1 {
+    opacity: 0;
+    animation: apear 1s 1s ease-in-out forwards;
+}
+
+.leaf2 {
+    opacity: 0;
+    animation: apear 1s 1.5s ease-in-out forwards;
+}
+
+.leaf3 {
+    opacity: 0;
+    animation: apear 1s 2s ease-in-out forwards;
+}
+
+.leaf4 {
+    opacity: 0;
+    animation: apear 1s 2.5s ease-in-out forwards;
+}
+
+.leaf5 {
+    opacity: 0;
+    animation: apear 1s 3s ease-in-out forwards;
+}
+
+.center {
+    transform: scale(0);
+    animation: scale 1s ease-in-out forwards;
+}
+
+svg {
+    width: fit-content;
+    margin: 0 auto;
+    animation: rotate 4s infinite ease-in-out alternate;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes apear {
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes scale {
+    100% {
+        transform: scale(1);
+    }
+}

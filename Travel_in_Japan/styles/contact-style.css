@@ -663,6 +663,7 @@ svg {
     text-decoration: underline;
   }
 }
+
 @media (max-width: 1024px) {
   .footer-logo {
     display: none;
@@ -757,7 +758,6 @@ svg {
     grid-area: 5 / 1 / 6 / 2;
   }
 }
-
 
 @media (max-width: 360px) {
   main,
