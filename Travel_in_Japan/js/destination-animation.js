@@ -2,18 +2,18 @@ const timeline = gsap.timeline({ defaults: { duration: 0.5 } });
 timeline
   .from('.header', { y: '-100%', ease: 'ease' })
   .from('.nav-link', { opacity: 0, stagger: 0.5, ease: 'ease' }, '<0.5')
-  .from('.gallery', { y: -100,opacity: 0, ease: 'ease' }, 0.3);
+  .from('.gallery', { y: -100, opacity: 0, ease: 'ease' }, 0.3);
 
 gsap.from('.preview', {
-    scrollTrigger:{
-      trigger: '.preview',
-      start: 'top bottom',
-      toggleActions: "play none none reset"
-    }, 
-    y: 100,
-    duration: 1,
-    opacity: 0,
-    ease: 'ease',
+  scrollTrigger: {
+    trigger: '.preview',
+    start: 'top bottom',
+    toggleActions: 'play none none reset',
+  },
+  y: 100,
+  duration: 1,
+  opacity: 0,
+  ease: 'ease',
 });
 
 gsap.from('.destination-temperature-array-el', {
@@ -83,7 +83,7 @@ gsap.from('.getting-around-destination-video', {
     start: 'top center',
     toggleActions: 'play none none reset',
   },
-  scale:(0.5),
+  scale: 0.5,
   duration: 1,
   opacity: 0,
   ease: 'back',
