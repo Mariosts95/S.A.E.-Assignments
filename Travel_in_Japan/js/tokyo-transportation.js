@@ -26,6 +26,43 @@ fetch('./assets/tokyo-transportation.json')
     }
   });
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
 /* const mainJson = () => {
     for (const city of cities){
         console.log(city.tokyo.preview.text);
